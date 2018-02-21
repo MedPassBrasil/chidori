@@ -1,0 +1,2261 @@
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+        COLUMN-(justify-content)-(align-items)-(align-content)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+.flex-column-center-center-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-column-start-center-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-column-start-end-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.flex-column-start-start-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex-column-start-start-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flex-column-start-center-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.flex-column-center-center-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.flex-column-between-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-column-end-end-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.flex-column-end-end-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+
+.flex-column-end-end-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-start;
+}
+
+.flex-column-end-start-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flex-column-end-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-column-end-start-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+
+.flex-column-center-between-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+}
+
+.flex-column-end-center-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+        ROW-(justify-content)-(align-items)-(align-content)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+.flex-row-between-start-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flex-row-between-end-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.flex-row-between-center-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-row-around-center-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-row-around-center-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.flex-row-around-center-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-row-around-start-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex-row-center-center-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-row-start-center-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-row-start-start-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex-row-start-start-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flex-row-start-start-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+
+.flex-row-end-center-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.flex-row-center-end-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.flex-row-center-start-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                            MARGIN | PERCENT |
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+@each $marginPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .m-#{$marginPercent}{
+
+        @if $marginPercent == 10p{
+            margin: $value;
+            } @else if $marginPercent == 20p{
+            margin: $value * 2;
+            } @else if $marginPercent == 30p{
+            margin: $value * 3;
+            } @else if $marginPercent == 40p{
+            margin: $value * 4;
+            } @else if $marginPercent == 50p{
+            margin: $value * 5;
+            } @else if $marginPercent == 60p{
+            margin: $value * 6;
+            } @else if $marginPercent == 70p{
+            margin: $value * 7;
+            } @else if $marginPercent == 80p{
+            margin: $value * 8;
+            } @else if $marginPercent == 90p{
+            margin: $value * 9;
+            } @else if $marginPercent == 100p{
+            margin: $value * 10;
+            }
+
+    }
+}
+
+@each $marginRightPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .m-right-#{$marginRightPercent}{
+
+        @if $marginRightPercent == 10p{
+            margin-right: $value;
+            } @else if $marginRightPercent == 20p{
+            margin-right: $value * 2;
+            } @else if $marginRightPercent == 30p{
+            margin-right: $value * 3;
+            } @else if $marginRightPercent == 40p{
+            margin-right: $value * 4;
+            } @else if $marginRightPercent == 50p{
+            margin-right: $value * 5;
+            } @else if $marginRightPercent == 60p{
+            margin-right: $value * 6;
+            } @else if $marginRightPercent == 70p{
+            margin-right: $value * 7;
+            } @else if $marginRightPercent == 80p{
+            margin-right: $value * 8;
+            } @else if $marginRightPercent == 90p{
+            margin-right: $value * 9;
+            } @else if $marginRightPercent == 100p{
+            margin-right: $value * 10;
+            }
+
+    }
+}
+
+@each $marginLeftPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .m-left-#{$marginLeftPercent}{
+
+        @if $marginLeftPercent == 10p{
+            margin-left: $value;
+            } @else if $marginLeftPercent == 20p{
+            margin-left: $value * 2;
+            } @else if $marginLeftPercent == 30p{
+            margin-left: $value * 3;
+            } @else if $marginLeftPercent == 40p{
+            margin-left: $value * 4;
+            } @else if $marginLeftPercent == 50p{
+            margin-left: $value * 5;
+            } @else if $marginLeftPercent == 60p{
+            margin-left: $value * 6;
+            } @else if $marginLeftPercent == 70p{
+            margin-left: $value * 7;
+            } @else if $marginLeftPercent == 80p{
+            margin-left: $value * 8;
+            } @else if $marginLeftPercent == 90p{
+            margin-left: $value * 9;
+            } @else if $marginLeftPercent == 100p{
+            margin-left: $value * 10;
+            }
+
+    }
+}
+
+@each $marginBottomPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .m-bottom-#{$marginBottomPercent}{
+
+        @if $marginBottomPercent == 10p{
+            margin-bottom: $value;
+            } @else if $marginBottomPercent == 20p{
+            margin-bottom: $value * 2;
+            } @else if $marginBottomPercent == 30p{
+            margin-bottom: $value * 3;
+            } @else if $marginBottomPercent == 40p{
+            margin-bottom: $value * 4;
+            } @else if $marginBottomPercent == 50p{
+            margin-bottom: $value * 5;
+            } @else if $marginBottomPercent == 60p{
+            margin-bottom: $value * 6;
+            } @else if $marginBottomPercent == 70p{
+            margin-bottom: $value * 7;
+            } @else if $marginBottomPercent == 80p{
+            margin-bottom: $value * 8;
+            } @else if $marginBottomPercent == 90p{
+            margin-bottom: $value * 9;
+            } @else if $marginBottomPercent == 100p{
+            margin-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $marginTopPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .m-top-#{$marginTopPercent}{
+
+        @if $marginTopPercent == 10p{
+            margin-top: $value;
+            } @else if $marginTopPercent == 20p{
+            margin-top: $value * 2;
+            } @else if $marginTopPercent == 30p{
+            margin-top: $value * 3;
+            } @else if $marginTopPercent == 40p{
+            margin-top: $value * 4;
+            } @else if $marginTopPercent == 50p{
+            margin-top: $value * 5;
+            } @else if $marginTopPercent == 60p{
+            margin-top: $value * 6;
+            } @else if $marginTopPercent == 70p{
+            margin-top: $value * 7;
+            } @else if $marginTopPercent == 80p{
+            margin-top: $value * 8;
+            } @else if $marginTopPercent == 90p{
+            margin-top: $value * 9;
+            } @else if $marginTopPercent == 100p{
+            margin-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+==========================================================================
+
+                        MARGIN | Viewport Height |
+
+==========================================================================
+*/
+
+@each $marginVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .m-#{$marginVH}{
+
+        @if $marginVH == 10vh{
+            margin: $value;
+            } @else if $marginVH == 20vh{
+            margin: $value * 2;
+            } @else if $marginVH == 30vh{
+            margin: $value * 3;
+            } @else if $marginVH == 40vh{
+            margin: $value * 4;
+            } @else if $marginVH == 50vh{
+            margin: $value * 5;
+            } @else if $marginVH == 60vh{
+            margin: $value * 6;
+            } @else if $marginVH == 70vh{
+            margin: $value * 7;
+            } @else if $marginVH == 80vh{
+            margin: $value * 8;
+            } @else if $marginVH == 90vh{
+            margin: $value * 9;
+            } @else if $marginVH == 100vh{
+            margin: $value * 10;
+            }
+
+    }
+}
+
+@each $marginRightVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .m-right-#{$marginRightVH}{
+
+        @if $marginRightVH == 10vh{
+            margin-right: $value;
+            } @else if $marginRightVH == 20vh{
+            margin-right: $value * 2;
+            } @else if $marginRightVH == 30vh{
+            margin-right: $value * 3;
+            } @else if $marginRightVH == 40vh{
+            margin-right: $value * 4;
+            } @else if $marginRightVH == 50vh{
+            margin-right: $value * 5;
+            } @else if $marginRightVH == 60vh{
+            margin-right: $value * 6;
+            } @else if $marginRightVH == 70vh{
+            margin-right: $value * 7;
+            } @else if $marginRightVH == 80vh{
+            margin-right: $value * 8;
+            } @else if $marginRightVH == 90vh{
+            margin-right: $value * 9;
+            } @else if $marginRightVH == 100vh{
+            margin-right: $value * 10;
+            }
+
+    }
+}
+
+@each $marginLeftVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .m-left-#{$marginLeftVH}{
+
+        @if $marginLeftVH == 10vh{
+            margin-left: $value;
+            } @else if $marginLeftVH == 20vh{
+            margin-left: $value * 2;
+            } @else if $marginLeftVH == 30vh{
+            margin-left: $value * 3;
+            } @else if $marginLeftVH == 40vh{
+            margin-left: $value * 4;
+            } @else if $marginLeftVH == 50vh{
+            margin-left: $value * 5;
+            } @else if $marginLeftVH == 60vh{
+            margin-left: $value * 6;
+            } @else if $marginLeftVH == 70vh{
+            margin-left: $value * 7;
+            } @else if $marginLeftVH == 80vh{
+            margin-left: $value * 8;
+            } @else if $marginLeftVH == 90vh{
+            margin-left: $value * 9;
+            } @else if $marginLeftVH == 100vh{
+            margin-left: $value * 10;
+            }
+
+    }
+}
+
+@each $marginBottomVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .m-bottom-#{$marginBottomVH}{
+
+        @if $marginBottomVH == 10vh{
+            margin-bottom: $value;
+            } @else if $marginBottomVH == 20vh{
+            margin-bottom: $value * 2;
+            } @else if $marginBottomVH == 30vh{
+            margin-bottom: $value * 3;
+            } @else if $marginBottomVH == 40vh{
+            margin-bottom: $value * 4;
+            } @else if $marginBottomVH == 50vh{
+            margin-bottom: $value * 5;
+            } @else if $marginBottomVH == 60vh{
+            margin-bottom: $value * 6;
+            } @else if $marginBottomVH == 70vh{
+            margin-bottom: $value * 7;
+            } @else if $marginBottomVH == 80vh{
+            margin-bottom: $value * 8;
+            } @else if $marginBottomVH == 90vh{
+            margin-bottom: $value * 9;
+            } @else if $marginBottomVH == 100vh{
+            margin-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $marginTopVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .m-top-#{$marginTopVH}{
+
+        @if $marginTopVH == 10vh{
+            margin-top: $value;
+            } @else if $marginTopVH == 20vh{
+            margin-top: $value * 2;
+            } @else if $marginTopVH == 30vh{
+            margin-top: $value * 3;
+            } @else if $marginTopVH == 40vh{
+            margin-top: $value * 4;
+            } @else if $marginTopVH == 50vh{
+            margin-top: $value * 5;
+            } @else if $marginTopVH == 60vh{
+            margin-top: $value * 6;
+            } @else if $marginTopVH == 70vh{
+            margin-top: $value * 7;
+            } @else if $marginTopVH == 80vh{
+            margin-top: $value * 8;
+            } @else if $marginTopVH == 90vh{
+            margin-top: $value * 9;
+            } @else if $marginTopVH == 100vh{
+            margin-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+==========================================================================
+
+                        MARGIN | Viewport Width |
+
+==========================================================================
+*/
+
+@each $marginVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .m-#{$marginVW}{
+
+        @if $marginVW == 10vw{
+            margin: $value;
+            } @else if $marginVW == 20vw{
+            margin: $value * 2;
+            } @else if $marginVW == 30vw{
+            margin: $value * 3;
+            } @else if $marginVW == 40vw{
+            margin: $value * 4;
+            } @else if $marginVW == 50vw{
+            margin: $value * 5;
+            } @else if $marginVW == 60vw{
+            margin: $value * 6;
+            } @else if $marginVW == 70vw{
+            margin: $value * 7;
+            } @else if $marginVW == 80vw{
+            margin: $value * 8;
+            } @else if $marginVW == 90vw{
+            margin: $value * 9;
+            } @else if $marginVW == 100vw{
+            margin: $value * 10;
+            }
+
+    }
+}
+
+@each $marginRightVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .m-right-#{$marginRightVW}{
+
+        @if $marginRightVW == 10vw{
+            margin-right: $value;
+            } @else if $marginRightVW == 20vw{
+            margin-right: $value * 2;
+            } @else if $marginRightVW == 30vw{
+            margin-right: $value * 3;
+            } @else if $marginRightVW == 40vw{
+            margin-right: $value * 4;
+            } @else if $marginRightVW == 50vw{
+            margin-right: $value * 5;
+            } @else if $marginRightVW == 60vw{
+            margin-right: $value * 6;
+            } @else if $marginRightVW == 70vw{
+            margin-right: $value * 7;
+            } @else if $marginRightVW == 80vw{
+            margin-right: $value * 8;
+            } @else if $marginRightVW == 90vw{
+            margin-right: $value * 9;
+            } @else if $marginRightVW == 100vw{
+            margin-right: $value * 10;
+            }
+
+    }
+}
+
+@each $marginLeftVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .m-left-#{$marginLeftVW}{
+
+        @if $marginLeftVW == 10vw{
+            margin-left: $value;
+            } @else if $marginLeftVW == 20vw{
+            margin-left: $value * 2;
+            } @else if $marginLeftVW == 30vw{
+            margin-left: $value * 3;
+            } @else if $marginLeftVW == 40vw{
+            margin-left: $value * 4;
+            } @else if $marginLeftVW == 50vw{
+            margin-left: $value * 5;
+            } @else if $marginLeftVW == 60vw{
+            margin-left: $value * 6;
+            } @else if $marginLeftVW == 70vw{
+            margin-left: $value * 7;
+            } @else if $marginLeftVW == 80vw{
+            margin-left: $value * 8;
+            } @else if $marginLeftVW == 90vw{
+            margin-left: $value * 9;
+            } @else if $marginLeftVW == 100vw{
+            margin-left: $value * 10;
+            }
+
+    }
+}
+
+@each $marginBottomVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .m-bottom-#{$marginBottomVW}{
+
+        @if $marginBottomVW == 10vw{
+            margin-bottom: $value;
+            } @else if $marginBottomVW == 20vw{
+            margin-bottom: $value * 2;
+            } @else if $marginBottomVW == 30vw{
+            margin-bottom: $value * 3;
+            } @else if $marginBottomVW == 40vw{
+            margin-bottom: $value * 4;
+            } @else if $marginBottomVW == 50vw{
+            margin-bottom: $value * 5;
+            } @else if $marginBottomVW == 60vw{
+            margin-bottom: $value * 6;
+            } @else if $marginBottomVW == 70vw{
+            margin-bottom: $value * 7;
+            } @else if $marginBottomVW == 80vw{
+            margin-bottom: $value * 8;
+            } @else if $marginBottomVW == 90vw{
+            margin-bottom: $value * 9;
+            } @else if $marginBottomVW == 100vw{
+            margin-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $marginTopVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .m-top-#{$marginTopVW}{
+
+        @if $marginTopVW == 10vw{
+            margin-top: $value;
+            } @else if $marginTopVW == 20vw{
+            margin-top: $value * 2;
+            } @else if $marginTopVW == 30vw{
+            margin-top: $value * 3;
+            } @else if $marginTopVW == 40vw{
+            margin-top: $value * 4;
+            } @else if $marginTopVW == 50vw{
+            margin-top: $value * 5;
+            } @else if $marginTopVW == 60vw{
+            margin-top: $value * 6;
+            } @else if $marginTopVW == 70vw{
+            margin-top: $value * 7;
+            } @else if $marginTopVW == 80vw{
+            margin-top: $value * 8;
+            } @else if $marginTopVW == 90vw{
+            margin-top: $value * 9;
+            } @else if $marginTopVW == 100vw{
+            margin-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+==========================================================================
+
+                        MARGIN | Pixels |
+
+==========================================================================
+*/
+
+@each $marginPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .m-#{$marginPX}{
+
+        @if $marginPX == 10px{
+            margin: $value;
+            } @else if $marginPX == 20px{
+            margin: $value * 2;
+            } @else if $marginPX == 30px{
+            margin: $value * 3;
+            } @else if $marginPX == 40px{
+            margin: $value * 4;
+            } @else if $marginPX == 50px{
+            margin: $value * 5;
+            } @else if $marginPX == 60px{
+            margin: $value * 6;
+            } @else if $marginPX == 70px{
+            margin: $value * 7;
+            } @else if $marginPX == 80px{
+            margin: $value * 8;
+            } @else if $marginPX == 90px{
+            margin: $value * 9;
+            } @else if $marginPX == 100px{
+            margin: $value * 10;
+            }
+
+    }
+}
+
+@each $marginRightPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .m-right-#{$marginRightPX}{
+
+        @if $marginRightPX == 10px{
+            margin-right: $value;
+            } @else if $marginRightPX == 20px{
+            margin-right: $value * 2;
+            } @else if $marginRightPX == 30px{
+            margin-right: $value * 3;
+            } @else if $marginRightPX == 40px{
+            margin-right: $value * 4;
+            } @else if $marginRightPX == 50px{
+            margin-right: $value * 5;
+            } @else if $marginRightPX == 60px{
+            margin-right: $value * 6;
+            } @else if $marginRightPX == 70px{
+            margin-right: $value * 7;
+            } @else if $marginRightPX == 80px{
+            margin-right: $value * 8;
+            } @else if $marginRightPX == 90px{
+            margin-right: $value * 9;
+            } @else if $marginRightPX == 100px{
+            margin-right: $value * 10;
+            }
+
+    }
+}
+
+@each $marginLeftPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .m-left-#{$marginLeftPX}{
+
+        @if $marginLeftPX == 10px{
+            margin-left: $value;
+            } @else if $marginLeftPX == 20px{
+            margin-left: $value * 2;
+            } @else if $marginLeftPX == 30px{
+            margin-left: $value * 3;
+            } @else if $marginLeftPX == 40px{
+            margin-left: $value * 4;
+            } @else if $marginLeftPX == 50px{
+            margin-left: $value * 5;
+            } @else if $marginLeftPX == 60px{
+            margin-left: $value * 6;
+            } @else if $marginLeftPX == 70px{
+            margin-left: $value * 7;
+            } @else if $marginLeftPX == 80px{
+            margin-left: $value * 8;
+            } @else if $marginLeftPX == 90px{
+            margin-left: $value * 9;
+            } @else if $marginLeftPX == 100px{
+            margin-left: $value * 10;
+            }
+
+    }
+}
+
+@each $marginBottomPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .m-bottom-#{$marginBottomPX}{
+
+        @if $marginBottomPX == 10px{
+            margin-bottom: $value;
+            } @else if $marginBottomPX == 20px{
+            margin-bottom: $value * 2;
+            } @else if $marginBottomPX == 30px{
+            margin-bottom: $value * 3;
+            } @else if $marginBottomPX == 40px{
+            margin-bottom: $value * 4;
+            } @else if $marginBottomPX == 50px{
+            margin-bottom: $value * 5;
+            } @else if $marginBottomPX == 60px{
+            margin-bottom: $value * 6;
+            } @else if $marginBottomPX == 70px{
+            margin-bottom: $value * 7;
+            } @else if $marginBottomPX == 80px{
+            margin-bottom: $value * 8;
+            } @else if $marginBottomPX == 90px{
+            margin-bottom: $value * 9;
+            } @else if $marginBottomPX == 100px{
+            margin-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $marginTopPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .m-top-#{$marginTopPX}{
+
+        @if $marginTopPX == 10px{
+            margin-top: $value;
+            } @else if $marginTopPX == 20px{
+            margin-top: $value * 2;
+            } @else if $marginTopPX == 30px{
+            margin-top: $value * 3;
+            } @else if $marginTopPX == 40px{
+            margin-top: $value * 4;
+            } @else if $marginTopPX == 50px{
+            margin-top: $value * 5;
+            } @else if $marginTopPX == 60px{
+            margin-top: $value * 6;
+            } @else if $marginTopPX == 70px{
+            margin-top: $value * 7;
+            } @else if $marginTopPX == 80px{
+            margin-top: $value * 8;
+            } @else if $marginTopPX == 90px{
+            margin-top: $value * 9;
+            } @else if $marginTopPX == 100px{
+            margin-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                            padding | PERCENT |
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+@each $paddingPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .p-#{$paddingPercent}{
+
+        @if $paddingPercent == 10p{
+            padding: $value;
+            } @else if $paddingPercent == 20p{
+            padding: $value * 2;
+            } @else if $paddingPercent == 30p{
+            padding: $value * 3;
+            } @else if $paddingPercent == 40p{
+            padding: $value * 4;
+            } @else if $paddingPercent == 50p{
+            padding: $value * 5;
+            } @else if $paddingPercent == 60p{
+            padding: $value * 6;
+            } @else if $paddingPercent == 70p{
+            padding: $value * 7;
+            } @else if $paddingPercent == 80p{
+            padding: $value * 8;
+            } @else if $paddingPercent == 90p{
+            padding: $value * 9;
+            } @else if $paddingPercent == 100p{
+            padding: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingRightPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .p-right-#{$paddingRightPercent}{
+
+        @if $paddingRightPercent == 10p{
+            padding-right: $value;
+            } @else if $paddingRightPercent == 20p{
+            padding-right: $value * 2;
+            } @else if $paddingRightPercent == 30p{
+            padding-right: $value * 3;
+            } @else if $paddingRightPercent == 40p{
+            padding-right: $value * 4;
+            } @else if $paddingRightPercent == 50p{
+            padding-right: $value * 5;
+            } @else if $paddingRightPercent == 60p{
+            padding-right: $value * 6;
+            } @else if $paddingRightPercent == 70p{
+            padding-right: $value * 7;
+            } @else if $paddingRightPercent == 80p{
+            padding-right: $value * 8;
+            } @else if $paddingRightPercent == 90p{
+            padding-right: $value * 9;
+            } @else if $paddingRightPercent == 100p{
+            padding-right: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingLeftPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .p-left-#{$paddingLeftPercent}{
+
+        @if $paddingLeftPercent == 10p{
+            padding-left: $value;
+            } @else if $paddingLeftPercent == 20p{
+            padding-left: $value * 2;
+            } @else if $paddingLeftPercent == 30p{
+            padding-left: $value * 3;
+            } @else if $paddingLeftPercent == 40p{
+            padding-left: $value * 4;
+            } @else if $paddingLeftPercent == 50p{
+            padding-left: $value * 5;
+            } @else if $paddingLeftPercent == 60p{
+            padding-left: $value * 6;
+            } @else if $paddingLeftPercent == 70p{
+            padding-left: $value * 7;
+            } @else if $paddingLeftPercent == 80p{
+            padding-left: $value * 8;
+            } @else if $paddingLeftPercent == 90p{
+            padding-left: $value * 9;
+            } @else if $paddingLeftPercent == 100p{
+            padding-left: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingBottomPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .p-bottom-#{$paddingBottomPercent}{
+
+        @if $paddingBottomPercent == 10p{
+            padding-bottom: $value;
+            } @else if $paddingBottomPercent == 20p{
+            padding-bottom: $value * 2;
+            } @else if $paddingBottomPercent == 30p{
+            padding-bottom: $value * 3;
+            } @else if $paddingBottomPercent == 40p{
+            padding-bottom: $value * 4;
+            } @else if $paddingBottomPercent == 50p{
+            padding-bottom: $value * 5;
+            } @else if $paddingBottomPercent == 60p{
+            padding-bottom: $value * 6;
+            } @else if $paddingBottomPercent == 70p{
+            padding-bottom: $value * 7;
+            } @else if $paddingBottomPercent == 80p{
+            padding-bottom: $value * 8;
+            } @else if $paddingBottomPercent == 90p{
+            padding-bottom: $value * 9;
+            } @else if $paddingBottomPercent == 100p{
+            padding-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingTopPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 10%;
+
+    .p-top-#{$paddingTopPercent}{
+
+        @if $paddingTopPercent == 10p{
+            padding-top: $value;
+            } @else if $paddingTopPercent == 20p{
+            padding-top: $value * 2;
+            } @else if $paddingTopPercent == 30p{
+            padding-top: $value * 3;
+            } @else if $paddingTopPercent == 40p{
+            padding-top: $value * 4;
+            } @else if $paddingTopPercent == 50p{
+            padding-top: $value * 5;
+            } @else if $paddingTopPercent == 60p{
+            padding-top: $value * 6;
+            } @else if $paddingTopPercent == 70p{
+            padding-top: $value * 7;
+            } @else if $paddingTopPercent == 80p{
+            padding-top: $value * 8;
+            } @else if $paddingTopPercent == 90p{
+            padding-top: $value * 9;
+            } @else if $paddingTopPercent == 100p{
+            padding-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+==========================================================================
+
+                        padding | Viewport Height |
+
+==========================================================================
+*/
+
+@each $paddingVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .p-#{$paddingVH}{
+
+        @if $paddingVH == 10vh{
+            padding: $value;
+            } @else if $paddingVH == 20vh{
+            padding: $value * 2;
+            } @else if $paddingVH == 30vh{
+            padding: $value * 3;
+            } @else if $paddingVH == 40vh{
+            padding: $value * 4;
+            } @else if $paddingVH == 50vh{
+            padding: $value * 5;
+            } @else if $paddingVH == 60vh{
+            padding: $value * 6;
+            } @else if $paddingVH == 70vh{
+            padding: $value * 7;
+            } @else if $paddingVH == 80vh{
+            padding: $value * 8;
+            } @else if $paddingVH == 90vh{
+            padding: $value * 9;
+            } @else if $paddingVH == 100vh{
+            padding: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingRightVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .p-right-#{$paddingRightVH}{
+
+        @if $paddingRightVH == 10vh{
+            padding-right: $value;
+            } @else if $paddingRightVH == 20vh{
+            padding-right: $value * 2;
+            } @else if $paddingRightVH == 30vh{
+            padding-right: $value * 3;
+            } @else if $paddingRightVH == 40vh{
+            padding-right: $value * 4;
+            } @else if $paddingRightVH == 50vh{
+            padding-right: $value * 5;
+            } @else if $paddingRightVH == 60vh{
+            padding-right: $value * 6;
+            } @else if $paddingRightVH == 70vh{
+            padding-right: $value * 7;
+            } @else if $paddingRightVH == 80vh{
+            padding-right: $value * 8;
+            } @else if $paddingRightVH == 90vh{
+            padding-right: $value * 9;
+            } @else if $paddingRightVH == 100vh{
+            padding-right: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingLeftVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .p-left-#{$paddingLeftVH}{
+
+        @if $paddingLeftVH == 10vh{
+            padding-left: $value;
+            } @else if $paddingLeftVH == 20vh{
+            padding-left: $value * 2;
+            } @else if $paddingLeftVH == 30vh{
+            padding-left: $value * 3;
+            } @else if $paddingLeftVH == 40vh{
+            padding-left: $value * 4;
+            } @else if $paddingLeftVH == 50vh{
+            padding-left: $value * 5;
+            } @else if $paddingLeftVH == 60vh{
+            padding-left: $value * 6;
+            } @else if $paddingLeftVH == 70vh{
+            padding-left: $value * 7;
+            } @else if $paddingLeftVH == 80vh{
+            padding-left: $value * 8;
+            } @else if $paddingLeftVH == 90vh{
+            padding-left: $value * 9;
+            } @else if $paddingLeftVH == 100vh{
+            padding-left: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingBottomVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .p-bottom-#{$paddingBottomVH}{
+
+        @if $paddingBottomVH == 10vh{
+            padding-bottom: $value;
+            } @else if $paddingBottomVH == 20vh{
+            padding-bottom: $value * 2;
+            } @else if $paddingBottomVH == 30vh{
+            padding-bottom: $value * 3;
+            } @else if $paddingBottomVH == 40vh{
+            padding-bottom: $value * 4;
+            } @else if $paddingBottomVH == 50vh{
+            padding-bottom: $value * 5;
+            } @else if $paddingBottomVH == 60vh{
+            padding-bottom: $value * 6;
+            } @else if $paddingBottomVH == 70vh{
+            padding-bottom: $value * 7;
+            } @else if $paddingBottomVH == 80vh{
+            padding-bottom: $value * 8;
+            } @else if $paddingBottomVH == 90vh{
+            padding-bottom: $value * 9;
+            } @else if $paddingBottomVH == 100vh{
+            padding-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingTopVH in 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 10vh;
+
+    .p-top-#{$paddingTopVH}{
+
+        @if $paddingTopVH == 10vh{
+            padding-top: $value;
+            } @else if $paddingTopVH == 20vh{
+            padding-top: $value * 2;
+            } @else if $paddingTopVH == 30vh{
+            padding-top: $value * 3;
+            } @else if $paddingTopVH == 40vh{
+            padding-top: $value * 4;
+            } @else if $paddingTopVH == 50vh{
+            padding-top: $value * 5;
+            } @else if $paddingTopVH == 60vh{
+            padding-top: $value * 6;
+            } @else if $paddingTopVH == 70vh{
+            padding-top: $value * 7;
+            } @else if $paddingTopVH == 80vh{
+            padding-top: $value * 8;
+            } @else if $paddingTopVH == 90vh{
+            padding-top: $value * 9;
+            } @else if $paddingTopVH == 100vh{
+            padding-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+==========================================================================
+
+                        padding | Viewport Width |
+
+==========================================================================
+*/
+
+@each $paddingVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .p-#{$paddingVW}{
+
+        @if $paddingVW == 10vw{
+            padding: $value;
+            } @else if $paddingVW == 20vw{
+            padding: $value * 2;
+            } @else if $paddingVW == 30vw{
+            padding: $value * 3;
+            } @else if $paddingVW == 40vw{
+            padding: $value * 4;
+            } @else if $paddingVW == 50vw{
+            padding: $value * 5;
+            } @else if $paddingVW == 60vw{
+            padding: $value * 6;
+            } @else if $paddingVW == 70vw{
+            padding: $value * 7;
+            } @else if $paddingVW == 80vw{
+            padding: $value * 8;
+            } @else if $paddingVW == 90vw{
+            padding: $value * 9;
+            } @else if $paddingVW == 100vw{
+            padding: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingRightVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .p-right-#{$paddingRightVW}{
+
+        @if $paddingRightVW == 10vw{
+            padding-right: $value;
+            } @else if $paddingRightVW == 20vw{
+            padding-right: $value * 2;
+            } @else if $paddingRightVW == 30vw{
+            padding-right: $value * 3;
+            } @else if $paddingRightVW == 40vw{
+            padding-right: $value * 4;
+            } @else if $paddingRightVW == 50vw{
+            padding-right: $value * 5;
+            } @else if $paddingRightVW == 60vw{
+            padding-right: $value * 6;
+            } @else if $paddingRightVW == 70vw{
+            padding-right: $value * 7;
+            } @else if $paddingRightVW == 80vw{
+            padding-right: $value * 8;
+            } @else if $paddingRightVW == 90vw{
+            padding-right: $value * 9;
+            } @else if $paddingRightVW == 100vw{
+            padding-right: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingLeftVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .p-left-#{$paddingLeftVW}{
+
+        @if $paddingLeftVW == 10vw{
+            padding-left: $value;
+            } @else if $paddingLeftVW == 20vw{
+            padding-left: $value * 2;
+            } @else if $paddingLeftVW == 30vw{
+            padding-left: $value * 3;
+            } @else if $paddingLeftVW == 40vw{
+            padding-left: $value * 4;
+            } @else if $paddingLeftVW == 50vw{
+            padding-left: $value * 5;
+            } @else if $paddingLeftVW == 60vw{
+            padding-left: $value * 6;
+            } @else if $paddingLeftVW == 70vw{
+            padding-left: $value * 7;
+            } @else if $paddingLeftVW == 80vw{
+            padding-left: $value * 8;
+            } @else if $paddingLeftVW == 90vw{
+            padding-left: $value * 9;
+            } @else if $paddingLeftVW == 100vw{
+            padding-left: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingBottomVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .p-bottom-#{$paddingBottomVW}{
+
+        @if $paddingBottomVW == 10vw{
+            padding-bottom: $value;
+            } @else if $paddingBottomVW == 20vw{
+            padding-bottom: $value * 2;
+            } @else if $paddingBottomVW == 30vw{
+            padding-bottom: $value * 3;
+            } @else if $paddingBottomVW == 40vw{
+            padding-bottom: $value * 4;
+            } @else if $paddingBottomVW == 50vw{
+            padding-bottom: $value * 5;
+            } @else if $paddingBottomVW == 60vw{
+            padding-bottom: $value * 6;
+            } @else if $paddingBottomVW == 70vw{
+            padding-bottom: $value * 7;
+            } @else if $paddingBottomVW == 80vw{
+            padding-bottom: $value * 8;
+            } @else if $paddingBottomVW == 90vw{
+            padding-bottom: $value * 9;
+            } @else if $paddingBottomVW == 100vw{
+            padding-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingTopVW in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 10VW;
+
+    .p-top-#{$paddingTopVW}{
+
+        @if $paddingTopVW == 10vw{
+            padding-top: $value;
+            } @else if $paddingTopVW == 20vw{
+            padding-top: $value * 2;
+            } @else if $paddingTopVW == 30vw{
+            padding-top: $value * 3;
+            } @else if $paddingTopVW == 40vw{
+            padding-top: $value * 4;
+            } @else if $paddingTopVW == 50vw{
+            padding-top: $value * 5;
+            } @else if $paddingTopVW == 60vw{
+            padding-top: $value * 6;
+            } @else if $paddingTopVW == 70vw{
+            padding-top: $value * 7;
+            } @else if $paddingTopVW == 80vw{
+            padding-top: $value * 8;
+            } @else if $paddingTopVW == 90vw{
+            padding-top: $value * 9;
+            } @else if $paddingTopVW == 100vw{
+            padding-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+==========================================================================
+
+                        padding | Pixels |
+
+==========================================================================
+*/
+
+@each $paddingPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .p-#{$paddingPX}{
+
+        @if $paddingPX == 10px{
+            padding: $value;
+            } @else if $paddingPX == 20px{
+            padding: $value * 2;
+            } @else if $paddingPX == 30px{
+            padding: $value * 3;
+            } @else if $paddingPX == 40px{
+            padding: $value * 4;
+            } @else if $paddingPX == 50px{
+            padding: $value * 5;
+            } @else if $paddingPX == 60px{
+            padding: $value * 6;
+            } @else if $paddingPX == 70px{
+            padding: $value * 7;
+            } @else if $paddingPX == 80px{
+            padding: $value * 8;
+            } @else if $paddingPX == 90px{
+            padding: $value * 9;
+            } @else if $paddingPX == 100px{
+            padding: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingRightPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .p-right-#{$paddingRightPX}{
+
+        @if $paddingRightPX == 10px{
+            padding-right: $value;
+            } @else if $paddingRightPX == 20px{
+            padding-right: $value * 2;
+            } @else if $paddingRightPX == 30px{
+            padding-right: $value * 3;
+            } @else if $paddingRightPX == 40px{
+            padding-right: $value * 4;
+            } @else if $paddingRightPX == 50px{
+            padding-right: $value * 5;
+            } @else if $paddingRightPX == 60px{
+            padding-right: $value * 6;
+            } @else if $paddingRightPX == 70px{
+            padding-right: $value * 7;
+            } @else if $paddingRightPX == 80px{
+            padding-right: $value * 8;
+            } @else if $paddingRightPX == 90px{
+            padding-right: $value * 9;
+            } @else if $paddingRightPX == 100px{
+            padding-right: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingLeftPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .p-left-#{$paddingLeftPX}{
+
+        @if $paddingLeftPX == 10px{
+            padding-left: $value;
+            } @else if $paddingLeftPX == 20px{
+            padding-left: $value * 2;
+            } @else if $paddingLeftPX == 30px{
+            padding-left: $value * 3;
+            } @else if $paddingLeftPX == 40px{
+            padding-left: $value * 4;
+            } @else if $paddingLeftPX == 50px{
+            padding-left: $value * 5;
+            } @else if $paddingLeftPX == 60px{
+            padding-left: $value * 6;
+            } @else if $paddingLeftPX == 70px{
+            padding-left: $value * 7;
+            } @else if $paddingLeftPX == 80px{
+            padding-left: $value * 8;
+            } @else if $paddingLeftPX == 90px{
+            padding-left: $value * 9;
+            } @else if $paddingLeftPX == 100px{
+            padding-left: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingBottomPX in 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 10px;
+
+    .p-bottom-#{$paddingBottomPX}{
+
+        @if $paddingBottomPX == 10px{
+            padding-bottom: $value;
+            } @else if $paddingBottomPX == 20px{
+            padding-bottom: $value * 2;
+            } @else if $paddingBottomPX == 30px{
+            padding-bottom: $value * 3;
+            } @else if $paddingBottomPX == 40px{
+            padding-bottom: $value * 4;
+            } @else if $paddingBottomPX == 50px{
+            padding-bottom: $value * 5;
+            } @else if $paddingBottomPX == 60px{
+            padding-bottom: $value * 6;
+            } @else if $paddingBottomPX == 70px{
+            padding-bottom: $value * 7;
+            } @else if $paddingBottomPX == 80px{
+            padding-bottom: $value * 8;
+            } @else if $paddingBottomPX == 90px{
+            padding-bottom: $value * 9;
+            } @else if $paddingBottomPX == 100px{
+            padding-bottom: $value * 10;
+            }
+
+    }
+}
+
+@each $paddingTopPX in 1px, 2px, 3px, 4px, 5px, 6px, 7px, 8px, 9px, 10px {
+
+    $value: 10px;
+
+    .p-top-#{$paddingTopPX}{
+
+        @if $paddingTopPX == 1px{
+            padding-top: $value;
+            } @else if $paddingTopPX == 2px{
+            padding-top: $value * 2;
+            } @else if $paddingTopPX == 3px{
+            padding-top: $value * 3;
+            } @else if $paddingTopPX == 4px{
+            padding-top: $value * 4;
+            } @else if $paddingTopPX == 5px{
+            padding-top: $value * 5;
+            } @else if $paddingTopPX == 6px{
+            padding-top: $value * 6;
+            } @else if $paddingTopPX == 7px{
+            padding-top: $value * 7;
+            } @else if $paddingTopPX == 8px{
+            padding-top: $value * 8;
+            } @else if $paddingTopPX == 9px{
+            padding-top: $value * 9;
+            } @else if $paddingTopPX == 10px{
+            padding-top: $value * 10;
+            }
+
+    }
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                TOP
+                                (For elements with POSITION:ABSOLUTE)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+@each $topPercent in Zp, 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 0%;
+
+    .top-#{$topPercent}{
+
+        @if $topPercent == Zp{
+            top: $value;
+        } @else if $topPercent == 10p{
+            top: $value + 10;
+            } @else if $topPercent == 20p{
+            top: $value + 20;
+            } @else if $topPercent == 30p{
+            top: $value + 30;
+            } @else if $topPercent == 40p{
+            top: $value + 40;
+            } @else if $topPercent == 50p{
+            top: $value + 50;
+            } @else if $topPercent == 60p{
+            top: $value + 60;
+            } @else if $topPercent == 70p{
+            top: $value + 70;
+            } @else if $topPercent == 80p{
+            top: $value + 80;
+            } @else if $topPercent == 90p{
+            top: $value + 90;
+            } @else if $topPercent == 100p{
+            top: $value + 100;
+            }
+
+    }
+
+}
+
+@each $topVH in Zvh, 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 0vh;
+
+    .top-#{$topVH}{
+
+        @if $topVH == Zvh{
+            top: $value;
+        } @else if $topVH == 10vh{
+            top: $value + 10;
+            } @else if $topVH == 20vh{
+            top: $value + 20;
+            } @else if $topVH == 30vh{
+            top: $value + 30;
+            } @else if $topVH == 40vh{
+            top: $value + 40;
+            } @else if $topVH == 50vh{
+            top: $value + 50;
+            } @else if $topVH == 60vh{
+            top: $value + 60;
+            } @else if $topVH == 70vh{
+            top: $value + 70;
+            } @else if $topVH == 80vh{
+            top: $value + 80;
+            } @else if $topVH == 90vh{
+            top: $value + 90;
+            } @else if $topVH == 100vh{
+            top: $value + 100;
+            }
+
+    }
+
+}
+
+@each $topVW in Zvw, 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 0vw;
+
+    .top-#{$topVW}{
+
+        @if $topVW == Zvw{
+            top: $value;
+        } @else if $topVW == 10vw{
+            top: $value + 10;
+            } @else if $topVW == 20vw{
+            top: $value + 20;
+            } @else if $topVW == 30vw{
+            top: $value + 30;
+            } @else if $topVW == 40vw{
+            top: $value + 40;
+            } @else if $topVW == 50vw{
+            top: $value + 50;
+            } @else if $topVW == 60vw{
+            top: $value + 60;
+            } @else if $topVW == 70vw{
+            top: $value + 70;
+            } @else if $topVW == 80vw{
+            top: $value + 80;
+            } @else if $topVW == 90vw{
+            top: $value + 90;
+            } @else if $topVW == 100vw{
+            top: $value + 100;
+            }
+
+    }
+
+}
+
+@each $topPX in Zpx, 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 0px;
+
+    .top-#{$topPX}{
+
+        @if $topPX == Zpx{
+            top: $value;
+        } @else if $topPX == 10px{
+            top: $value + 10;
+            } @else if $topPX == 20px{
+            top: $value + 20;
+            } @else if $topPX == 30px{
+            top: $value + 30;
+            } @else if $topPX == 40px{
+            top: $value + 40;
+            } @else if $topPX == 50px{
+            top: $value + 50;
+            } @else if $topPX == 60px{
+            top: $value + 60;
+            } @else if $topPX == 70px{
+            top: $value + 70;
+            } @else if $topPX == 80px{
+            top: $value + 80;
+            } @else if $topPX == 90px{
+            top: $value + 90;
+            } @else if $topPX == 100px{
+            top: $value + 100;
+            }
+
+    }
+
+}
+
+/*
+==========================================================================
+
+                                Bottom
+                (For elements with POSITION:ABSOLUTE)
+
+==========================================================================
+*/
+
+@each $bottomPercent in Zp, 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 0%;
+
+    .bottom-#{$bottomPercent}{
+
+        @if $bottomPercent == Zp{
+            bottom: $value;
+        } @else if $bottomPercent == 10p{
+            bottom: $value + 10;
+            } @else if $bottomPercent == 20p{
+            bottom: $value + 20;
+            } @else if $bottomPercent == 30p{
+            bottom: $value + 30;
+            } @else if $bottomPercent == 40p{
+            bottom: $value + 40;
+            } @else if $bottomPercent == 50p{
+            bottom: $value + 50;
+            } @else if $bottomPercent == 60p{
+            bottom: $value + 60;
+            } @else if $bottomPercent == 70p{
+            bottom: $value + 70;
+            } @else if $bottomPercent == 80p{
+            bottom: $value + 80;
+            } @else if $bottomPercent == 90p{
+            bottom: $value + 90;
+            } @else if $bottomPercent == 100p{
+            bottom: $value + 100;
+            }
+
+    }
+
+}
+
+@each $bottomVH in Zvh, 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 0vh;
+
+    .bottom-#{$bottomVH}{
+
+        @if $bottomVH == Zvh{
+            bottom: $value;
+        } @else if $bottomVH == 10vh{
+            bottom: $value + 10;
+            } @else if $bottomVH == 20vh{
+            bottom: $value + 20;
+            } @else if $bottomVH == 30vh{
+            bottom: $value + 30;
+            } @else if $bottomVH == 40vh{
+            bottom: $value + 40;
+            } @else if $bottomVH == 50vh{
+            bottom: $value + 50;
+            } @else if $bottomVH == 60vh{
+            bottom: $value + 60;
+            } @else if $bottomVH == 70vh{
+            bottom: $value + 70;
+            } @else if $bottomVH == 80vh{
+            bottom: $value + 80;
+            } @else if $bottomVH == 90vh{
+            bottom: $value + 90;
+            } @else if $bottomVH == 100vh{
+            bottom: $value + 100;
+            }
+
+    }
+
+}
+
+@each $bottomVW in Zvw, 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 0vw;
+
+    .bottom-#{$bottomVW}{
+
+        @if $bottomVW == Zvw{
+            bottom: $value;
+        } @else if $bottomVW == 10vw{
+            bottom: $value + 10;
+            } @else if $bottomVW == 20vw{
+            bottom: $value + 20;
+            } @else if $bottomVW == 30vw{
+            bottom: $value + 30;
+            } @else if $bottomVW == 40vw{
+            bottom: $value + 40;
+            } @else if $bottomVW == 50vw{
+            bottom: $value + 50;
+            } @else if $bottomVW == 60vw{
+            bottom: $value + 60;
+            } @else if $bottomVW == 70vw{
+            bottom: $value + 70;
+            } @else if $bottomVW == 80vw{
+            bottom: $value + 80;
+            } @else if $bottomVW == 90vw{
+            bottom: $value + 90;
+            } @else if $bottomVW == 100vw{
+            bottom: $value + 100;
+            }
+
+    }
+
+}
+
+@each $bottomPX in Zpx, 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 0px;
+
+    .bottom-#{$bottomPX}{
+
+        @if $bottomPX == Zpx{
+            bottom: $value;
+        } @else if $bottomPX == 10px{
+            bottom: $value + 10;
+            } @else if $bottomPX == 20px{
+            bottom: $value + 20;
+            } @else if $bottomPX == 30px{
+            bottom: $value + 30;
+            } @else if $bottomPX == 40px{
+            bottom: $value + 40;
+            } @else if $bottomPX == 50px{
+            bottom: $value + 50;
+            } @else if $bottomPX == 60px{
+            bottom: $value + 60;
+            } @else if $bottomPX == 70px{
+            bottom: $value + 70;
+            } @else if $bottomPX == 80px{
+            bottom: $value + 80;
+            } @else if $bottomPX == 90px{
+            bottom: $value + 90;
+            } @else if $bottomPX == 100px{
+            bottom: $value + 100;
+            }
+
+    }
+
+}
+
+/*
+==========================================================================
+
+                                Right
+                (For elements with POSITION:ABSOLUTE)
+
+==========================================================================
+*/
+
+@each $rightPercent in Zp, 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 0%;
+
+    .right-#{$rightPercent}{
+
+        @if $rightPercent == Zp{
+            right: $value;
+        } @else if $rightPercent == 10p{
+            right: $value + 10;
+            } @else if $rightPercent == 20p{
+            right: $value + 20;
+            } @else if $rightPercent == 30p{
+            right: $value + 30;
+            } @else if $rightPercent == 40p{
+            right: $value + 40;
+            } @else if $rightPercent == 50p{
+            right: $value + 50;
+            } @else if $rightPercent == 60p{
+            right: $value + 60;
+            } @else if $rightPercent == 70p{
+            right: $value + 70;
+            } @else if $rightPercent == 80p{
+            right: $value + 80;
+            } @else if $rightPercent == 90p{
+            right: $value + 90;
+            } @else if $rightPercent == 100p{
+            right: $value + 100;
+            }
+
+    }
+
+}
+
+@each $rightVH in Zvh, 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 0vh;
+
+    .right-#{$rightVH}{
+
+        @if $rightVH == Zvh{
+            right: $value;
+        } @else if $rightVH == 10vh{
+            right: $value + 10;
+            } @else if $rightVH == 20vh{
+            right: $value + 20;
+            } @else if $rightVH == 30vh{
+            right: $value + 30;
+            } @else if $rightVH == 40vh{
+            right: $value + 40;
+            } @else if $rightVH == 50vh{
+            right: $value + 50;
+            } @else if $rightVH == 60vh{
+            right: $value + 60;
+            } @else if $rightVH == 70vh{
+            right: $value + 70;
+            } @else if $rightVH == 80vh{
+            right: $value + 80;
+            } @else if $rightVH == 90vh{
+            right: $value + 90;
+            } @else if $rightVH == 100vh{
+            right: $value + 100;
+            }
+
+    }
+
+}
+
+@each $rightVW in Zvw, 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 0vw;
+
+    .right-#{$rightVW}{
+
+        @if $rightVW == Zvw{
+            right: $value;
+        } @else if $rightVW == 10vw{
+            right: $value + 10;
+            } @else if $rightVW == 20vw{
+            right: $value + 20;
+            } @else if $rightVW == 30vw{
+            right: $value + 30;
+            } @else if $rightVW == 40vw{
+            right: $value + 40;
+            } @else if $rightVW == 50vw{
+            right: $value + 50;
+            } @else if $rightVW == 60vw{
+            right: $value + 60;
+            } @else if $rightVW == 70vw{
+            right: $value + 70;
+            } @else if $rightVW == 80vw{
+            right: $value + 80;
+            } @else if $rightVW == 90vw{
+            right: $value + 90;
+            } @else if $rightVW == 100vw{
+            right: $value + 100;
+            }
+
+    }
+
+}
+
+@each $rightPX in Zpx, 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 0px;
+
+    .right-#{$rightPX}{
+
+        @if $rightPX == Zpx{
+            right: $value;
+        } @else if $rightPX == 10px{
+            right: $value + 10;
+            } @else if $rightPX == 20px{
+            right: $value + 20;
+            } @else if $rightPX == 30px{
+            right: $value + 30;
+            } @else if $rightPX == 40px{
+            right: $value + 40;
+            } @else if $rightPX == 50px{
+            right: $value + 50;
+            } @else if $rightPX == 60px{
+            right: $value + 60;
+            } @else if $rightPX == 70px{
+            right: $value + 70;
+            } @else if $rightPX == 80px{
+            right: $value + 80;
+            } @else if $rightPX == 90px{
+            right: $value + 90;
+            } @else if $rightPX == 100px{
+            right: $value + 100;
+            }
+
+    }
+
+}
+
+/*
+==========================================================================
+
+                                Left
+                (For elements with POSITION:ABSOLUTE)
+
+==========================================================================
+*/
+
+@each $leftPercent in Zp, 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+    $value: 0%;
+
+    .left-#{$leftPercent}{
+
+        @if $leftPercent == Zp{
+            left: $value;
+        } @else if $leftPercent == 10p{
+            left: $value + 10;
+            } @else if $leftPercent == 20p{
+            left: $value + 20;
+            } @else if $leftPercent == 30p{
+            left: $value + 30;
+            } @else if $leftPercent == 40p{
+            left: $value + 40;
+            } @else if $leftPercent == 50p{
+            left: $value + 50;
+            } @else if $leftPercent == 60p{
+            left: $value + 60;
+            } @else if $leftPercent == 70p{
+            left: $value + 70;
+            } @else if $leftPercent == 80p{
+            left: $value + 80;
+            } @else if $leftPercent == 90p{
+            left: $value + 90;
+            } @else if $leftPercent == 100p{
+            left: $value + 100;
+            }
+
+    }
+
+}
+
+@each $leftVH in Zvh, 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+
+    $value: 0vh;
+
+    .left-#{$leftVH}{
+
+        @if $leftVH == Zvh{
+            left: $value;
+        } @else if $leftVH == 10vh{
+            left: $value + 10;
+            } @else if $leftVH == 20vh{
+            left: $value + 20;
+            } @else if $leftVH == 30vh{
+            left: $value + 30;
+            } @else if $leftVH == 40vh{
+            left: $value + 40;
+            } @else if $leftVH == 50vh{
+            left: $value + 50;
+            } @else if $leftVH == 60vh{
+            left: $value + 60;
+            } @else if $leftVH == 70vh{
+            left: $value + 70;
+            } @else if $leftVH == 80vh{
+            left: $value + 80;
+            } @else if $leftVH == 90vh{
+            left: $value + 90;
+            } @else if $leftVH == 100vh{
+            left: $value + 100;
+            }
+
+    }
+
+}
+
+@each $leftVW in Zvw, 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+
+    $value: 0vw;
+
+    .left-#{$leftVW}{
+
+        @if $leftVW == Zvw{
+            left: $value;
+        } @else if $leftVW == 10vw{
+            left: $value + 10;
+            } @else if $leftVW == 20vw{
+            left: $value + 20;
+            } @else if $leftVW == 30vw{
+            left: $value + 30;
+            } @else if $leftVW == 40vw{
+            left: $value + 40;
+            } @else if $leftVW == 50vw{
+            left: $value + 50;
+            } @else if $leftVW == 60vw{
+            left: $value + 60;
+            } @else if $leftVW == 70vw{
+            left: $value + 70;
+            } @else if $leftVW == 80vw{
+            left: $value + 80;
+            } @else if $leftVW == 90vw{
+            left: $value + 90;
+            } @else if $leftVW == 100vw{
+            left: $value + 100;
+            }
+
+    }
+
+}
+
+@each $leftPX in Zpx, 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px {
+
+    $value: 0px;
+
+    .left-#{$leftPX}{
+
+        @if $leftPX == Zpx{
+            left: $value;
+        } @else if $leftPX == 10px{
+            left: $value * 10;
+            } @else if $leftPX == 20px{
+            left: $value * 20;
+            } @else if $leftPX == 30px{
+            left: $value * 30;
+            } @else if $leftPX == 40px{
+            left: $value * 40;
+            } @else if $leftPX == 50px{
+            left: $value * 50;
+            } @else if $leftPX == 60px{
+            left: $value * 60;
+            } @else if $leftPX == 70px{
+            left: $value * 70;
+            } @else if $leftPX == 80px{
+            left: $value * 80;
+            } @else if $leftPX == 90px{
+            left: $value * 90;
+            } @else if $leftPX == 100px{
+            left: $value * 100;
+            }
+
+    }
+
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                Center/Middle ELEMENTS WITH TRANSLATE
+                                (For elements with POSITION:ABSOLUTE)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+.translate-horizontal{
+    transform: translateX(-50%);
+}
+.translate-vertical{
+    transform: translateY(-50%);
+}
+.translate-horizontal-vertical{
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                            TEXT ALIGN
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+@each $value in right, center, left {
+
+    .text-align-#{$value}{
+        text-align: $value;
+    }
+
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                            Z-INDEX
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+@each $zIndex in 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120 {
+
+    $value: 0;
+
+    .zIndex-#{$zIndex}{
+
+        @if $zIndex == 10{
+            z-index: $value + 10;
+            } @else if $zIndex == 20{
+            z-index: $value + 20;
+            } @else if $zIndex == 30{
+            z-index: $value + 30;
+            } @else if $zIndex == 40{
+            z-index: $value + 40;
+            } @else if $zIndex == 50{
+            z-index: $value + 50;
+            } @else if $zIndex == 60{
+            z-index: $value + 60;
+            } @else if $zIndex == 70{
+            z-index: $value + 70;
+            } @else if $zIndex == 80{
+            z-index: $value + 80;
+            } @else if $zIndex == 90{
+            z-index: $value + 90;
+            } @else if $zIndex == 100{
+            z-index: $value + 100;
+            } @else if $zIndex == 110{
+            z-index: $value + 110;
+            } @else if $zIndex == 120{
+            z-index: $value + 120;
+            }
+    }
+
+}
+      

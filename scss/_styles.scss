@@ -1,0 +1,170 @@
+/*
+========================================================
+
+                        COLORS
+
+========================================================
+*/
+
+@each $color, $value in (someColor, #someColor){
+
+    .color-#{$color}{
+        color: $value;
+    }
+
+    .background-#{$color}{
+        background-color: $value;
+    }
+
+}
+
+/*
+========================================================
+
+                        FONTS
+
+========================================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+@each $type, $weight, $size in (fontType: regular, fontWeight: 400, fontSize: 10px){
+    $font: 'Montserrat', sans-serif;
+
+    .font-#{$type}-#{$size}{
+        font:{
+            family: $font;
+            weight: $weight;
+            size: $size;
+        }
+    }
+}
+
+@each $font in lowercase, capitalize, uppercase {
+  .text-#{$font} {
+    text-transform: $font;
+  }
+}
+
+
+/*
+========================================================
+
+                        BOX SHADOW
+
+========================================================
+*/
+
+@each $color, $align, $shadow, $value in (nameColor, verticalAlign, sizeShadow, someColor){
+
+    .shadow-#{$color}{
+        box-shadow: 0 $align $shadow $value;
+    }
+
+}
+
+/*
+========================================================
+
+                        BORDER
+
+========================================================
+*/
+
+@each $color, $border in (someColor, borderColor){
+
+    .border-#{$color}{
+        border: 2px solid $border;
+    }
+
+}
+
+/*
+========================================================
+
+                         FILL COLOR
+                       (used on svg)
+
+========================================================
+*/
+
+@each $fill, $color in (nameColor, someColor){
+    .fill-#{$fill} {
+        fill: $color;
+        stroke: $color;
+        stroke-width: 0;
+        stroke-linecap: butt;
+        stroke-dasharray: 0;
+    }
+}
+
+/*
+========================================================
+
+                        TRANSITIONS
+
+========================================================
+*/
+
+
+.transition-cubic{
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+/*
+========================================================
+
+                        Filter
+
+========================================================
+*/
+
+.filter, img{
+    &.black-white{
+        filter: grayscale(100%);
+        img{
+            opacity: 0.3;
+        }
+    }
+}
+
+.filter-box{
+    filter: grayscale(100%);
+    img{
+        opacity: 0.1
+    }
+}
+
+
+/*
+========================================================
+
+                        FORMS
+
+========================================================
+*/
+
+
+.form{
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"]{
+        padding: 5px;
+        border: solid #D0D4DA 1px;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+    button{
+        padding: 5px;
+        border: solid #D0D4DA 1px;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+}

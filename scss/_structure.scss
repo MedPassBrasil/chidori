@@ -1,0 +1,55 @@
+@import "alignments.scss";
+@import "units.scss";
+@import "styles.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row, .content, .layout{
+    box-sizing: border-box;
+}
+
+.box{
+    box-sizing: border-box;
+
+    @each $boxSize in size15, size20, size25, size33, size50, size55, size60, size70, size80, size90, size95, size100 {
+
+        &.#{$boxSize}{
+            @if $boxSize == size15{
+                width: 15%;
+        	} @else if $boxSize == size20{
+                width: 20%;
+        	} @else if $boxSize == size25{
+                width: 25%;
+        	} @else if $boxSize == size33{
+                width: 33.3%;
+        	} @else if $boxSize == size50{
+                width: 50%;
+        	} @else if $boxSize == size55{
+                width: 55%;
+        	} @else if $boxSize == size60{
+                width: 33.3% * 2;
+        	} @else if $boxSize == size70{
+                width: 70%;
+        	} @else if $boxSize == size80{
+                width: 80%;
+        	} @else if $boxSize == size90{
+                width: 90%;
+        	} @else if $boxSize == size95{
+                width: 95%;
+        	} @else if $boxSize == size100{
+                width: 100%;
+        	}
+
+            position: relative;
+            box-sizing: border-box;
+
+            @media screen and (max-width: 1024px){
+                width: 100%;
+            }
+        }
+
+    }
+}

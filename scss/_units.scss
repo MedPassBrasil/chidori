@@ -1,0 +1,272 @@
+/*
+========================================================
+
+                        WIDTH
+
+========================================================
+*/
+
+@each $widthPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+
+        $sizeW: 10%;
+    
+        .w-#{$widthPercent}{
+    
+            @if $widthPercent == 10p{
+                width: $sizeW;
+                } @else if $widthPercent == 20p{
+                width: $sizeW * 2;
+                } @else if $widthPercent == 30p{
+                width: $sizeW * 3;
+                } @else if $widthPercent == 40p{
+                width: $sizeW * 4;
+                } @else if $widthPercent == 50p{
+                width: $sizeW * 5;
+                } @else if $widthPercent == 60p{
+                width: $sizeW * 6;
+                } @else if $widthPercent == 70p{
+                width: $sizeW * 7;
+                } @else if $widthPercent == 80p{
+                width: $sizeW * 8;
+                } @else if $widthPercent == 90p{
+                width: $sizeW * 9;
+                } @else if $widthPercent == 100p{
+                width: $sizeW * 10;
+                }
+    
+        }
+    }
+    
+    @each $widthViewport in 10vw, 20vw, 30vw, 40vw, 50vw, 60vw, 70vw, 80vw, 90vw, 100vw {
+    
+        $sizeW: 10vw;
+    
+        .w-#{$widthViewport}{
+    
+            @if $widthViewport == 10vw{
+                width: $sizeW;
+                } @else if $widthViewport == 20vw{
+                width: $sizeW * 2;
+                } @else if $widthViewport == 30vw{
+                width: $sizeW * 3;
+                } @else if $widthViewport == 40vw{
+                width: $sizeW * 4;
+                } @else if $widthViewport == 50vw{
+                width: $sizeW * 5;
+                } @else if $widthViewport == 60vw{
+                width: $sizeW * 6;
+                } @else if $widthViewport == 70vw{
+                width: $sizeW * 7;
+                } @else if $widthViewport == 80vw{
+                width: $sizeW * 8;
+                } @else if $widthViewport == 90vw{
+                width: $sizeW * 9;
+                } @else if $widthViewport == 100vw{
+                width: $sizeW * 10;
+                }
+    
+        }
+    }
+    
+    @each $widthPX in 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 55px, 60px, 65px, 70px, 75px, 80px, 90px, 100px, 110px, 120px, 130px, 140px, 150px, 160px, 170px, 180px, 190px, 200px{
+    
+        $sizeH: 10px;
+    
+        .w-#{$widthPX}{
+    
+            @if $widthPX == 10px{
+                width: $sizeH;
+                } @else if $widthPX == 15px{
+                width: $sizeH + 5;
+                } @else if $widthPX == 20px{
+                width: $sizeH * 2;
+                } @else if $widthPX == 25px{
+                width: $sizeH * 2 + 5;
+                } @else if $widthPX == 30px{
+                width: $sizeH * 3;
+                } @else if $widthPX == 35px{
+                width: $sizeH * 3 + 5;
+                } @else if $widthPX == 40px{
+                width: $sizeH * 4;
+                } @else if $widthPX == 45px{
+                width: $sizeH * 4 + 5;
+                } @else if $widthPX == 50px{
+                width: $sizeH * 5;
+                } @else if $widthPX == 55px{
+                width: $sizeH * 5 + 5;
+                } @else if $widthPX == 60px{
+                width: $sizeH * 6;
+                } @else if $widthPX == 65px{
+                width: $sizeH * 6 + 5;
+                } @else if $widthPX == 70px{
+                width: $sizeH * 7;
+                } @else if $widthPX == 75px{
+                width: $sizeH * 7 + 5;
+                } @else if $widthPX == 80px{
+                width: $sizeH * 8;
+                } @else if $widthPX == 90px{
+                width: $sizeH * 9;
+                } @else if $widthPX == 100px{
+                width: $sizeH * 10;
+                } @else if $widthPX == 110px{
+                width: $sizeH * 11;
+            } @else if $widthPX == 120px{
+                width: $sizeH * 12;
+            } @else if $widthPX == 130px{
+                width: $sizeH * 13;
+            } @else if $widthPX == 140px{
+                width: $sizeH * 14;
+            } @else if $widthPX == 150px{
+                width: $sizeH * 15;
+            } @else if $widthPX == 160px{
+                width: $sizeH * 16;
+            } @else if $widthPX == 170px{
+                width: $sizeH * 17;
+            } @else if $widthPX == 180px{
+                width: $sizeH * 18;
+            } @else if $widthPX == 190px{
+                width: $sizeH * 19;
+            } @else if $widthPX == 200px{
+                width: $sizeH * 100;
+            }
+    
+        }
+    }
+    
+    /*
+    ========================================================
+    
+                            HEIGHT
+    
+    ========================================================
+    */
+    
+    @each $heightPercent in 10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p {
+    
+        $sizeH: 10%;
+    
+        .h-#{$heightPercent}{
+    
+            @if $heightPercent == 10p{
+                height: $sizeH;
+                } @else if $heightPercent == 20p{
+                height: $sizeH * 2;
+                } @else if $heightPercent == 30p{
+                height: $sizeH * 3;
+                } @else if $heightPercent == 40p{
+                height: $sizeH * 4;
+                } @else if $heightPercent == 50p{
+                height: $sizeH * 5;
+                } @else if $heightPercent == 60p{
+                height: $sizeH * 6;
+                } @else if $heightPercent == 70p{
+                height: $sizeH * 7;
+                } @else if $heightPercent == 80p{
+                height: $sizeH * 8;
+                } @else if $heightPercent == 90p{
+                height: $sizeH * 9;
+                } @else if $heightPercent == 100p{
+                height: $sizeH * 10;
+                }
+    
+        }
+    }
+    
+    @each $heightViewport in Zvh, 10vh, 20vh, 30vh, 40vh, 50vh, 60vh, 70vh, 80vh, 90vh, 100vh {
+    
+        $sizeH: 10vh;
+    
+        .h-#{$heightViewport}{
+    
+            @if $heightViewport == Zvh{
+                height: $sizeH / 2;
+            } @else if $heightViewport == 10vh{
+                height: $sizeH;
+                } @else if $heightViewport == 20vh{
+                height: $sizeH * 2;
+                } @else if $heightViewport == 30vh{
+                height: $sizeH * 3;
+                } @else if $heightViewport == 40vh{
+                height: $sizeH * 4;
+                } @else if $heightViewport == 50vh{
+                height: $sizeH * 5;
+                } @else if $heightViewport == 60vh{
+                height: $sizeH * 6;
+                } @else if $heightViewport == 70vh{
+                height: $sizeH * 7;
+                } @else if $heightViewport == 80vh{
+                height: $sizeH * 8;
+                } @else if $heightViewport == 90vh{
+                height: $sizeH * 9;
+                } @else if $heightViewport == 100vh{
+                height: $sizeH * 10;
+                }
+    
+        }
+    }
+    
+    @each $heightPX in 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 55px, 60px, 65px, 70px, 75px, 80px, 90px, 100px, 110px, 120px, 130px, 140px, 150px, 160px, 170px, 180px, 190px, 200px{
+    
+        $sizeH: 10px;
+    
+        .h-#{$heightPX}{
+    
+            @if $heightPX == 10px{
+                height: $sizeH;
+                } @else if $heightPX == 15px{
+                height: $sizeH + 5;
+                } @else if $heightPX == 20px{
+                height: $sizeH * 2;
+                } @else if $heightPX == 25px{
+                height: $sizeH * 2 + 5;
+                } @else if $heightPX == 30px{
+                height: $sizeH * 3;
+                } @else if $heightPX == 35px{
+                height: $sizeH * 3 + 5;
+                } @else if $heightPX == 40px{
+                height: $sizeH * 4;
+                } @else if $heightPX == 45px{
+                height: $sizeH * 4 + 5;
+                } @else if $heightPX == 50px{
+                height: $sizeH * 5;
+                } @else if $heightPX == 55px{
+                height: $sizeH * 5 + 5;
+                } @else if $heightPX == 60px{
+                height: $sizeH * 6;
+                } @else if $heightPX == 65px{
+                height: $sizeH * 6 + 5;
+                } @else if $heightPX == 70px{
+                height: $sizeH * 7;
+                } @else if $heightPX == 75px{
+                height: $sizeH * 7 + 5;
+                } @else if $heightPX == 80px{
+                height: $sizeH * 8;
+                } @else if $heightPX == 90px{
+                height: $sizeH * 9;
+                } @else if $heightPX == 100px{
+                height: $sizeH * 10;
+                } @else if $heightPX == 110px{
+                height: $sizeH * 11;
+            } @else if $heightPX == 120px{
+                height: $sizeH * 12;
+            } @else if $heightPX == 130px{
+                height: $sizeH * 13;
+            } @else if $heightPX == 140px{
+                height: $sizeH * 14;
+            } @else if $heightPX == 150px{
+                height: $sizeH * 15;
+            } @else if $heightPX == 160px{
+                height: $sizeH * 16;
+            } @else if $heightPX == 170px{
+                height: $sizeH * 17;
+            } @else if $heightPX == 180px{
+                height: $sizeH * 18;
+            } @else if $heightPX == 190px{
+                height: $sizeH * 19;
+            } @else if $heightPX == 200px{
+                height: $sizeH * 100;
+            }
+    
+        }
+    }
+    
