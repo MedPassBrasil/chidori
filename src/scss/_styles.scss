@@ -6,9 +6,9 @@
 ========================================================
 */
 
-@each $color, $value in (someColor, #someColor){
+@each $color, $value in (someColor, #000000) {
 
-    .color-#{$color}{
+    .color-#{$color} {
         color: $value;
     }
 
@@ -28,17 +28,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
-@each $type, $weight, $size in (fontType: regular, fontWeight: 400, fontSize: 10px){
-    $font: 'Montserrat', sans-serif;
+$type: regular;
+$weight: 400;
+$size: 10px;
 
-    .font-#{$type}-#{$size}{
-        font:{
-            family: $font;
-            weight: $weight;
-            size: $size;
-        }
+$font: 'Montserrat', sans-serif;
+
+.font-#{type}-#{size}{
+    font: {
+        family: $font;
+        weight: $weight;
+        size: $size;
     }
 }
+
+// @each $type, $weight, $size in (fontType: regular, fontWeight: 400, fontSize: 10px){
+    
+// }
 
 @each $font in lowercase, capitalize, uppercase {
   .text-#{$font} {

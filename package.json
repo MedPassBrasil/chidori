@@ -1,0 +1,23 @@
+{
+  "name": "chidori",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style compressed ./src/scss/main.scss build/chidori.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonewill/chidori.git"
+  },
+  "author": "Will Leone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonewill/chidori/issues"
+  },
+  "homepage": "https://github.com/leonewill/chidori#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
