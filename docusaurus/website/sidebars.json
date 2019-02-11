@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Getting Started": ["getting-started"],
+    "Layout": ["layout"],
+    "Components": [
+      "components/components",
+      "components/buttons",
+      "components/inputs"
+    ]
+  }
+}

@@ -60,11 +60,11 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        <Logo img_src={`${baseUrl}img/medpass.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl('doc1.html')}>DOCS</Button>
+            <Button href={docUrl('getting-started.html')}>DOCS</Button>
             <Button href="https://github.com/MedPassBrasil/chidori">GITHUB</Button>
           </PromoSection>
         </div>
@@ -105,7 +105,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Talk about trying this out',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/medpass.png`,
             imageAlign: 'left',
             title: 'Try it Out',
           },
@@ -119,7 +119,7 @@ class Index extends React.Component {
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/medpass.png`,
             imageAlign: 'right',
             title: 'Description',
           },
@@ -132,7 +132,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Talk about learning how to use this',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/medpass.png`,
             imageAlign: 'right',
             title: 'Learn How',
           },
@@ -145,13 +145,13 @@ class Index extends React.Component {
         {[
           {
             content: 'This is the content of my feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/medpass.png`,
             imageAlign: 'top',
             title: 'Feature One',
           },
           {
             content: 'The content of my second feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/medpass.png`,
             imageAlign: 'top',
             title: 'Feature Two',
           },
