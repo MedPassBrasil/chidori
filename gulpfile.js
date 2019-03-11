@@ -1,7 +1,6 @@
 const gulp = require("gulp")
 const sass = require("gulp-sass")
 const rename = require("gulp-rename")
-const minify = require("gulp-minify-css")
 const cssnano = require("gulp-cssnano")
 
 gulp.task("sass", () => {
@@ -24,3 +23,5 @@ gulp.task("minify", () => {
 gulp.task("watch", () => {
 	gulp.watch("src/scss/**/*.scss", gulp.series("sass"))
 })
+
+gulp.task("build", gulp.series("sass", "minify"))

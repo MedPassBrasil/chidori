@@ -41,7 +41,7 @@ const siteConfig = {
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
-  separateCss: ['static/css/chidori.min.css']
+  separateCss: ['static/css']
 };
 
 module.exports = siteConfig;
