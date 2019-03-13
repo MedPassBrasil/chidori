@@ -26,20 +26,58 @@
 ========================================================
 */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@font-face {
+    font-family: 'Circular Std Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('../fonts/CircularStd-Black.woff') format('woff'), local('Circular Std Black'), url('../fonts/CircularStd-Black.otf') format('otf');
+ }
+ 
+ @font-face {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Book'), url('../fonts/CircularStd-Book.woff') format('woff'), local('Circular Std Book'), url('../fonts/CircularStd-Book.otf') format('otf');
+ }
+ 
+ @font-face {
+    font-family: 'Circular Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Medium'), url('../fonts/CircularStd-Medium.woff') format('woff'), local('Circular Std Medium'), url('../fonts/CircularStd-Medium.otf') format('otf');
+ }
+ 
+ @font-face {
+    font-family: 'Circular Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Bold'), url('../fonts/CircularStd-Bold.woff') format('woff'), local('Circular Std Bold'), url('../fonts/CircularStd-Bold.otf') format('otf');
+ }
 
-$type: regular;
-$weight: 400;
-$size: 10px;
+ @each $font, $type, $weight, $size in
+   // Regular fonts
+   ('Circular Std Book', book, 400, 9px), ('Circular Std Book', book, 400, 10px), ('Circular Std Book', book, 400, 12px), ('Circular Std Book', book, 400, 13px), ('Circular Std Book', book, 400, 15px), ('Circular Std Book', book, 400, 20px),
+   ('Circular Std Book', book, 400, 25px), ('Circular Std Book', book, 400, 35px), ('Circular Std Book', book, 400, 40px),
 
-$font: 'Montserrat', sans-serif;
+   // MEDIUM FONTS
+   ('Circular Std Medium', medium, 400, 9px), ('Circular Std Medium', medium, 400, 10px), ('Circular Std Medium', medium, 400, 12px), ('Circular Std Medium', medium, 400, 13px), ('Circular Std Medium', medium, 400, 15px), ('Circular Std Medium', medium, 400, 20px),
+   ('Circular Std Medium', medium, 400, 25px), ('Circular Std Medium', medium, 400, 35px), ('Circular Std Medium', medium, 400, 40px),
 
-.font-#{type}-#{size}{
-    font: {
-        family: $font;
-        weight: $weight;
-        size: $size;
-    }
+   // SEMIBOLD FONTS
+   ('Circular Std Bold', bold, 400, 9px), ('Circular Std Bold', bold, 400, 10px), ('Circular Std Bold', bold, 400, 12px), ('Circular Std Bold', bold, 400, 13px), ('Circular Std Bold', bold, 400, 15px), ('Circular Std Bold', bold, 400, 20px),
+   ('Circular Std Bold', bold, 400, 25px), ('Circular Std Bold', bold, 400, 35px), ('Circular Std Bold', bold, 400, 40px),
+
+   // BOLD FONTS
+   ('Circular Std Black', black, 400, 9px), ('Circular Std Black', black, 400, 10px), ('Circular Std Black', black, 400, 12px), ('Circular Std Black', black, 400, 13px), ('Circular Std Black', black, 400, 15px), ('Circular Std Black', black, 400, 20px),
+   ('Circular Std Black', black, 400, 25px), ('Circular Std Black', black, 400, 35px), ('Circular Std Black', black, 400, 40px){
+
+   .font-#{$type}-#{$size}{
+       font: {
+           family: $font;
+           weight: $weight;
+           size: $size;
+       }
+   }
 }
 
 // @each $type, $weight, $size in (fontType: regular, fontWeight: 400, fontSize: 10px){

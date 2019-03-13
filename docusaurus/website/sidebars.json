@@ -2,10 +2,14 @@
   "docs": {
     "Getting Started": ["getting-started"],
     "Layout": ["layout"],
+    "Content": [
+      "content/typography"
+    ],
     "Components": [
       "components/components",
       "components/buttons",
-      "components/inputs"
+      "components/forms",
+      "components/labels"
     ]
   }
 }

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"build": "gulp build",
-		"watch": "gulp watch",
+    "build": "gulp build",
+    "watch": "gulp watch",
     "start": "concurrently -k \"npm start --prefix docusaurus/website\" \"gulp watch\""
   },
   "repository": {
