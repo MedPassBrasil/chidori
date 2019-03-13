@@ -1,0 +1,19 @@
+.btn {
+	width: 325px;
+	height: 55px;
+	border: none;
+	border-radius: 32px;
+	cursor: pointer;
+	color: white;
+	line-height: normal;
+
+	&.primary {
+		box-shadow: 0 5px 30px 0 rgba(69, 198, 214, 0.4);
+		background-color: $aqua-marine;
+	}
+
+	&.secundary {
+		border: solid 1px $dark-grey-blue;
+		background-color: $dark-blue-grey;
+	}
+}
