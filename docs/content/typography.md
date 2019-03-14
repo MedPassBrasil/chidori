@@ -8,7 +8,7 @@ title: Typography
         <div class="background typographyCover"></div>
     </figure>
     <figure class="coverImage showCover">
-        <img src="/img/typography-cover.png">
+        <img src="../../img/typography-cover.png">
     </figure>
 </div>
 

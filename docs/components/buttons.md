@@ -8,7 +8,7 @@ title: Buttons
         <div class="background buttonsCover"></div>
     </figure>
     <figure class="coverImage showCover">
-        <img src="/img/buttons-cover.png">
+        <img src="../../img/buttons-cover.png">
     </figure>
 </div>
 
@@ -66,14 +66,14 @@ Code:
 
 Example:
 <button class="btn fifth icon font-circularBold-15px">
-    <img src="/icons/icon-plus.svg" alt="" />
+    <img src="../../icons/icon-plus.svg" alt="" />
     Button with Left Icon
 </button>
 
 Code:
 ```html
 <button className="btn fifth icon font-circularBold-15px">
-    <img src="/icons/icon-plus.svg" alt="" />
+    <img src="../../icons/icon-plus.svg" alt="" />
     Button with Left Icon
 </button>
 ```
