@@ -14,7 +14,7 @@ const siteConfig = {
   url: 'https://medpassbrasil.github.io',
   baseUrl: '/chidori/',
   projectName: 'chidori',
-  organizationName: 'MedPass Brasil',
+  organizationName: 'MedPassBrasil',
   defaultVersionShown: '1.0.0',
   headerLinks: [
     { doc: 'getting-started', label: 'Docs' },
