@@ -1,23 +1,24 @@
 {
   "name": "chidori",
   "version": "1.0.0",
-  "description": "",
+  "description": "Medpass's Styleguide",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd website && npm i",
     "build": "gulp build",
     "watch": "gulp watch",
     "start": "concurrently -k \"npm start --prefix website\" \"gulp watch\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonewill/chidori.git"
+    "url": "git+https://github.com/MedPassBrasil/chidori.git"
   },
   "author": "Will Leone",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leonewill/chidori/issues"
+    "url": "https://github.com/MedPassBrasil/chidori/issues"
   },
-  "homepage": "https://github.com/leonewill/chidori#readme",
+  "homepage": "https://github.com/MedPassBrasil/chidori#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
     "gulp": "^4.0.0",
