@@ -10,7 +10,12 @@ gulp.task("sass", () => {
 		.pipe(gulp.dest("build"))
 		.pipe(gulp.dest("website/static/css"))
 })
-	
+
+gulp.task("fonts", () => {
+	return gulp.src("src/fonts/*")
+		.pipe(gulp.dest("build/fonts"))
+})
+
 gulp.task("minify", () => {
 	return gulp.src("build/*.css")
 		.pipe(cssnano())
@@ -24,4 +29,4 @@ gulp.task("watch", () => {
 	gulp.watch("src/scss/**/*.scss", gulp.series("sass"))
 })
 
-gulp.task("build", gulp.series("sass", "minify"))
+gulp.task("build", gulp.series("sass", "minify", "fonts"))
