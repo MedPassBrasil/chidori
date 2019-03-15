@@ -34,7 +34,7 @@ Example:
 	</div>
 	<div class="inputContainer">
 		<img src="../../icons/icon-token.svg" alt="" />
-		<input type="password" class="defaultInput" placeholder="Token confirmation..." />
+		<input type="text" class="defaultInput" placeholder="Token confirmation..." />
 	</div>
 	<div class="inputContainer">
 		<img src="../../icons/icon-telephone.svg" alt="" />
@@ -109,5 +109,79 @@ Code:
 		<img src="../../icons/icon-send.svg" />
 	</button>
 	<input type="text" class="contentInput" placeholder="Type your message..." />
+</div>
+```
+
+## Radio
+
+Example: 
+<form action="">
+	<div class="inputContainer">
+		<input checked type="radio" name="yourName" value="1" class="radioInput" />
+		<div class="radioButton">
+			<p>Choose your answer</p>
+		</div>
+	</div>
+	<div class="inputContainer">
+		<input type="radio" name="yourName" value="2" class="radioInput" />
+		<div class="radioButton">
+			<p>Choose your answer</p>
+		</div>
+	</div>
+</form>
+
+Code:
+```html
+<div class="inputContainer">
+	<input type="radio" name="yourName" value="1" class="radioInput" />
+	<div class="radioButton">
+		<p>Choose your answer</p>
+	</div>
+</div>
+<div class="inputContainer">
+	<input type="radio" name="yourName" value="2" class="radioInput" />
+	<div class="checkboxButton">
+		<p>Choose your answer</p>
+	</div>
+</div>
+```
+
+## Checkbox
+
+Example: 
+<form action="">
+	<div class="inputContainer">
+		<input type="checkbox" class="checkboxInput" />
+		<div class="checkboxButton">
+			<p>Check me</p>
+		</div>
+	</div>
+	<div class="inputContainer">
+		<input type="checkbox" class="checkboxInput" />
+		<div class="checkboxButton">
+			<p>Check me</p>
+		</div>
+	</div>
+	<div class="inputContainer">
+		<input type="checkbox" class="checkboxInput" />
+		<div class="checkboxButton">
+			<p>Check me</p>
+		</div>
+	</div>
+	<div class="inputContainer">
+		<input type="checkbox" class="checkboxInput" />
+		<div class="checkboxButton">
+			<p>Check me</p>
+		</div>
+	</div>
+</form>
+
+Code:
+```html
+<div class="inputContainer">
+	<input type="checkbox" class="checkboxInput" />
+	<div class="checkboxButton">
+		<p>Check me</p>
+	</div>
 </div>
 ```

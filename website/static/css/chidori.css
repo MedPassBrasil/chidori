@@ -9,7 +9,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-.flex-column-center-center-center, form .inputContainer button {
+.flex-column-center-center-center, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2475,7 +2475,7 @@
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey {
+.color-darkGrey, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
   color: #4d5154; }
 
 .background-darkGrey {
@@ -2568,7 +2568,7 @@
 .background-azureGreen {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
@@ -2857,7 +2857,7 @@
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -3743,7 +3743,7 @@ a {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.flex-column-center-center-center, form .inputContainer button {
+.flex-column-center-center-center, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6209,7 +6209,7 @@ a {
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey {
+.color-darkGrey, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
   color: #4d5154; }
 
 .background-darkGrey {
@@ -6302,7 +6302,7 @@ a {
 .background-azureGreen {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
@@ -6591,7 +6591,7 @@ a {
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -7484,6 +7484,86 @@ form {
         transition-duration: 0s; }
     form .inputContainer .contentInput:focus {
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); }
+    form .inputContainer .radioInput {
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      opacity: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .radioInput:checked + .radioButton:before {
+        transition-duration: 0.5s; }
+      form .inputContainer .radioInput:checked + .radioButton p {
+        color: #ffffff;
+        transition-duration: 0.5s; }
+    form .inputContainer .radioButton {
+      max-width: 100%;
+      min-width: 48.5%;
+      height: 60px;
+      margin: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .radioButton:before {
+        content: '';
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 0.5s; }
+      form .inputContainer .radioButton p {
+        margin: 0;
+        z-index: 2;
+        position: relative;
+        transition-duration: 0.5s; }
+    form .inputContainer .checkboxInput {
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      opacity: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .checkboxInput:checked + .checkboxButton:before {
+        transition-duration: 0.5s; }
+      form .inputContainer .checkboxInput:checked + .checkboxButton p {
+        color: #ffffff;
+        transition-duration: 0.5s; }
+    form .inputContainer .checkboxButton {
+      max-width: 100%;
+      min-width: 48.5%;
+      height: 60px;
+      margin: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .checkboxButton:before {
+        content: '';
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 0.5s; }
+      form .inputContainer .checkboxButton p {
+        margin: 0;
+        z-index: 2;
+        position: relative;
+        transition-duration: 0.5s; }
 
 .circular, .roboto {
   font-size: 80px;
