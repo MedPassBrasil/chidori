@@ -11,11 +11,11 @@
 const siteConfig = {
   title: 'Chidori',
   tagline: 'MedPass\'s Styleguide',
-  url: 'https://medpassbrasil.github.io/chidori',
-  baseUrl: '/',
+  url: 'https://medpassbrasil.github.io',
+  baseUrl: '/chidori/',
   projectName: 'chidori',
-  organizationName: 'MedPass Brasil',
-  defaultVersionShown: '1.0.0',
+  organizationName: 'MedPassBrasil',
+  defaultVersionShown: '1.1.2',
   headerLinks: [
     { doc: 'getting-started', label: 'Docs' },
     { page: 'help', label: 'Help' },
@@ -41,7 +41,7 @@ const siteConfig = {
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
-  stylesheets: ['/css/chidori.css']
+  stylesheets: ['/chidori/css/chidori.css']
 };
 
 module.exports = siteConfig;
