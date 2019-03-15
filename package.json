@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
-  "name": "chidori",
-  "version": "1.0.0",
-  "description": "Medpass's Styleguide",
-=======
   "name": "@medpass/chidori",
   "version": "1.1.2",
   "description": "it's a styleguide used by MedPass products, feel free to use it.",
->>>>>>> master
   "main": "index.js",
   "scripts": {
     "postinstall": "cd website && npm i",
@@ -18,24 +12,14 @@
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
-    "url": "git+https://github.com/MedPassBrasil/chidori.git"
-=======
     "url": "git+https://github.com/medpassbrasil/chidori.git"
->>>>>>> master
   },
   "author": "Will Leone",
   "license": "MIT",
   "bugs": {
-<<<<<<< HEAD
-    "url": "https://github.com/MedPassBrasil/chidori/issues"
-  },
-  "homepage": "https://github.com/MedPassBrasil/chidori#readme",
-=======
     "url": "https://github.com/medpassbrasil/chidori/issues"
   },
   "homepage": "https://medpassbrasil.github.io/chidori",
->>>>>>> master
   "devDependencies": {
     "concurrently": "^4.1.0",
     "gulp": "^4.0.0",

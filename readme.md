@@ -6,11 +6,7 @@ if you are looking for documentation, visit [website](https://medpassbrasil.gith
 
 ## CODING
 ```bash
-<<<<<<< HEAD
-npm i
-=======
 npm i && cd website && npm i
->>>>>>> master
 npm start
 ```
 
