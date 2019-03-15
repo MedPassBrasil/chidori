@@ -1,0 +1,28 @@
+.circular, .roboto{
+    font-size: 80px;
+    margin: 0;
+}
+
+.mainContainer h1 {
+    font-size: 50px !important;
+}
+
+.mainContainer h2 {
+    font-size: 45px !important;
+}
+
+.mainContainer h3 {
+    font-size: 35px !important;
+}
+
+.mainContainer h4 {
+    font-size: 25px !important;
+}
+
+.mainContainer {
+    h1, h2, h3, h4 {
+        small {
+            font-size: 15px;
+        }
+    }
+}
