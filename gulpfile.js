@@ -8,7 +8,7 @@ gulp.task("sass", () => {
 		.pipe(sass())
 		.pipe(rename("chidori.css"))
 		.pipe(gulp.dest("build"))
-		.pipe(gulp.dest("docusaurus/website/static/css"))
+		.pipe(gulp.dest("website/static/css"))
 })
 	
 gulp.task("minify", () => {
