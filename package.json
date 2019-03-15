@@ -4,12 +4,11 @@
   "description": "it's a styleguide used by MedPass products, feel free to use it.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd website && npm i",
+    "postinstall": "if [ -d \"website\" ]; then cd website && npm i; fi",
     "build": "gulp build",
     "watch": "gulp watch",
     "start": "concurrently -k \"npm start --prefix website\" \"gulp watch\"",
-    "publish-gh-pages": "bash config/publish.sh",
-    "prepare": "npm run build"
+    "publish-gh-pages": "bash config/publish.sh"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/medpassbrasil/chidori/issues"
   },
-  "homepage": "https://github.com/medpassbrasil/chidori#readme",
+  "homepage": "https://medpassbrasil.github.io/chidori",
   "devDependencies": {
     "concurrently": "^4.1.0",
     "gulp": "^4.0.0",
