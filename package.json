@@ -4,7 +4,7 @@
   "description": "it's a styleguide used by MedPass products, feel free to use it.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "if [ -d \"website\" ]; then cd website && npm i; fi",
+    "install": "if [ -d \"website\" ]; then cd website && npm i; fi",
     "build": "gulp build",
     "watch": "gulp watch",
     "start": "concurrently -k \"npm start --prefix website\" \"gulp watch\"",
