@@ -1,10 +1,10 @@
 {
   "name": "@medpass/chidori",
-  "version": "1.1.1",
+  "version": "1.1.1-0",
   "description": "it's a styleguide used by MedPass products, feel free to use it.",
   "main": "index.js",
   "scripts": {
-    "install": "if [ -d \"website\" ]; then cd website && npm i; fi",
+    "prestart": "if [ ! -d \"website\\node_modules\" ]; then cd website && npm i; fi",
     "build": "gulp build",
     "watch": "gulp watch",
     "start": "concurrently -k \"npm start --prefix website\" \"gulp watch\"",
