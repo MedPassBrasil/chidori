@@ -8,7 +8,8 @@
     "build": "gulp build",
     "watch": "gulp watch",
     "start": "concurrently -k \"npm start --prefix website\" \"gulp watch\"",
-    "publish-npm": "./config/publish.sh"
+    "publish-gh-pages": "bash config/publish.sh",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
