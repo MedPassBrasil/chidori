@@ -98,6 +98,11 @@ $lightPink: #fe5196;
 @extend .background-purple ;
 @extend .color-purple ;
 ```
+```html
+<div class="yourDiv background-purple">
+    <p class="color-white">Your Content</p>
+</div>
+```
 
 ## Gradient Colors
 
@@ -148,4 +153,10 @@ $lightPink: #fe5196;
 
 @extend .background-royalPink ;
 // background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+```
+
+```html
+<div class="yourDiv background-nightPurple">
+    <p class="color-white">Your Content</p>
+</div>
 ```
