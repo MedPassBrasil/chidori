@@ -9,7 +9,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-.flex-column-center-center-center, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
+.flex-column-center-center-center, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2475,7 +2475,7 @@
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.color-darkGrey, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
@@ -2568,7 +2568,7 @@
 .background-azureGreen {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before {
+.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
@@ -2857,7 +2857,7 @@
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -3740,7 +3740,7 @@ a {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.flex-column-center-center-center, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
+.flex-column-center-center-center, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6206,7 +6206,7 @@ a {
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.color-darkGrey, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
@@ -6299,7 +6299,7 @@ a {
 .background-azureGreen {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before {
+.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
@@ -6588,7 +6588,7 @@ a {
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -7411,12 +7411,12 @@ form {
   width: 100%; }
   form div {
     margin: 20px 0; }
-  form .inputContainer {
+  form .inputContainer, form .inputFileContainer, form .selectContainerDefault, form .selectContainerTransparent {
     max-width: 325px;
     width: 100%;
     height: 55px;
     position: relative; }
-    form .inputContainer img, form .inputContainer svg {
+    form .inputContainer img, form .inputContainer svg, form .inputFileContainer img, form .inputFileContainer svg, form .selectContainerDefault img, form .selectContainerDefault svg, form .selectContainerTransparent img, form .selectContainerTransparent svg {
       max-width: 30px;
       max-height: 30px;
       position: absolute;
@@ -7424,7 +7424,7 @@ form {
       left: 25px;
       transform: translateY(-50%);
       transition-duration: 0.5s; }
-    form .inputContainer .defaultInput {
+    form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput {
       max-width: 325px;
       width: 100%;
       height: 55px;
@@ -7437,11 +7437,11 @@ form {
       outline: none;
       -webkit-appearance: none;
       transition-duration: 0.5s; }
-      form .inputContainer .defaultInput::-webkit-input-placeholder {
+      form .inputContainer .defaultInput::-webkit-input-placeholder, form .inputFileContainer .defaultInput::-webkit-input-placeholder, form .selectContainerDefault .defaultInput::-webkit-input-placeholder, form .selectContainerTransparent .defaultInput::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5); }
-    form .inputContainer:hover .defaultInput, form .inputContainer .defaultInput:focus {
+    form .inputContainer:hover .defaultInput, form .inputContainer .defaultInput:focus, form .inputFileContainer:hover .defaultInput, form .inputFileContainer .defaultInput:focus, form .selectContainerDefault:hover .defaultInput, form .selectContainerDefault .defaultInput:focus, form .selectContainerTransparent:hover .defaultInput, form .selectContainerTransparent .defaultInput:focus {
       border: 2px solid #3dc1cd; }
-    form .inputContainer .contentInput {
+    form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput {
       max-width: 325px;
       width: 100%;
       height: 55px;
@@ -7454,9 +7454,9 @@ form {
       outline: none;
       -webkit-appearance: none;
       transition-duration: 0.5s; }
-      form .inputContainer .contentInput::-webkit-input-placeholder {
+      form .inputContainer .contentInput::-webkit-input-placeholder, form .inputFileContainer .contentInput::-webkit-input-placeholder, form .selectContainerDefault .contentInput::-webkit-input-placeholder, form .selectContainerTransparent .contentInput::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5); }
-    form .inputContainer button {
+    form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button {
       width: 40px;
       height: 40px;
       position: absolute;
@@ -7468,7 +7468,7 @@ form {
       transition-duration: 0.5s;
       cursor: pointer;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
-      form .inputContainer button img, form .inputContainer button svg {
+      form .inputContainer button img, form .inputContainer button svg, form .inputFileContainer button img, form .inputFileContainer button svg, form .selectContainerDefault button img, form .selectContainerDefault button svg, form .selectContainerTransparent button img, form .selectContainerTransparent button svg {
         max-width: auto;
         max-height: auto;
         position: relative;
@@ -7476,9 +7476,9 @@ form {
         left: auto;
         transform: translateY(5%);
         transition-duration: 0s; }
-    form .inputContainer .contentInput:focus {
+    form .inputContainer .contentInput:focus, form .inputFileContainer .contentInput:focus, form .selectContainerDefault .contentInput:focus, form .selectContainerTransparent .contentInput:focus {
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); }
-    form .inputContainer .radioInput {
+    form .inputContainer .radioInput, form .inputFileContainer .radioInput, form .selectContainerDefault .radioInput, form .selectContainerTransparent .radioInput {
       width: 100%;
       height: 60px;
       position: absolute;
@@ -7488,19 +7488,19 @@ form {
       opacity: 0;
       transition-duration: 0.5s;
       cursor: pointer; }
-      form .inputContainer .radioInput:checked + .radioButton:before {
+      form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before {
         transition-duration: 0.5s; }
-      form .inputContainer .radioInput:checked + .radioButton p {
+      form .inputContainer .radioInput:checked + .radioButton p, form .inputFileContainer .radioInput:checked + .radioButton p, form .selectContainerDefault .radioInput:checked + .radioButton p, form .selectContainerTransparent .radioInput:checked + .radioButton p {
         color: #ffffff;
         transition-duration: 0.5s; }
-    form .inputContainer .radioButton {
+    form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton {
       max-width: 100%;
       min-width: 48.5%;
       height: 60px;
       margin: 0;
       transition-duration: 0.5s;
       cursor: pointer; }
-      form .inputContainer .radioButton:before {
+      form .inputContainer .radioButton:before, form .inputFileContainer .radioButton:before, form .selectContainerDefault .radioButton:before, form .selectContainerTransparent .radioButton:before {
         content: '';
         width: 100%;
         height: 60px;
@@ -7513,12 +7513,12 @@ form {
         top: 0;
         left: 0;
         transition-duration: 0.5s; }
-      form .inputContainer .radioButton p {
+      form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p {
         margin: 0;
         z-index: 2;
         position: relative;
         transition-duration: 0.5s; }
-    form .inputContainer .checkboxInput {
+    form .inputContainer .checkboxInput, form .inputFileContainer .checkboxInput, form .selectContainerDefault .checkboxInput, form .selectContainerTransparent .checkboxInput {
       width: 100%;
       height: 60px;
       position: absolute;
@@ -7528,19 +7528,19 @@ form {
       opacity: 0;
       transition-duration: 0.5s;
       cursor: pointer; }
-      form .inputContainer .checkboxInput:checked + .checkboxButton:before {
+      form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before {
         transition-duration: 0.5s; }
-      form .inputContainer .checkboxInput:checked + .checkboxButton p {
+      form .inputContainer .checkboxInput:checked + .checkboxButton p, form .inputFileContainer .checkboxInput:checked + .checkboxButton p, form .selectContainerDefault .checkboxInput:checked + .checkboxButton p, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton p {
         color: #ffffff;
         transition-duration: 0.5s; }
-    form .inputContainer .checkboxButton {
+    form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton {
       max-width: 100%;
       min-width: 48.5%;
       height: 60px;
       margin: 0;
       transition-duration: 0.5s;
       cursor: pointer; }
-      form .inputContainer .checkboxButton:before {
+      form .inputContainer .checkboxButton:before, form .inputFileContainer .checkboxButton:before, form .selectContainerDefault .checkboxButton:before, form .selectContainerTransparent .checkboxButton:before {
         content: '';
         width: 100%;
         height: 60px;
@@ -7553,11 +7553,102 @@ form {
         top: 0;
         left: 0;
         transition-duration: 0.5s; }
-      form .inputContainer .checkboxButton p {
+      form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p {
         margin: 0;
         z-index: 2;
         position: relative;
         transition-duration: 0.5s; }
+    form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent {
+      max-width: 325px;
+      width: 100%;
+      height: 55px;
+      border-radius: 100px;
+      padding: 0 60px 0 30px;
+      border: 0;
+      box-sizing: border-box;
+      background-color: #212b47;
+      color: #ffffff;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      transition-duration: 0.5s;
+      position: relative; }
+      form .inputContainer .selectDefault.selectTransparent, form .inputContainer .selectTransparent.selectTransparent, form .inputFileContainer .selectDefault.selectTransparent, form .inputFileContainer .selectTransparent.selectTransparent, form .selectContainerDefault .selectDefault.selectTransparent, form .selectContainerDefault .selectTransparent.selectTransparent, form .selectContainerTransparent .selectDefault.selectTransparent, form .selectContainerTransparent .selectTransparent.selectTransparent {
+        background-color: transparent;
+        color: #4a4a4a;
+        border-radius: 0;
+        padding-left: 5px;
+        padding-right: 0;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
+  form .inputFileContainer {
+    height: auto; }
+  form .selectContainerDefault:before, form .selectContainerDefault:after, form .selectContainerTransparent:before, form .selectContainerTransparent:after {
+    content: '';
+    width: 12px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    z-index: 5; }
+  form .selectContainerDefault:after, form .selectContainerTransparent:after {
+    right: 27px;
+    transform: translateY(-50%) rotate(45deg); }
+  form .selectContainerTransparent:before, form .selectContainerTransparent:after {
+    background-color: #4a4a4a; }
+  form .fileInput {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    transition-duration: 0.5s;
+    cursor: pointer; }
+    form .fileInput:checked + .fileButton:before {
+      transition-duration: 0.5s; }
+    form .fileInput:checked + .fileButton p {
+      color: #ffffff;
+      transition-duration: 0.5s; }
+  form .fileButton {
+    width: 175px;
+    height: 175px;
+    margin: 0;
+    transition-duration: 0.5s;
+    cursor: pointer; }
+    form .fileButton:before {
+      content: '';
+      width: 175px;
+      height: 175px;
+      margin: 0;
+      border-radius: 50%;
+      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
+      background-color: #ffffff;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition-duration: 0.5s; }
+    form .fileButton img {
+      height: 30px;
+      z-index: 2;
+      margin: 0;
+      margin-bottom: 10px;
+      position: relative;
+      left: auto;
+      top: auto;
+      padding: 0;
+      transform: none; }
+    form .fileButton p {
+      width: 80%;
+      margin: 0;
+      z-index: 2;
+      position: relative;
+      transition-duration: 0.5s;
+      text-align: center; }
 
 .circular, .roboto {
   font-size: 80px;

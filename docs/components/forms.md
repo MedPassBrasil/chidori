@@ -112,6 +112,80 @@ Code:
 </div>
 ```
 
+## Select Default
+<form>
+	<div class="selectContainerDefault">
+		<select class="selectDefault">
+			<option value="">Selecione uma opção</option>
+			<option value="valor">1</option>
+			<option value="valor">2</option>
+			<option value="valor">3</option>
+		</select>
+	</div>
+</form>
+
+Code:
+```html
+<div class="selectContainerDefault">
+	<select class="selectDefault">
+		<option value="">Selecione uma opção</option>
+		<option value="valor">1</option>
+		<option value="valor">2</option>
+		<option value="valor">3</option>
+	</select>
+</div>
+```
+
+## Select Transparent
+<form class="w-100p background-white p-20px m-bottom-40px">
+	<div class="selectContainerTransparent">
+		<select class="selectTransparent">
+			<option value="">Selecione uma opção</option>
+			<option value="valor">1</option>
+			<option value="valor">2</option>
+			<option value="valor">3</option>
+		</select>
+	</div>
+</form>
+
+Code:
+```html
+<div class="selectContainerTransparent">
+	<div class="selectContainerTransparent">
+		<select class="selectTransparent">
+			<option value="">Selecione uma opção</option>
+			<option value="valor">1</option>
+			<option value="valor">2</option>
+			<option value="valor">3</option>
+		</select>
+	</div>
+</div>
+```
+
+## Input File
+
+Example: 
+<form action="">
+	<div class="inputFileContainer">
+		<input type="file" class="fileInput" />
+		<div class="fileButton">
+			<img src="../../icons/icon-camera.svg">
+			<p>Insira o logo da empresa</p>
+		</div>
+	</div>
+</form>
+
+Code:
+```html
+<div class="inputFileContainer">
+	<input type="file" class="fileInput" />
+	<div class="fileButton">
+		<img src="../../icons/icon-camera.svg">
+		<p>Insira o logo da empresa</p>
+	</div>
+</div>
+```
+
 ## Radio
 
 Example: 
