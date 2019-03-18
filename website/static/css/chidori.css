@@ -9,7 +9,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-.flex-column-center-center-center, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2457,7 +2457,7 @@
 
 ========================================================
 */
-.color-white {
+.color-white, .colors .colorContainer .colorName {
   color: #ffffff; }
 
 .background-white {
@@ -2475,11 +2475,17 @@
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
   color: #4d5154; }
 
 .background-darkGrey {
   background-color: #4d5154; }
+
+.color-black {
+  color: #252525; }
+
+.background-black {
+  background-color: #252525; }
 
 .color-lightGreen {
   color: #50e3c2; }
@@ -2577,8 +2583,8 @@
 .background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
   background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
 
-.background-wineMagenta {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-wineMagenta, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
 .background-sunsetOrange {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
@@ -2887,7 +2893,7 @@
   font-weight: 400;
   font-size: 25px; }
 
-.font-circularBold-35px {
+.font-circularBold-35px, .colors .colorContainer .colorName {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 35px; }
@@ -3508,8 +3514,8 @@ a {
 .showCover, .showAfter {
   animation-name: showCover;
   -webkit-animation-name: showCover;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  animation-duration: 0.75s;
+  -webkit-animation-duration: 0.75s;
   animation-delay: 0.25s;
   -webkit-animation-delay: 0.25s;
   animation-timing-function: ease;
@@ -3533,6 +3539,23 @@ a {
     -webkit-clip: rect(0, 0, 500px, 0); }
   100% {
     -webkit-clip: rect(0, 60vw, 500px, 0); } }
+
+.colors {
+  width: 100%;
+  position: relative; }
+  .colors .colorContainer {
+    width: 33.3%;
+    height: 250px;
+    transition-duration: 0.1s; }
+    .colors .colorContainer .colorName {
+      width: 60%;
+      text-align: center;
+      line-height: 35px;
+      margin: 0; }
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover, .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors .colorContainer.background-azureGreen, .colors .colorContainer.background-sunsetOrange, .colors .colorContainer.background-royalPink {
+      width: 50%; }
+    .colors .colorContainer:hover {
+      transform: scale(1.2); }
 
 /*
 ========================================================
@@ -3740,7 +3763,7 @@ a {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.flex-column-center-center-center, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6188,7 +6211,7 @@ a {
 
 ========================================================
 */
-.color-white {
+.color-white, .colors .colorContainer .colorName {
   color: #ffffff; }
 
 .background-white {
@@ -6206,11 +6229,17 @@ a {
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
   color: #4d5154; }
 
 .background-darkGrey {
   background-color: #4d5154; }
+
+.color-black {
+  color: #252525; }
+
+.background-black {
+  background-color: #252525; }
 
 .color-lightGreen {
   color: #50e3c2; }
@@ -6308,8 +6337,8 @@ a {
 .background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
   background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
 
-.background-wineMagenta {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-wineMagenta, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
 .background-sunsetOrange {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
@@ -6618,7 +6647,7 @@ a {
   font-weight: 400;
   font-size: 25px; }
 
-.font-circularBold-35px {
+.font-circularBold-35px, .colors .colorContainer .colorName {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 35px; }
@@ -7239,8 +7268,8 @@ a {
 .showCover, .showAfter {
   animation-name: showCover;
   -webkit-animation-name: showCover;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  animation-duration: 0.75s;
+  -webkit-animation-duration: 0.75s;
   animation-delay: 0.25s;
   -webkit-animation-delay: 0.25s;
   animation-timing-function: ease;
@@ -7264,6 +7293,23 @@ a {
     -webkit-clip: rect(0, 0, 500px, 0); }
   100% {
     -webkit-clip: rect(0, 60vw, 500px, 0); } }
+
+.colors {
+  width: 100%;
+  position: relative; }
+  .colors .colorContainer {
+    width: 33.3%;
+    height: 250px;
+    transition-duration: 0.1s; }
+    .colors .colorContainer .colorName {
+      width: 60%;
+      text-align: center;
+      line-height: 35px;
+      margin: 0; }
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover, .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors .colorContainer.background-azureGreen, .colors .colorContainer.background-sunsetOrange, .colors .colorContainer.background-royalPink {
+      width: 50%; }
+    .colors .colorContainer:hover {
+      transform: scale(1.2); }
 
 /*
 ========================================================

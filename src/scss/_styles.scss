@@ -31,6 +31,7 @@ $value in (white, $white),
 (lightGrey, $lightGrey),
 (grey, $grey),
 (darkGrey, $darkGrey),
+(black, $black),
 (lightGreen, $lightGreen),
 (green, $green),
 (yellow, $yellow),
@@ -76,7 +77,7 @@ $value in (white, $white),
 }
 
 .background-wineMagenta {
-    background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+    background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
 }
 
 .background-sunsetOrange {
@@ -305,6 +306,10 @@ a {
         &.typographyCover {
             @extend .background-sharpBlues ;
         }
+
+        &.typographyCover {
+            @extend .background-wineMagenta ;
+        }
     }
 
     img{
@@ -322,8 +327,8 @@ a {
     animation-name: showCover;
     -webkit-animation-name: showCover;
     
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
+    animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
 
     animation-delay: 0.25s;
     -webkit-animation-delay: 0.25s;
@@ -359,6 +364,39 @@ a {
 
     100% {
         -webkit-clip: rect(0, 60vw, 500px, 0);
+    }
+}
+
+.colors {
+    width: 100%;
+    position: relative;
+
+    .colorContainer {
+        width: 33.3%;
+        height: 250px;
+        transition-duration: 0.1s;
+        @extend .flex-column-center-center-center ;
+        
+        .colorName {
+            width: 60%;
+            text-align: center;
+            line-height: 35px;
+            margin: 0;
+            @extend .font-circularBold-35px ;
+            @extend .color-white ;
+        }
+        
+        &.background-white .colorName, &.background-lightGrey .colorName {
+            @extend .color-darkGrey ;
+        }
+
+        &.background-sharpBlues, &.background-azureGreen, &.background-sunsetOrange, &.background-royalPink {
+            width: 50%;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 

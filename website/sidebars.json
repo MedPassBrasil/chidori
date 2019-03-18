@@ -3,7 +3,8 @@
     "Getting Started": ["getting-started"],
     "Layout": ["layout"],
     "Content": [
-      "content/typography"
+      "content/typography",
+      "content/colors"
     ],
     "Components": [
       "components/components",
