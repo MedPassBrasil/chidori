@@ -46,10 +46,10 @@ Code:
 ## Titles Roboto
 
 Example:
-<h1 class="roboto">h1 Heading <small>(50px)</small></h1>
-<h2 class="roboto">h2 Heading <small>(45px)</small></h2>
-<h3 class="roboto">h3 Heading <small>(35px)</small></h3>
-<h3 class="roboto">h4 Heading <small>(25px)</small></h4>
+<h1 class="roboto font-robotoBold">h1 Heading <small>(50px)</small></h1>
+<h2 class="roboto font-robotoBold">h2 Heading <small>(45px)</small></h2>
+<h3 class="roboto font-robotoBold">h3 Heading <small>(35px)</small></h3>
+<h3 class="roboto font-robotoBold">h4 Heading <small>(25px)</small></h4>
 
 Code:
 ```html
