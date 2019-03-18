@@ -5,7 +5,7 @@ title: Colors
 
 <div class="wrapCover">
     <figure class="coverBackground showAfter">
-        <div class="background typographyCover"></div>
+        <div class="background colorsCover"></div>
     </figure>
     <figure class="coverImage showCover">
         <img src="../../img/color-cover.png">

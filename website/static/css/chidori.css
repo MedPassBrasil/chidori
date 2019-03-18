@@ -2571,7 +2571,7 @@
 .background-lightPink {
   background-color: #fe5196; }
 
-.background-azureGreen {
+.background-azureGreen, .coverBackground .background.colorsCover, .coverImage .background.colorsCover {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
 .background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before {
@@ -2583,7 +2583,7 @@
 .background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
   background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
 
-.background-wineMagenta, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+.background-wineMagenta {
   background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
 .background-sunsetOrange {
@@ -3552,7 +3552,7 @@ a {
       text-align: center;
       line-height: 35px;
       margin: 0; }
-    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover, .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors .colorContainer.background-azureGreen, .colors .colorContainer.background-sunsetOrange, .colors .colorContainer.background-royalPink {
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover, .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover, .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .colorContainer.background-royalPink {
       width: 50%; }
     .colors .colorContainer:hover {
       transform: scale(1.2); }
@@ -6325,7 +6325,7 @@ a {
 .background-lightPink {
   background-color: #fe5196; }
 
-.background-azureGreen {
+.background-azureGreen, .coverBackground .background.colorsCover, .coverImage .background.colorsCover {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
 .background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before {
@@ -6337,7 +6337,7 @@ a {
 .background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
   background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
 
-.background-wineMagenta, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+.background-wineMagenta {
   background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
 .background-sunsetOrange {
@@ -7306,7 +7306,7 @@ a {
       text-align: center;
       line-height: 35px;
       margin: 0; }
-    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover, .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors .colorContainer.background-azureGreen, .colors .colorContainer.background-sunsetOrange, .colors .colorContainer.background-royalPink {
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover, .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover, .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .colorContainer.background-royalPink {
       width: 50%; }
     .colors .colorContainer:hover {
       transform: scale(1.2); }
