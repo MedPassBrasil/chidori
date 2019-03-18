@@ -208,5 +208,33 @@ form {
 			}
 		}
 	}
+}
 
+.labelStatus {
+	width: 110px;
+	height: 40px;
+	border-radius: 100px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	@extend .flex-column-center-center-center ;
+
+	&.active {
+		@extend .background-lightGreen ;
+	}
+
+	&.inactive {
+		@extend .background-black ;
+	}
+
+	&.canceled {
+		@extend .background-red ;
+	}
+
+	p {
+		width: 100%;
+		height: 40px;
+		margin: 0;
+		line-height: 40px;
+		text-align: center;
+		@extend .font-circularBold-15px ;
+	}
 }

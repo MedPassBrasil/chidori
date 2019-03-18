@@ -9,7 +9,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton, .labelStatus {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2484,13 +2484,13 @@
 .color-black {
   color: #252525; }
 
-.background-black {
+.background-black, .labelStatus.inactive {
   background-color: #252525; }
 
 .color-lightGreen {
   color: #50e3c2; }
 
-.background-lightGreen {
+.background-lightGreen, .labelStatus.active {
   background-color: #50e3c2; }
 
 .color-green {
@@ -2508,7 +2508,7 @@
 .color-red {
   color: #e63349; }
 
-.background-red {
+.background-red, .labelStatus.canceled {
   background-color: #e63349; }
 
 .color-lightBlue {
@@ -2863,7 +2863,7 @@
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p, .labelStatus p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -3768,7 +3768,7 @@ a {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputContainer .radioButton, form .inputContainer .checkboxButton, .labelStatus {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6243,13 +6243,13 @@ a {
 .color-black {
   color: #252525; }
 
-.background-black {
+.background-black, .labelStatus.inactive {
   background-color: #252525; }
 
 .color-lightGreen {
   color: #50e3c2; }
 
-.background-lightGreen {
+.background-lightGreen, .labelStatus.active {
   background-color: #50e3c2; }
 
 .color-green {
@@ -6267,7 +6267,7 @@ a {
 .color-red {
   color: #e63349; }
 
-.background-red {
+.background-red, .labelStatus.canceled {
   background-color: #e63349; }
 
 .color-lightBlue {
@@ -6622,7 +6622,7 @@ a {
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputContainer .contentInput, form .inputContainer .radioButton p, form .inputContainer .checkboxButton p, .labelStatus p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -7614,6 +7614,18 @@ form {
         z-index: 2;
         position: relative;
         transition-duration: 0.5s; }
+
+.labelStatus {
+  width: 110px;
+  height: 40px;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+  .labelStatus p {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
+    text-align: center; }
 
 .circular, .roboto {
   font-size: 80px;
