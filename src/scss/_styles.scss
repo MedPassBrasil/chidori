@@ -271,7 +271,7 @@ a {
 
 .wrapCover {
     position: relative;
-    height: 70vh;
+    height: 60vh;
     margin: 5vh 0 0;
     transform: translateX(-5%);
 }
@@ -294,7 +294,7 @@ a {
         height: 80%;
         position: absolute;
         left: 6%;
-        top: 7%;
+        top: 12vh;
         padding: 0;
         margin: 0;
         z-index: 1;
@@ -310,6 +310,10 @@ a {
         &.colorsCover {
             @extend .background-azureGreen ;
         }
+        
+        &.gridsCover {
+            @extend .background-wineMagenta ;
+        }
     }
 
     img{
@@ -320,7 +324,7 @@ a {
 
 .coverImage {
     z-index: 3;
-    height: 60vh;
+    height: 50vh;
 }
 
 .showCover, .showAfter {
