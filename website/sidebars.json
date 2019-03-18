@@ -1,6 +1,7 @@
 {
   "docs": {
     "Getting Started": ["getting-started"],
+    "Brand": ["brand"],
     "Layout": ["layout"],
     "Content": [
       "content/typography",

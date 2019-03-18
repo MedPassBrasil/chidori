@@ -314,11 +314,23 @@ a {
         &.gridsCover {
             @extend .background-wineMagenta ;
         }
+
+        &.brandCover {
+            @extend .background-sunsetOrange ;
+        }
     }
 
     img{
         width: 100%;
         position: relative;
+    }
+}
+
+.containerBrand {
+    margin-bottom: 40px;
+
+    img {
+        border-radius: 20px;
     }
 }
 
