@@ -9,7 +9,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-.flex-column-center-center-center, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2457,7 +2457,7 @@
 
 ========================================================
 */
-.color-white {
+.color-white, .colors .colorContainer .colorName {
   color: #ffffff; }
 
 .background-white {
@@ -2475,16 +2475,22 @@
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
+.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
   background-color: #4d5154; }
 
+.color-black {
+  color: #252525; }
+
+.background-black, .labelStatus.inactive {
+  background-color: #252525; }
+
 .color-lightGreen {
   color: #50e3c2; }
 
-.background-lightGreen {
+.background-lightGreen, .labelStatus.active {
   background-color: #50e3c2; }
 
 .color-green {
@@ -2502,7 +2508,7 @@
 .color-red {
   color: #e63349; }
 
-.background-red {
+.background-red, .labelStatus.canceled {
   background-color: #e63349; }
 
 .color-lightBlue {
@@ -2565,7 +2571,8 @@
 .background-lightPink {
   background-color: #fe5196; }
 
-.background-azureGreen {
+.background-azureGreen, .coverBackground .background.colorsCover,
+.coverImage .background.colorsCover {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
 .background-sharpBlues, .coverBackground .background.typographyCover,
@@ -2579,10 +2586,12 @@
 .coverImage .background.buttonsCover {
   background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
-.background-wineMagenta {
-  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
+.background-wineMagenta, .coverBackground .background.gridsCover,
+.coverImage .background.gridsCover {
+  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
-.background-sunsetOrange {
+.background-sunsetOrange, .coverBackground .background.brandCover,
+.coverImage .background.brandCover {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
 
 .background-royalPink {
@@ -2859,7 +2868,7 @@
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -2889,7 +2898,7 @@
   font-weight: 400;
   font-size: 25px; }
 
-.font-circularBold-35px {
+.font-circularBold-35px, .colors .colorContainer .colorName {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 35px; }
@@ -3477,7 +3486,7 @@ a {
 
 .wrapCover {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   margin: 5vh 0 0;
   transform: translateX(-5%); }
 
@@ -3499,19 +3508,26 @@ a {
     width: 100%;
     height: 80%;
     position: absolute;
-    left: 6%;
-    top: 7%;
-    padding: 0;
-    margin: 0;
-    z-index: 1; }
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    clip: rect(0px, 0, 500px, 200px);
+    z-index: 2; }
   .coverBackground img,
   .coverImage img {
     width: 100%;
     position: relative; }
 
+.containerBrand {
+  margin-bottom: 40px; }
+  .containerBrand img {
+    border-radius: 20px; }
+
 .coverImage {
   z-index: 3;
-  height: 60vh; }
+  height: 50vh; }
 
 .showCover,
 .showAfter {
@@ -3577,6 +3593,26 @@ a {
     z-index: 3; }
   .homeCover img {
     clip: rect(0, 345px, 500px, 0); }
+
+.colors {
+  width: 100%;
+  position: relative; }
+  .colors .colorContainer {
+    width: 33.3%;
+    height: 250px;
+    transition-duration: 0.1s; }
+    .colors .colorContainer .colorName {
+      width: 60%;
+      text-align: center;
+      line-height: 35px;
+      margin: 0; }
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover,
+    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputFileContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputFileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerDefault .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerDefault .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerTransparent .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerTransparent .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .inputFileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputFileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerDefault .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerDefault .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerTransparent .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerTransparent .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
+    .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .coverBackground .colorContainer.background.brandCover, .coverBackground .colors .colorContainer.background.brandCover,
+    .colors .coverImage .colorContainer.background.brandCover, .coverImage .colors .colorContainer.background.brandCover, .colors .colorContainer.background-royalPink {
+      width: 50%; }
+    .colors .colorContainer:hover {
+      transform: scale(1.2); }
 
 .logoHome {
   width: 30%;
@@ -3793,7 +3829,7 @@ img.black-white {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.flex-column-center-center-center, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6241,7 +6277,7 @@ img.black-white {
 
 ========================================================
 */
-.color-white {
+.color-white, .colors .colorContainer .colorName {
   color: #ffffff; }
 
 .background-white {
@@ -6259,16 +6295,22 @@ img.black-white {
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
+.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
   background-color: #4d5154; }
 
+.color-black {
+  color: #252525; }
+
+.background-black, .labelStatus.inactive {
+  background-color: #252525; }
+
 .color-lightGreen {
   color: #50e3c2; }
 
-.background-lightGreen {
+.background-lightGreen, .labelStatus.active {
   background-color: #50e3c2; }
 
 .color-green {
@@ -6286,7 +6328,7 @@ img.black-white {
 .color-red {
   color: #e63349; }
 
-.background-red {
+.background-red, .labelStatus.canceled {
   background-color: #e63349; }
 
 .color-lightBlue {
@@ -6349,7 +6391,8 @@ img.black-white {
 .background-lightPink {
   background-color: #fe5196; }
 
-.background-azureGreen {
+.background-azureGreen, .coverBackground .background.colorsCover,
+.coverImage .background.colorsCover {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
 .background-sharpBlues, .coverBackground .background.typographyCover,
@@ -6363,10 +6406,12 @@ img.black-white {
 .coverImage .background.buttonsCover {
   background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
-.background-wineMagenta {
-  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
+.background-wineMagenta, .coverBackground .background.gridsCover,
+.coverImage .background.gridsCover {
+  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
-.background-sunsetOrange {
+.background-sunsetOrange, .coverBackground .background.brandCover,
+.coverImage .background.brandCover {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
 
 .background-royalPink {
@@ -6643,7 +6688,7 @@ img.black-white {
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -6673,7 +6718,7 @@ img.black-white {
   font-weight: 400;
   font-size: 25px; }
 
-.font-circularBold-35px {
+.font-circularBold-35px, .colors .colorContainer .colorName {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 35px; }
@@ -7261,7 +7306,7 @@ a {
 
 .wrapCover {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   margin: 5vh 0 0;
   transform: translateX(-5%); }
 
@@ -7283,19 +7328,26 @@ a {
     width: 100%;
     height: 80%;
     position: absolute;
-    left: 6%;
-    top: 7%;
-    padding: 0;
-    margin: 0;
-    z-index: 1; }
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    clip: rect(0px, 0, 500px, 200px);
+    z-index: 2; }
   .coverBackground img,
   .coverImage img {
     width: 100%;
     position: relative; }
 
+.containerBrand {
+  margin-bottom: 40px; }
+  .containerBrand img {
+    border-radius: 20px; }
+
 .coverImage {
   z-index: 3;
-  height: 60vh; }
+  height: 50vh; }
 
 .showCover,
 .showAfter {
@@ -7361,6 +7413,26 @@ a {
     z-index: 3; }
   .homeCover img {
     clip: rect(0, 345px, 500px, 0); }
+
+.colors {
+  width: 100%;
+  position: relative; }
+  .colors .colorContainer {
+    width: 33.3%;
+    height: 250px;
+    transition-duration: 0.1s; }
+    .colors .colorContainer .colorName {
+      width: 60%;
+      text-align: center;
+      line-height: 35px;
+      margin: 0; }
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover,
+    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputFileContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputFileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerDefault .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerDefault .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerTransparent .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerTransparent .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .inputFileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputFileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerDefault .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerDefault .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerTransparent .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerTransparent .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
+    .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .coverBackground .colorContainer.background.brandCover, .coverBackground .colors .colorContainer.background.brandCover,
+    .colors .coverImage .colorContainer.background.brandCover, .coverImage .colors .colorContainer.background.brandCover, .colors .colorContainer.background-royalPink {
+      width: 50%; }
+    .colors .colorContainer:hover {
+      transform: scale(1.2); }
 
 .logoHome {
   width: 30%;
@@ -7755,6 +7827,18 @@ form {
       position: relative;
       transition-duration: 0.5s;
       text-align: center; }
+
+.labelStatus {
+  width: 110px;
+  height: 40px;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+  .labelStatus p {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
+    text-align: center; }
 
 .circular, .roboto {
   font-size: 80px;
