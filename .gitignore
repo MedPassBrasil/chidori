@@ -6,8 +6,6 @@ build
 # docusaurus
 .DS_Store
 
-node_modules
-
 lib/core/metadata.js
 lib/core/MetadataBlog.js
 
