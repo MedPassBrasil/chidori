@@ -77,7 +77,7 @@ class HomeSplash extends React.Component {
           </PromoSection>
           <img
             className="logoHome"
-            src="../../icons/logo-medpass-outline.png"
+            src="/chidori/icons/logo-medpass-outline.png"
           />
         </div>
       </SplashContainer>
