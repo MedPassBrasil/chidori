@@ -18,7 +18,7 @@ npm i --save @medpass/chidori
 >react.js
 ```javascript
 import React from "react"
-import "@medpass/chidori/build/chidori.min.css"
+import "@medpass/chidori/build/css/chidori.min.css"
 
 const MedpassButton = () => (
 	<button className="btn primary font-circularBold-15px" >Styled Button</button>
