@@ -253,9 +253,8 @@ $lightPink: #fe5196;
 ========================================================
 */
 
-body {
-  font-family: "Circular Std Book";
-  @extend .background-spaceBlues;
+body{
+  @extend .background-spaceBlues ;
 }
 
 * {
