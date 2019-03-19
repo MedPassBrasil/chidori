@@ -417,6 +417,62 @@ a {
   }
 }
 
+.homeContainer {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+.pluginWrapper .button {
+    padding: 15px 40px;
+    border-radius: 100px;
+    border: none;
+    margin: 0 5px 40px;
+    font-family: 'Circular Std Bold';
+    color: $purple;
+    background-color: #FFF;
+    z-index: 3;
+}
+
+.homeCover {
+    position: relative;
+    transform: translateX(-2%);
+    
+    .background, .mask {
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+
+        &.mask {
+            position: absolute;
+            left: 3%;
+            top: 7%;
+            z-index: 1;
+        }
+    }
+
+    h1, .section, img {
+        z-index: 3;
+    }
+
+    img {
+        clip: rect(0, 345px, 500px, 0);
+    }
+}
+
+.logoHome {
+    width: 30%;
+    position: absolute;
+    right: -5%;
+    bottom: 5%;
+    opacity: 0.2;
+}
+
 /*
 ========================================================
 
