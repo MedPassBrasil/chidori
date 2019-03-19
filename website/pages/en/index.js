@@ -60,13 +60,15 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/medpass.png`} />
-        <div className="inner">
-          <ProjectTitle siteConfig={siteConfig} />
+        <div class="homeCover w-100p h-50vh flex-column-end-center-center">
+          <div class="background background-wineMagenta"></div>
+          <div class="mask background-azureGreen"></div>
+          <h1 class="w-90p font-circularBold-45px">Medpass Styleguide</h1>
           <PromoSection>
-            <Button href={docUrl('getting-started.html')}>DOCS</Button>
-            <Button href="https://github.com/MedPassBrasil/chidori">GITHUB</Button>
+            <Button className="btn" href={docUrl('getting-started.html')}>DOCS</Button>
+            <Button className="btn" href="https://github.com/MedPassBrasil/chidori">GITHUB</Button>
           </PromoSection>
+          <img class="logoHome" src="../../icons/logo-medpass-outline.png" />
         </div>
       </SplashContainer>
     );

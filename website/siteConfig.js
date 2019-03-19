@@ -12,7 +12,7 @@ const siteConfig = {
   title: 'Chidori',
   tagline: 'MedPass\'s Styleguide',
   url: 'https://medpassbrasil.github.io',
-  baseUrl: '/chidori/',
+  baseUrl: '/',
   projectName: 'chidori',
   organizationName: 'MedPassBrasil',
   defaultVersionShown: '1.1.2',

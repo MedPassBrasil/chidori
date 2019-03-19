@@ -9,7 +9,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-.flex-column-center-center-center {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +127,7 @@
 .column-reverse {
   flex-direction: column-reverse; }
 
-.flex-wrap {
+.flex-wrap, form {
   flex-wrap: wrap; }
 
 .align-self-center {
@@ -156,7 +156,7 @@
   align-items: flex-end;
   align-content: center; }
 
-.flex-row-between-center-center {
+.flex-row-between-center-center, form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2457,7 +2457,7 @@
 
 ========================================================
 */
-.color-white {
+.color-white, .colors .colorContainer .colorName {
   color: #ffffff; }
 
 .background-white {
@@ -2475,16 +2475,22 @@
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey {
+.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
   background-color: #4d5154; }
 
+.color-black {
+  color: #252525; }
+
+.background-black, .labelStatus.inactive {
+  background-color: #252525; }
+
 .color-lightGreen {
   color: #50e3c2; }
 
-.background-lightGreen {
+.background-lightGreen, .labelStatus.active {
   background-color: #50e3c2; }
 
 .color-green {
@@ -2502,7 +2508,7 @@
 .color-red {
   color: #e63349; }
 
-.background-red {
+.background-red, .labelStatus.canceled {
   background-color: #e63349; }
 
 .color-lightBlue {
@@ -2565,22 +2571,27 @@
 .background-lightPink {
   background-color: #fe5196; }
 
-.background-azureGreen {
+.background-azureGreen, .coverBackground .background.colorsCover,
+.coverImage .background.colorsCover {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+.background-sharpBlues, .coverBackground .background.typographyCover,
+.coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
   background-image: radial-gradient(circle at 0 0, #222c49, #161d31); }
 
-.background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-nightPurple, .coverBackground .background.buttonsCover,
+.coverImage .background.buttonsCover {
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
-.background-wineMagenta {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-wineMagenta, .coverBackground .background.gridsCover,
+.coverImage .background.gridsCover {
+  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
-.background-sunsetOrange {
+.background-sunsetOrange, .coverBackground .background.brandCover,
+.coverImage .background.brandCover {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
 
 .background-royalPink {
@@ -2594,25 +2605,25 @@
 ========================================================
 */
 @font-face {
-  font-family: 'Circular Std Black';
+  font-family: "Circular Std Black";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Black"), url("../fonts/CircularStd-Black.woff") format("woff"), local("Circular Std Black"), url("../fonts/CircularStd-Black.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Book';
+  font-family: "Circular Std Book";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Book"), url("../fonts/CircularStd-Book.woff") format("woff"), local("Circular Std Book"), url("../fonts/CircularStd-Book.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Medium';
+  font-family: "Circular Std Medium";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Medium"), url("../fonts/CircularStd-Medium.woff") format("woff"), local("Circular Std Medium"), url("../fonts/CircularStd-Medium.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Bold';
+  font-family: "Circular Std Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Bold"), url("../fonts/CircularStd-Bold.woff") format("woff"), local("Circular Std Bold"), url("../fonts/CircularStd-Bold.otf") format("otf"); }
@@ -2857,7 +2868,7 @@
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -2887,7 +2898,7 @@
   font-weight: 400;
   font-size: 25px; }
 
-.font-circularBold-35px {
+.font-circularBold-35px, .colors .colorContainer .colorName {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 35px; }
@@ -3424,17 +3435,14 @@
 
 ========================================================
 */
-body {
-  font-family: 'Circular Std Book'; }
-
 * {
-  color: #FFF; }
+  color: #fff; }
 
 a {
   color: #50e3c2; }
 
 .navGroupCategoryTitle {
-  color: #FFF !important; }
+  color: #fff !important; }
 
 .navItem {
   color: #3dc1cd !important;
@@ -3454,15 +3462,18 @@ a {
   background-color: #161d31;
   border: 2px solid #212b47; }
 
-.docs-next.button, .docs-prev.button {
+.docs-next.button,
+.docs-prev.button {
   background-color: #7918f2;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 100px;
   text-transform: none; }
-  .docs-next.button.docs-next, .docs-prev.button.docs-next {
+  .docs-next.button.docs-next,
+  .docs-prev.button.docs-next {
     padding-right: 20px; }
-  .docs-next.button span, .docs-prev.button span {
+  .docs-next.button span,
+  .docs-prev.button span {
     margin-right: 5px; }
 
 .nav-footer {
@@ -3475,11 +3486,12 @@ a {
 
 .wrapCover {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   margin: 5vh 0 0;
   transform: translateX(-5%); }
 
-.coverBackground, .coverImage {
+.coverBackground,
+.coverImage {
   width: 100%;
   height: 100%;
   position: relative;
@@ -3491,24 +3503,34 @@ a {
   -o-transition: all 1s ease;
   clip: rect(0px, 0, 500px, 200px);
   z-index: 2; }
-  .coverBackground .background, .coverImage .background {
+  .coverBackground .background,
+  .coverImage .background {
     width: 100%;
     height: 80%;
     position: absolute;
-    left: 6%;
-    top: 7%;
-    padding: 0;
-    margin: 0;
-    z-index: 1; }
-  .coverBackground img, .coverImage img {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    clip: rect(0px, 0, 500px, 200px);
+    z-index: 2; }
+  .coverBackground img,
+  .coverImage img {
     width: 100%;
     position: relative; }
 
+.containerBrand {
+  margin-bottom: 40px; }
+  .containerBrand img {
+    border-radius: 20px; }
+
 .coverImage {
   z-index: 3;
-  height: 60vh; }
+  height: 50vh; }
 
-.showCover, .showAfter {
+.showCover,
+.showAfter {
   animation-name: showCover;
   -webkit-animation-name: showCover;
   animation-duration: 1s;
@@ -3536,6 +3558,68 @@ a {
     -webkit-clip: rect(0, 0, 500px, 0); }
   100% {
     -webkit-clip: rect(0, 60vw, 500px, 0); } }
+
+.homeContainer h1 {
+  font-size: 70px; }
+
+.pluginWrapper .button {
+  padding: 15px 40px;
+  border-radius: 100px;
+  border: none;
+  margin: 0 5px 40px;
+  font-family: 'Circular Std Bold';
+  color: #7918f2;
+  background-color: #FFF;
+  z-index: 3; }
+
+.homeCover {
+  position: relative;
+  transform: translateX(-2%); }
+  .homeCover .background, .homeCover .mask {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 2; }
+    .homeCover .background.mask, .homeCover .mask.mask {
+      position: absolute;
+      left: 3%;
+      top: 7%;
+      z-index: 1; }
+  .homeCover h1, .homeCover .section, .homeCover img {
+    z-index: 3; }
+  .homeCover img {
+    clip: rect(0, 345px, 500px, 0); }
+
+.colors {
+  width: 100%;
+  position: relative; }
+  .colors .colorContainer {
+    width: 33.3%;
+    height: 250px;
+    transition-duration: 0.1s; }
+    .colors .colorContainer .colorName {
+      width: 60%;
+      text-align: center;
+      line-height: 35px;
+      margin: 0; }
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover,
+    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputFileContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputFileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerDefault .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerDefault .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerTransparent .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerTransparent .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .inputFileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputFileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerDefault .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerDefault .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerTransparent .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerTransparent .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
+    .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .coverBackground .colorContainer.background.brandCover, .coverBackground .colors .colorContainer.background.brandCover,
+    .colors .coverImage .colorContainer.background.brandCover, .coverImage .colors .colorContainer.background.brandCover, .colors .colorContainer.background-royalPink {
+      width: 50%; }
+    .colors .colorContainer:hover {
+      transform: scale(1.2); }
+
+.logoHome {
+  width: 30%;
+  position: absolute;
+  right: -5%;
+  bottom: 5%;
+  opacity: 0.2; }
 
 /*
 ========================================================
@@ -3604,9 +3688,11 @@ a {
 
 ========================================================
 */
-.filter.black-white, img.black-white {
+.filter.black-white,
+img.black-white {
   filter: grayscale(100%); }
-  .filter.black-white img, img.black-white img {
+  .filter.black-white img,
+  img.black-white img {
     opacity: 0.3; }
 
 .filter-box {
@@ -3626,7 +3712,7 @@ a {
 .form input[type="number"],
 .form input[type="tel"] {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
@@ -3634,7 +3720,7 @@ a {
 
 .form button {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
@@ -3743,7 +3829,7 @@ a {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.flex-column-center-center-center {
+.flex-column-center-center-center, .colors .colorContainer, form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button, form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton, form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3861,7 +3947,7 @@ a {
 .column-reverse {
   flex-direction: column-reverse; }
 
-.flex-wrap {
+.flex-wrap, form {
   flex-wrap: wrap; }
 
 .align-self-center {
@@ -3890,7 +3976,7 @@ a {
   align-items: flex-end;
   align-content: center; }
 
-.flex-row-between-center-center {
+.flex-row-between-center-center, form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6191,7 +6277,7 @@ a {
 
 ========================================================
 */
-.color-white {
+.color-white, .colors .colorContainer .colorName {
   color: #ffffff; }
 
 .background-white {
@@ -6209,16 +6295,22 @@ a {
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey {
+.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
   background-color: #4d5154; }
 
+.color-black {
+  color: #252525; }
+
+.background-black, .labelStatus.inactive {
+  background-color: #252525; }
+
 .color-lightGreen {
   color: #50e3c2; }
 
-.background-lightGreen {
+.background-lightGreen, .labelStatus.active {
   background-color: #50e3c2; }
 
 .color-green {
@@ -6236,7 +6328,7 @@ a {
 .color-red {
   color: #e63349; }
 
-.background-red {
+.background-red, .labelStatus.canceled {
   background-color: #e63349; }
 
 .color-lightBlue {
@@ -6299,22 +6391,27 @@ a {
 .background-lightPink {
   background-color: #fe5196; }
 
-.background-azureGreen {
+.background-azureGreen, .coverBackground .background.colorsCover,
+.coverImage .background.colorsCover {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover {
+.background-sharpBlues, .coverBackground .background.typographyCover,
+.coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
   background-image: radial-gradient(circle at 0 0, #222c49, #161d31); }
 
-.background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-nightPurple, .coverBackground .background.buttonsCover,
+.coverImage .background.buttonsCover {
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
-.background-wineMagenta {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-wineMagenta, .coverBackground .background.gridsCover,
+.coverImage .background.gridsCover {
+  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
 
-.background-sunsetOrange {
+.background-sunsetOrange, .coverBackground .background.brandCover,
+.coverImage .background.brandCover {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
 
 .background-royalPink {
@@ -6328,25 +6425,25 @@ a {
 ========================================================
 */
 @font-face {
-  font-family: 'Circular Std Black';
+  font-family: "Circular Std Black";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Black"), url("../fonts/CircularStd-Black.woff") format("woff"), local("Circular Std Black"), url("../fonts/CircularStd-Black.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Book';
+  font-family: "Circular Std Book";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Book"), url("../fonts/CircularStd-Book.woff") format("woff"), local("Circular Std Book"), url("../fonts/CircularStd-Book.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Medium';
+  font-family: "Circular Std Medium";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Medium"), url("../fonts/CircularStd-Medium.woff") format("woff"), local("Circular Std Medium"), url("../fonts/CircularStd-Medium.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Bold';
+  font-family: "Circular Std Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Bold"), url("../fonts/CircularStd-Bold.woff") format("woff"), local("Circular Std Bold"), url("../fonts/CircularStd-Bold.otf") format("otf"); }
@@ -6591,7 +6688,7 @@ a {
   font-weight: 400;
   font-size: 13px; }
 
-.font-circularBold-15px {
+.font-circularBold-15px, form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput, form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput, form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p, form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -6621,7 +6718,7 @@ a {
   font-weight: 400;
   font-size: 25px; }
 
-.font-circularBold-35px {
+.font-circularBold-35px, .colors .colorContainer .colorName {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 35px; }
@@ -7158,17 +7255,14 @@ a {
 
 ========================================================
 */
-body {
-  font-family: 'Circular Std Book'; }
-
 * {
-  color: #FFF; }
+  color: #fff; }
 
 a {
   color: #50e3c2; }
 
 .navGroupCategoryTitle {
-  color: #FFF !important; }
+  color: #fff !important; }
 
 .navItem {
   color: #3dc1cd !important;
@@ -7188,15 +7282,18 @@ a {
   background-color: #161d31;
   border: 2px solid #212b47; }
 
-.docs-next.button, .docs-prev.button {
+.docs-next.button,
+.docs-prev.button {
   background-color: #7918f2;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 100px;
   text-transform: none; }
-  .docs-next.button.docs-next, .docs-prev.button.docs-next {
+  .docs-next.button.docs-next,
+  .docs-prev.button.docs-next {
     padding-right: 20px; }
-  .docs-next.button span, .docs-prev.button span {
+  .docs-next.button span,
+  .docs-prev.button span {
     margin-right: 5px; }
 
 .nav-footer {
@@ -7209,11 +7306,12 @@ a {
 
 .wrapCover {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   margin: 5vh 0 0;
   transform: translateX(-5%); }
 
-.coverBackground, .coverImage {
+.coverBackground,
+.coverImage {
   width: 100%;
   height: 100%;
   position: relative;
@@ -7225,24 +7323,34 @@ a {
   -o-transition: all 1s ease;
   clip: rect(0px, 0, 500px, 200px);
   z-index: 2; }
-  .coverBackground .background, .coverImage .background {
+  .coverBackground .background,
+  .coverImage .background {
     width: 100%;
     height: 80%;
     position: absolute;
-    left: 6%;
-    top: 7%;
-    padding: 0;
-    margin: 0;
-    z-index: 1; }
-  .coverBackground img, .coverImage img {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    clip: rect(0px, 0, 500px, 200px);
+    z-index: 2; }
+  .coverBackground img,
+  .coverImage img {
     width: 100%;
     position: relative; }
 
+.containerBrand {
+  margin-bottom: 40px; }
+  .containerBrand img {
+    border-radius: 20px; }
+
 .coverImage {
   z-index: 3;
-  height: 60vh; }
+  height: 50vh; }
 
-.showCover, .showAfter {
+.showCover,
+.showAfter {
   animation-name: showCover;
   -webkit-animation-name: showCover;
   animation-duration: 1s;
@@ -7270,6 +7378,68 @@ a {
     -webkit-clip: rect(0, 0, 500px, 0); }
   100% {
     -webkit-clip: rect(0, 60vw, 500px, 0); } }
+
+.homeContainer h1 {
+  font-size: 70px; }
+
+.pluginWrapper .button {
+  padding: 15px 40px;
+  border-radius: 100px;
+  border: none;
+  margin: 0 5px 40px;
+  font-family: 'Circular Std Bold';
+  color: #7918f2;
+  background-color: #FFF;
+  z-index: 3; }
+
+.homeCover {
+  position: relative;
+  transform: translateX(-2%); }
+  .homeCover .background, .homeCover .mask {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 2; }
+    .homeCover .background.mask, .homeCover .mask.mask {
+      position: absolute;
+      left: 3%;
+      top: 7%;
+      z-index: 1; }
+  .homeCover h1, .homeCover .section, .homeCover img {
+    z-index: 3; }
+  .homeCover img {
+    clip: rect(0, 345px, 500px, 0); }
+
+.colors {
+  width: 100%;
+  position: relative; }
+  .colors .colorContainer {
+    width: 33.3%;
+    height: 250px;
+    transition-duration: 0.1s; }
+    .colors .colorContainer .colorName {
+      width: 60%;
+      text-align: center;
+      line-height: 35px;
+      margin: 0; }
+    .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover,
+    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputFileContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputFileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerDefault .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerDefault .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .selectContainerTransparent .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerTransparent .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .inputFileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputFileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerDefault .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerDefault .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .selectContainerTransparent .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerTransparent .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
+    .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .coverBackground .colorContainer.background.brandCover, .coverBackground .colors .colorContainer.background.brandCover,
+    .colors .coverImage .colorContainer.background.brandCover, .coverImage .colors .colorContainer.background.brandCover, .colors .colorContainer.background-royalPink {
+      width: 50%; }
+    .colors .colorContainer:hover {
+      transform: scale(1.2); }
+
+.logoHome {
+  width: 30%;
+  position: absolute;
+  right: -5%;
+  bottom: 5%;
+  opacity: 0.2; }
 
 /*
 ========================================================
@@ -7338,9 +7508,11 @@ a {
 
 ========================================================
 */
-.filter.black-white, img.black-white {
+.filter.black-white,
+img.black-white {
   filter: grayscale(100%); }
-  .filter.black-white img, img.black-white img {
+  .filter.black-white img,
+  img.black-white img {
     opacity: 0.3; }
 
 .filter-box {
@@ -7360,7 +7532,7 @@ a {
 .form input[type="number"],
 .form input[type="tel"] {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
@@ -7368,7 +7540,7 @@ a {
 
 .form button {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
@@ -7413,11 +7585,260 @@ a {
       height: 15px;
       margin-right: 10px; }
 
-form .default-input {
-  width: 325px;
-  height: 55px;
-  border-radius: 40px;
-  border: solid 2px white; }
+form {
+  width: 100%; }
+  form div {
+    margin: 20px 0; }
+  form .inputContainer, form .inputFileContainer, form .selectContainerDefault, form .selectContainerTransparent {
+    max-width: 325px;
+    width: 100%;
+    height: 55px;
+    position: relative; }
+    form .inputContainer img, form .inputContainer svg, form .inputFileContainer img, form .inputFileContainer svg, form .selectContainerDefault img, form .selectContainerDefault svg, form .selectContainerTransparent img, form .selectContainerTransparent svg {
+      max-width: 30px;
+      max-height: 30px;
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+      transition-duration: 0.5s; }
+    form .inputContainer .defaultInput, form .inputFileContainer .defaultInput, form .selectContainerDefault .defaultInput, form .selectContainerTransparent .defaultInput {
+      max-width: 325px;
+      width: 100%;
+      height: 55px;
+      border-radius: 100px;
+      padding: 0 20px 0 60px;
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #ffffff;
+      outline: none;
+      -webkit-appearance: none;
+      transition-duration: 0.5s; }
+      form .inputContainer .defaultInput::-webkit-input-placeholder, form .inputFileContainer .defaultInput::-webkit-input-placeholder, form .selectContainerDefault .defaultInput::-webkit-input-placeholder, form .selectContainerTransparent .defaultInput::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    form .inputContainer:hover .defaultInput, form .inputContainer .defaultInput:focus, form .inputFileContainer:hover .defaultInput, form .inputFileContainer .defaultInput:focus, form .selectContainerDefault:hover .defaultInput, form .selectContainerDefault .defaultInput:focus, form .selectContainerTransparent:hover .defaultInput, form .selectContainerTransparent .defaultInput:focus {
+      border: 2px solid #3dc1cd; }
+    form .inputContainer .contentInput, form .inputFileContainer .contentInput, form .selectContainerDefault .contentInput, form .selectContainerTransparent .contentInput {
+      max-width: 325px;
+      width: 100%;
+      height: 55px;
+      border-radius: 100px;
+      padding: 0 60px 0 30px;
+      border: 0;
+      box-sizing: border-box;
+      background-color: #212b47;
+      color: #ffffff;
+      outline: none;
+      -webkit-appearance: none;
+      transition-duration: 0.5s; }
+      form .inputContainer .contentInput::-webkit-input-placeholder, form .inputFileContainer .contentInput::-webkit-input-placeholder, form .selectContainerDefault .contentInput::-webkit-input-placeholder, form .selectContainerTransparent .contentInput::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    form .inputContainer button, form .inputFileContainer button, form .selectContainerDefault button, form .selectContainerTransparent button {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      border-radius: 50%;
+      border: 0;
+      transform: translateY(-50%);
+      transition-duration: 0.5s;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+      form .inputContainer button img, form .inputContainer button svg, form .inputFileContainer button img, form .inputFileContainer button svg, form .selectContainerDefault button img, form .selectContainerDefault button svg, form .selectContainerTransparent button img, form .selectContainerTransparent button svg {
+        max-width: auto;
+        max-height: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translateY(5%);
+        transition-duration: 0s; }
+    form .inputContainer .contentInput:focus, form .inputFileContainer .contentInput:focus, form .selectContainerDefault .contentInput:focus, form .selectContainerTransparent .contentInput:focus {
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); }
+    form .inputContainer .radioInput, form .inputFileContainer .radioInput, form .selectContainerDefault .radioInput, form .selectContainerTransparent .radioInput {
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      opacity: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before {
+        transition-duration: 0.5s; }
+      form .inputContainer .radioInput:checked + .radioButton p, form .inputFileContainer .radioInput:checked + .radioButton p, form .selectContainerDefault .radioInput:checked + .radioButton p, form .selectContainerTransparent .radioInput:checked + .radioButton p {
+        color: #ffffff;
+        transition-duration: 0.5s; }
+    form .inputContainer .radioButton, form .inputFileContainer .radioButton, form .selectContainerDefault .radioButton, form .selectContainerTransparent .radioButton {
+      max-width: 100%;
+      min-width: 48.5%;
+      height: 60px;
+      margin: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .radioButton:before, form .inputFileContainer .radioButton:before, form .selectContainerDefault .radioButton:before, form .selectContainerTransparent .radioButton:before {
+        content: '';
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 0.5s; }
+      form .inputContainer .radioButton p, form .inputFileContainer .radioButton p, form .selectContainerDefault .radioButton p, form .selectContainerTransparent .radioButton p {
+        margin: 0;
+        z-index: 2;
+        position: relative;
+        transition-duration: 0.5s; }
+    form .inputContainer .checkboxInput, form .inputFileContainer .checkboxInput, form .selectContainerDefault .checkboxInput, form .selectContainerTransparent .checkboxInput {
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      opacity: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before {
+        transition-duration: 0.5s; }
+      form .inputContainer .checkboxInput:checked + .checkboxButton p, form .inputFileContainer .checkboxInput:checked + .checkboxButton p, form .selectContainerDefault .checkboxInput:checked + .checkboxButton p, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton p {
+        color: #ffffff;
+        transition-duration: 0.5s; }
+    form .inputContainer .checkboxButton, form .inputFileContainer .checkboxButton, form .selectContainerDefault .checkboxButton, form .selectContainerTransparent .checkboxButton {
+      max-width: 100%;
+      min-width: 48.5%;
+      height: 60px;
+      margin: 0;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      form .inputContainer .checkboxButton:before, form .inputFileContainer .checkboxButton:before, form .selectContainerDefault .checkboxButton:before, form .selectContainerTransparent .checkboxButton:before {
+        content: '';
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 0.5s; }
+      form .inputContainer .checkboxButton p, form .inputFileContainer .checkboxButton p, form .selectContainerDefault .checkboxButton p, form .selectContainerTransparent .checkboxButton p {
+        margin: 0;
+        z-index: 2;
+        position: relative;
+        transition-duration: 0.5s; }
+    form .inputContainer .selectDefault, form .inputContainer .selectTransparent, form .inputFileContainer .selectDefault, form .inputFileContainer .selectTransparent, form .selectContainerDefault .selectDefault, form .selectContainerDefault .selectTransparent, form .selectContainerTransparent .selectDefault, form .selectContainerTransparent .selectTransparent {
+      max-width: 325px;
+      width: 100%;
+      height: 55px;
+      border-radius: 100px;
+      padding: 0 60px 0 30px;
+      border: 0;
+      box-sizing: border-box;
+      background-color: #212b47;
+      color: #ffffff;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      transition-duration: 0.5s;
+      position: relative; }
+      form .inputContainer .selectDefault.selectTransparent, form .inputContainer .selectTransparent.selectTransparent, form .inputFileContainer .selectDefault.selectTransparent, form .inputFileContainer .selectTransparent.selectTransparent, form .selectContainerDefault .selectDefault.selectTransparent, form .selectContainerDefault .selectTransparent.selectTransparent, form .selectContainerTransparent .selectDefault.selectTransparent, form .selectContainerTransparent .selectTransparent.selectTransparent {
+        background-color: transparent;
+        color: #4a4a4a;
+        border-radius: 0;
+        padding-left: 5px;
+        padding-right: 0;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
+  form .inputFileContainer {
+    height: auto; }
+  form .selectContainerDefault:before, form .selectContainerDefault:after, form .selectContainerTransparent:before, form .selectContainerTransparent:after {
+    content: '';
+    width: 12px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    z-index: 5; }
+  form .selectContainerDefault:after, form .selectContainerTransparent:after {
+    right: 27px;
+    transform: translateY(-50%) rotate(45deg); }
+  form .selectContainerTransparent:before, form .selectContainerTransparent:after {
+    background-color: #4a4a4a; }
+  form .fileInput {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    transition-duration: 0.5s;
+    cursor: pointer; }
+    form .fileInput:checked + .fileButton:before {
+      transition-duration: 0.5s; }
+    form .fileInput:checked + .fileButton p {
+      color: #ffffff;
+      transition-duration: 0.5s; }
+  form .fileButton {
+    width: 175px;
+    height: 175px;
+    margin: 0;
+    transition-duration: 0.5s;
+    cursor: pointer; }
+    form .fileButton:before {
+      content: '';
+      width: 175px;
+      height: 175px;
+      margin: 0;
+      border-radius: 50%;
+      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
+      background-color: #ffffff;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition-duration: 0.5s; }
+    form .fileButton img {
+      height: 30px;
+      z-index: 2;
+      margin: 0;
+      margin-bottom: 10px;
+      position: relative;
+      left: auto;
+      top: auto;
+      padding: 0;
+      transform: none; }
+    form .fileButton p {
+      width: 80%;
+      margin: 0;
+      z-index: 2;
+      position: relative;
+      transition-duration: 0.5s;
+      text-align: center; }
+
+.labelStatus {
+  width: 110px;
+  height: 40px;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+  .labelStatus p {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
+    text-align: center; }
 
 .circular, .roboto {
   font-size: 80px;

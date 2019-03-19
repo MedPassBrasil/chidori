@@ -31,6 +31,7 @@ $value in (white, $white),
 (lightGrey, $lightGrey),
 (grey, $grey),
 (darkGrey, $darkGrey),
+(black, $black),
 (lightGreen, $lightGreen),
 (green, $green),
 (yellow, $yellow),
@@ -60,31 +61,36 @@ $value in (white, $white),
 //                    Gradients
 //////////////////////////////////////////////
 .background-azureGreen {
-    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
 }
 
 .background-sharpBlues {
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
 
 .background-spaceBlues {
-    background-image: radial-gradient(circle at 0 0, #222c49, #161d31);
+  background-image: radial-gradient(circle at 0 0, #222c49, #161d31);
 }
 
 .background-nightPurple {
-    background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  background-image: linear-gradient(
+    -255deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
 }
 
 .background-wineMagenta {
-    background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
 }
 
 .background-sunsetOrange {
-    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 .background-royalPink {
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
 }
 
 /*
@@ -95,102 +101,158 @@ $value in (white, $white),
 ========================================================
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 
 @font-face {
-    font-family: 'Circular Std Black';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Circular Std Black'), url('../fonts/CircularStd-Black.woff') format('woff'), local('Circular Std Black'), url('../fonts/CircularStd-Black.otf') format('otf');
- }
- 
- @font-face {
-    font-family: 'Circular Std Book';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Circular Std Book'), url('../fonts/CircularStd-Book.woff') format('woff'), local('Circular Std Book'), url('../fonts/CircularStd-Book.otf') format('otf');
- }
- 
- @font-face {
-    font-family: 'Circular Std Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Circular Std Medium'), url('../fonts/CircularStd-Medium.woff') format('woff'), local('Circular Std Medium'), url('../fonts/CircularStd-Medium.otf') format('otf');
- }
- 
- @font-face {
-    font-family: 'Circular Std Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Circular Std Bold'), url('../fonts/CircularStd-Bold.woff') format('woff'), local('Circular Std Bold'), url('../fonts/CircularStd-Bold.otf') format('otf');
- }
-
- @each $font, $type, $weight, $size in
-   // Regular fonts
-   ('Circular Std Book', circularBook, 400, 9px), ('Circular Std Book', circularBook, 400, 10px), ('Circular Std Book', circularBook, 400, 12px), ('Circular Std Book', circularBook, 400, 13px), ('Circular Std Book', circularBook, 400, 15px), ('Circular Std Book', circularBook, 400, 20px),
-   ('Circular Std Book', circularBook, 400, 25px), ('Circular Std Book', circularBook, 400, 35px), ('Circular Std Book', circularBook, 400, 45px), ('Circular Std Book', book, 400, 50px),
-
-   // MEDIUM FONTS
-   ('Circular Std Medium', circularMedium, 400, 9px), ('Circular Std Medium', circularMedium, 400, 10px), ('Circular Std Medium', circularMedium, 400, 12px), ('Circular Std Medium', circularMedium, 400, 13px), ('Circular Std Medium', circularMedium, 400, 15px), ('Circular Std Medium', circularMedium, 400, 20px),
-   ('Circular Std Medium', circularMedium, 400, 25px), ('Circular Std Medium', circularMedium, 400, 35px), ('Circular Std Medium', circularMedium, 400, 45px), ('Circular Std Medium', medium, 400, 50px),
-
-   // BOLD FONTS
-   ('Circular Std Bold', circularBold, 400, 9px), ('Circular Std Bold', circularBold, 400, 10px), ('Circular Std Bold', circularBold, 400, 12px), ('Circular Std Bold', circularBold, 400, 13px), ('Circular Std Bold', circularBold, 400, 15px), ('Circular Std Bold', circularBold, 400, 20px),
-   ('Circular Std Bold', circularBold, 400, 25px), ('Circular Std Bold', circularBold, 400, 35px), ('Circular Std Bold', circularBold, 400, 45px), ('Circular Std Bold', bold, 400, 50px),
-
-   // BLACK FONTS
-   ('Circular Std Black', circularBlack, 400, 9px), ('Circular Std Black', circularBlack, 400, 10px), ('Circular Std Black', circularBlack, 400, 12px), ('Circular Std Black', circularBlack, 400, 13px), ('Circular Std Black', circularBlack, 400, 15px), ('Circular Std Black', circularBlack, 400, 20px),
-   ('Circular Std Black', circularBlack, 400, 25px), ('Circular Std Black', circularBlack, 400, 35px), ('Circular Std Black', circularBlack, 400, 45px), ('Circular Std Black', black, 400, 50px) {
-
-   .font-#{$type}-#{$size}{
-       font: {
-           family: $font;
-           weight: $weight;
-           size: $size;
-       }
-   }
-
-   .font-#{$type} {
-       font: {
-           family: $font;
-           weight: $weight;
-           size: $size;
-       }
-   }
+  font-family: "Circular Std Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Black"),
+    url("../fonts/CircularStd-Black.woff") format("woff"),
+    local("Circular Std Black"),
+    url("../fonts/CircularStd-Black.otf") format("otf");
 }
 
- @each $font, $type, $weight, $size in
-   // Regular fonts
-   ('Roboto', robotoThin, 300, 9px), ('Roboto', robotoThin, 300, 10px), ('Roboto', robotoThin, 300, 12px), ('Roboto', robotoThin, 300, 13px), ('Roboto', robotoThin, 300, 15px), ('Roboto', robotoThin, 300, 20px),
-   ('Roboto', robotoThin, 300, 25px), ('Roboto', robotoThin, 300, 35px), ('Roboto', robotoThin, 300, 45px), ('Roboto', robotoThin, 300, 50px),
+@font-face {
+  font-family: "Circular Std Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Book"),
+    url("../fonts/CircularStd-Book.woff") format("woff"),
+    local("Circular Std Book"),
+    url("../fonts/CircularStd-Book.otf") format("otf");
+}
 
-   // MEDIUM FONTS
-   ('Roboto', robotoRegular, 400, 9px), ('Roboto', robotoRegular, 400, 10px), ('Roboto', robotoRegular, 400, 12px), ('Roboto', robotoRegular, 400, 13px), ('Roboto', robotoRegular, 400, 15px), ('Roboto', robotoRegular, 400, 20px),
-   ('Roboto', robotoRegular, 400, 25px), ('Roboto', robotoRegular, 400, 35px), ('Roboto', robotoRegular, 400, 45px), ('Roboto', robotoRegular, 400, 50px),
+@font-face {
+  font-family: "Circular Std Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Medium"),
+    url("../fonts/CircularStd-Medium.woff") format("woff"),
+    local("Circular Std Medium"),
+    url("../fonts/CircularStd-Medium.otf") format("otf");
+}
 
-   // BOLD FONTS
-   ('Roboto', robotoBold, 700, 9px), ('Roboto', robotoBold, 700, 10px), ('Roboto', robotoBold, 700, 12px), ('Roboto', robotoBold, 700, 13px), ('Roboto', robotoBold, 700, 15px), ('Roboto', robotoBold, 700, 20px),
-   ('Roboto', robotoBold, 700, 25px), ('Roboto', robotoBold, 700, 35px), ('Roboto', robotoBold, 700, 45px), ('Roboto', robotoBold, 700, 50px),
+@font-face {
+  font-family: "Circular Std Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Bold"),
+    url("../fonts/CircularStd-Bold.woff") format("woff"),
+    local("Circular Std Bold"),
+    url("../fonts/CircularStd-Bold.otf") format("otf");
+}
 
-   // BLACK FONTS
-   ('Roboto', robotoBlack, 900, 9px), ('Roboto', robotoBlack, 900, 10px), ('Roboto', robotoBlack, 900, 12px), ('Roboto', robotoBlack, 900, 13px), ('Roboto', robotoBlack, 900, 15px), ('Roboto', robotoBlack, 900, 20px),
-   ('Roboto', robotoBlack, 900, 25px), ('Roboto', robotoBlack, 900, 35px), ('Roboto', robotoBlack, 900, 45px), ('Roboto', robotoBlack, 900, 50px){
+@each $font, $type, $weight,
+  $size
+    in // Regular fonts
+    ("Circular Std Book", circularBook, 400, 9px),
+  ("Circular Std Book", circularBook, 400, 10px),
+  ("Circular Std Book", circularBook, 400, 12px),
+  ("Circular Std Book", circularBook, 400, 13px),
+  ("Circular Std Book", circularBook, 400, 15px),
+  ("Circular Std Book", circularBook, 400, 20px),
+  ("Circular Std Book", circularBook, 400, 25px),
+  ("Circular Std Book", circularBook, 400, 35px),
+  ("Circular Std Book", circularBook, 400, 45px),
+  ("Circular Std Book", book, 400, 50px),
+  // MEDIUM FONTS
+    ("Circular Std Medium", circularMedium, 400, 9px),
+  ("Circular Std Medium", circularMedium, 400, 10px),
+  ("Circular Std Medium", circularMedium, 400, 12px),
+  ("Circular Std Medium", circularMedium, 400, 13px),
+  ("Circular Std Medium", circularMedium, 400, 15px),
+  ("Circular Std Medium", circularMedium, 400, 20px),
+  ("Circular Std Medium", circularMedium, 400, 25px),
+  ("Circular Std Medium", circularMedium, 400, 35px),
+  ("Circular Std Medium", circularMedium, 400, 45px),
+  ("Circular Std Medium", medium, 400, 50px),
+  // BOLD FONTS
+    ("Circular Std Bold", circularBold, 400, 9px),
+  ("Circular Std Bold", circularBold, 400, 10px),
+  ("Circular Std Bold", circularBold, 400, 12px),
+  ("Circular Std Bold", circularBold, 400, 13px),
+  ("Circular Std Bold", circularBold, 400, 15px),
+  ("Circular Std Bold", circularBold, 400, 20px),
+  ("Circular Std Bold", circularBold, 400, 25px),
+  ("Circular Std Bold", circularBold, 400, 35px),
+  ("Circular Std Bold", circularBold, 400, 45px),
+  ("Circular Std Bold", bold, 400, 50px),
+  // BLACK FONTS
+    ("Circular Std Black", circularBlack, 400, 9px),
+  ("Circular Std Black", circularBlack, 400, 10px),
+  ("Circular Std Black", circularBlack, 400, 12px),
+  ("Circular Std Black", circularBlack, 400, 13px),
+  ("Circular Std Black", circularBlack, 400, 15px),
+  ("Circular Std Black", circularBlack, 400, 20px),
+  ("Circular Std Black", circularBlack, 400, 25px),
+  ("Circular Std Black", circularBlack, 400, 35px),
+  ("Circular Std Black", circularBlack, 400, 45px),
+  ("Circular Std Black", black, 400, 50px)
+{
+  .font-#{$type}-#{$size} {
+    font: {
+      family: $font;
+      weight: $weight;
+      size: $size;
+    }
+  }
 
-   .font-#{$type}-#{$size}{
-       font: {
-           family: $font;
-           weight: $weight;
-           size: $size;
-       }
-   }
+  .font-#{$type} {
+    font: {
+      family: $font;
+      weight: $weight;
+      size: $size;
+    }
+  }
+}
 
-   .font-#{$type} {
-       font: {
-           family: $font;
-           weight: $weight;
-           size: $size;
-       }
-   }
+@each $font, $type, $weight,
+  $size
+    in // Regular fonts
+    ("Roboto", robotoThin, 300, 9px),
+  ("Roboto", robotoThin, 300, 10px), ("Roboto", robotoThin, 300, 12px),
+  ("Roboto", robotoThin, 300, 13px), ("Roboto", robotoThin, 300, 15px),
+  ("Roboto", robotoThin, 300, 20px), ("Roboto", robotoThin, 300, 25px),
+  ("Roboto", robotoThin, 300, 35px), ("Roboto", robotoThin, 300, 45px),
+  ("Roboto", robotoThin, 300, 50px),
+  // MEDIUM FONTS
+    ("Roboto", robotoRegular, 400, 9px),
+  ("Roboto", robotoRegular, 400, 10px), ("Roboto", robotoRegular, 400, 12px),
+  ("Roboto", robotoRegular, 400, 13px), ("Roboto", robotoRegular, 400, 15px),
+  ("Roboto", robotoRegular, 400, 20px), ("Roboto", robotoRegular, 400, 25px),
+  ("Roboto", robotoRegular, 400, 35px), ("Roboto", robotoRegular, 400, 45px),
+  ("Roboto", robotoRegular, 400, 50px),
+  // BOLD FONTS
+    ("Roboto", robotoBold, 700, 9px),
+  ("Roboto", robotoBold, 700, 10px), ("Roboto", robotoBold, 700, 12px),
+  ("Roboto", robotoBold, 700, 13px), ("Roboto", robotoBold, 700, 15px),
+  ("Roboto", robotoBold, 700, 20px), ("Roboto", robotoBold, 700, 25px),
+  ("Roboto", robotoBold, 700, 35px), ("Roboto", robotoBold, 700, 45px),
+  ("Roboto", robotoBold, 700, 50px),
+  // BLACK FONTS
+    ("Roboto", robotoBlack, 900, 9px),
+  ("Roboto", robotoBlack, 900, 10px), ("Roboto", robotoBlack, 900, 12px),
+  ("Roboto", robotoBlack, 900, 13px), ("Roboto", robotoBlack, 900, 15px),
+  ("Roboto", robotoBlack, 900, 20px), ("Roboto", robotoBlack, 900, 25px),
+  ("Roboto", robotoBlack, 900, 35px), ("Roboto", robotoBlack, 900, 45px),
+  ("Roboto", robotoBlack, 900, 50px)
+{
+  .font-#{$type}-#{$size} {
+    font: {
+      family: $font;
+      weight: $weight;
+      size: $size;
+    }
+  }
+
+  .font-#{$type} {
+    font: {
+      family: $font;
+      weight: $weight;
+      size: $size;
+    }
+  }
 }
 
 /*
@@ -202,83 +264,96 @@ $value in (white, $white),
 */
 
 body{
-    font-family: 'Circular Std Book';
-    @extend .background-spaceBlues ;
+  @extend .background-spaceBlues ;
 }
 
-*{
-    color: #FFF;
+* {
+  color: #fff;
 }
 
 a {
-    color: $lightGreen;
+  color: $lightGreen;
 }
 
 .navGroupCategoryTitle {
-    color: #FFF !important;
+  color: #fff !important;
 }
 
 .navItem {
-    color: $lightBlue !important;
-    transition: transform, color !important;
-    transition-duration: 0.25s !important;
+  color: $lightBlue !important;
+  transition: transform, color !important;
+  transition-duration: 0.25s !important;
 
-    &:hover {
-        transform: translateX(10px);
-        color: $purple !important;
-    }
+  &:hover {
+    transform: translateX(10px);
+    color: $purple !important;
+  }
 }
 
-.fixedHeaderContainer{
-    background-color: #222c49 !important;
+.fixedHeaderContainer {
+  background-color: #222c49 !important;
 }
 
 .onPageNav a {
-    color: $lightGreen !important;
+  color: $lightGreen !important;
 }
 
 .hljs {
-    background-color: $darkBlue;
-    border: 2px solid $spaceBlue;
+  background-color: $darkBlue;
+  border: 2px solid $spaceBlue;
 }
 
-.docs-next.button, .docs-prev.button {
-    background-color: $purple;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 100px;
-    text-transform: none;
+.docs-next.button,
+.docs-prev.button {
+  background-color: $purple;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 100px;
+  text-transform: none;
 
-    &.docs-next {
-        padding-right: 20px;
-    }
+  &.docs-next {
+    padding-right: 20px;
+  }
 
-    span {
-        margin-right: 5px;
-    }
+  span {
+    margin-right: 5px;
+  }
 }
 
 .nav-footer {
-    padding-top: 80px;
-    background: transparent;
-    box-shadow: inset 0 30px 60px rgba(0, 0, 0, 0.15);
+  padding-top: 80px;
+  background: transparent;
+  box-shadow: inset 0 30px 60px rgba(0, 0, 0, 0.15);
 }
 
 .postHeaderTitle {
-    font-size: 55px;
+  font-size: 55px;
 }
 
 .wrapCover {
     position: relative;
-    height: 70vh;
+    height: 60vh;
     margin: 5vh 0 0;
     transform: translateX(-5%);
 }
 
-.coverBackground, .coverImage {
+.coverBackground,
+.coverImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  position: absolute;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  clip: rect(0px, 0, 500px, 200px);
+  z-index: 2;
+
+  .background {
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 80%;
     position: absolute;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
@@ -287,79 +362,179 @@ a {
     -o-transition: all 1s ease;
     clip: rect(0px, 0, 500px, 200px);
     z-index: 2;
-    
-    .background{
-        width: 100%;
-        height: 80%;
-        position: absolute;
-        left: 6%;
-        top: 7%;
-        padding: 0;
-        margin: 0;
-        z-index: 1;
 
-        &.buttonsCover {
-            @extend .background-nightPurple ;
-        }
-        
-        &.typographyCover {
-            @extend .background-sharpBlues ;
-        }
+    &.buttonsCover {
+        @extend .background-nightPurple ;
+    }
+    
+    &.typographyCover {
+        @extend .background-sharpBlues ;
     }
 
-    img{
-        width: 100%;
-        position: relative;
+    &.colorsCover {
+        @extend .background-azureGreen ;
+    }
+    
+    &.gridsCover {
+        @extend .background-wineMagenta ;
+    }
+
+    &.brandCover {
+        @extend .background-sunsetOrange ;
+    }
+}
+
+  img {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.containerBrand {
+    margin-bottom: 40px;
+
+    img {
+        border-radius: 20px;
     }
 }
 
 .coverImage {
     z-index: 3;
-    height: 60vh;
+    height: 50vh;
 }
 
-.showCover, .showAfter {
-    animation-name: showCover;
-    -webkit-animation-name: showCover;
-    
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
+.showCover,
+.showAfter {
+  animation-name: showCover;
+  -webkit-animation-name: showCover;
 
-    animation-delay: 0.25s;
-    -webkit-animation-delay: 0.25s;
-    
-    animation-timing-function: ease;
-    -webkit-animation-timing-function: ease;
-    
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    
-    visibility: visible !important;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  visibility: visible !important;
 }
 
 .showAfter {
-    animation-delay: 0s;
-    -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 
 @keyframes showCover {
-    0% {
-        clip: rect(0, 0, 500px, 0);
-    }
+  0% {
+    clip: rect(0, 0, 500px, 0);
+  }
 
-    100% {
-        clip: rect(0, 60vw, 500px, 0);
-    }
+  100% {
+    clip: rect(0, 60vw, 500px, 0);
+  }
 }
 
 @-webkit-keyframes showCover {
-    0% {
-        -webkit-clip: rect(0, 0, 500px, 0);
+  0% {
+    -webkit-clip: rect(0, 0, 500px, 0);
+  }
+
+  100% {
+    -webkit-clip: rect(0, 60vw, 500px, 0);
+  }
+}
+
+.homeContainer {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+.pluginWrapper .button {
+    padding: 15px 40px;
+    border-radius: 100px;
+    border: none;
+    margin: 0 5px 40px;
+    font-family: 'Circular Std Bold';
+    color: $purple;
+    background-color: #FFF;
+    z-index: 3;
+}
+
+.homeCover {
+    position: relative;
+    transform: translateX(-2%);
+    
+    .background, .mask {
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+
+        &.mask {
+            position: absolute;
+            left: 3%;
+            top: 7%;
+            z-index: 1;
+        }
     }
 
-    100% {
-        -webkit-clip: rect(0, 60vw, 500px, 0);
+    h1, .section, img {
+        z-index: 3;
     }
+
+    img {
+        clip: rect(0, 345px, 500px, 0);
+    }
+}
+
+.colors {
+    width: 100%;
+    position: relative;
+
+    .colorContainer {
+        width: 33.3%;
+        height: 250px;
+        transition-duration: 0.1s;
+        @extend .flex-column-center-center-center ;
+        
+        .colorName {
+            width: 60%;
+            text-align: center;
+            line-height: 35px;
+            margin: 0;
+            @extend .font-circularBold-35px ;
+            @extend .color-white ;
+        }
+        
+        &.background-white .colorName, &.background-lightGrey .colorName {
+            @extend .color-darkGrey ;
+        }
+
+        &.background-sharpBlues, &.background-azureGreen, &.background-sunsetOrange, &.background-royalPink {
+            width: 50%;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.logoHome {
+  width: 30%;
+  position: absolute;
+  right: -5%;
+  bottom: 5%;
+  opacity: 0.2;
 }
 
 /*
@@ -370,12 +545,12 @@ a {
 ========================================================
 */
 
-@each $color, $align, $shadow, $value in (nameColor, verticalAlign, sizeShadow, someColor){
-
-    .shadow-#{$color}{
-        box-shadow: 0 $align $shadow $value;
-    }
-
+@each $color, $align, $shadow,
+  $value in (nameColor, verticalAlign, sizeShadow, someColor)
+{
+  .shadow-#{$color} {
+    box-shadow: 0 $align $shadow $value;
+  }
 }
 
 /*
@@ -386,12 +561,10 @@ a {
 ========================================================
 */
 
-@each $color, $border in (someColor, borderColor){
-
-    .border-#{$color}{
-        border: 2px solid $border;
-    }
-
+@each $color, $border in (someColor, borderColor) {
+  .border-#{$color} {
+    border: 2px solid $border;
+  }
 }
 
 /*
@@ -403,14 +576,14 @@ a {
 ========================================================
 */
 
-@each $fill, $color in (nameColor, someColor){
-    .fill-#{$fill} {
-        fill: $color;
-        stroke: $color;
-        stroke-width: 0;
-        stroke-linecap: butt;
-        stroke-dasharray: 0;
-    }
+@each $fill, $color in (nameColor, someColor) {
+  .fill-#{$fill} {
+    fill: $color;
+    stroke: $color;
+    stroke-width: 0;
+    stroke-linecap: butt;
+    stroke-dasharray: 0;
+  }
 }
 
 /*
@@ -421,9 +594,8 @@ a {
 ========================================================
 */
 
-
-.transition-cubic{
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+.transition-cubic {
+  transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
 }
 
 /*
@@ -434,22 +606,22 @@ a {
 ========================================================
 */
 
-.filter, img{
-    &.black-white{
-        filter: grayscale(100%);
-        img{
-            opacity: 0.3;
-        }
-    }
-}
-
-.filter-box{
+.filter,
+img {
+  &.black-white {
     filter: grayscale(100%);
-    img{
-        opacity: 0.1
+    img {
+      opacity: 0.3;
     }
+  }
 }
 
+.filter-box {
+  filter: grayscale(100%);
+  img {
+    opacity: 0.1;
+  }
+}
 
 /*
 ========================================================
@@ -459,27 +631,25 @@ a {
 ========================================================
 */
 
+.form {
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"] {
+    padding: 5px;
+    border: solid #d0d4da 1px;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px;
+  }
 
-.form{
-
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    input[type="tel"]{
-        padding: 5px;
-        border: solid #D0D4DA 1px;
-        border-radius: 3px;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 5px;
-    }
-
-    button{
-        padding: 5px;
-        border: solid #D0D4DA 1px;
-        border-radius: 3px;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 5px;
-    }
+  button {
+    padding: 5px;
+    border: solid #d0d4da 1px;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px;
+  }
 }
