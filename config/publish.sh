@@ -8,6 +8,5 @@ fi
 
 git pull
 npm --prefix website run build
-git add -f $BUILD_FOLDER && git ci -am "publishing docs"
+git add -f $BUILD_FOLDER && git commit -am "publishing docs"
 git push origin `git subtree split --prefix $BUILD_FOLDER master`:gh-pages --force
-# git subtree push --prefix website/build/chidori/ origin gh-pages
