@@ -2568,17 +2568,19 @@
 .background-azureGreen {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
+.background-sharpBlues, .coverBackground .background.typographyCover,
+.coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
   background-image: radial-gradient(circle at 0 0, #222c49, #161d31); }
 
-.background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-nightPurple, .coverBackground .background.buttonsCover,
+.coverImage .background.buttonsCover {
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
 .background-wineMagenta {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
 .background-sunsetOrange {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
@@ -2594,25 +2596,25 @@
 ========================================================
 */
 @font-face {
-  font-family: 'Circular Std Black';
+  font-family: "Circular Std Black";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Black"), url("../fonts/CircularStd-Black.woff") format("woff"), local("Circular Std Black"), url("../fonts/CircularStd-Black.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Book';
+  font-family: "Circular Std Book";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Book"), url("../fonts/CircularStd-Book.woff") format("woff"), local("Circular Std Book"), url("../fonts/CircularStd-Book.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Medium';
+  font-family: "Circular Std Medium";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Medium"), url("../fonts/CircularStd-Medium.woff") format("woff"), local("Circular Std Medium"), url("../fonts/CircularStd-Medium.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Bold';
+  font-family: "Circular Std Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Bold"), url("../fonts/CircularStd-Bold.woff") format("woff"), local("Circular Std Bold"), url("../fonts/CircularStd-Bold.otf") format("otf"); }
@@ -3425,13 +3427,13 @@
 ========================================================
 */
 * {
-  color: #FFF; }
+  color: #fff; }
 
 a {
   color: #50e3c2; }
 
 .navGroupCategoryTitle {
-  color: #FFF !important; }
+  color: #fff !important; }
 
 .navItem {
   color: #3dc1cd !important;
@@ -3451,15 +3453,18 @@ a {
   background-color: #161d31;
   border: 2px solid #212b47; }
 
-.docs-next.button, .docs-prev.button {
+.docs-next.button,
+.docs-prev.button {
   background-color: #7918f2;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 100px;
   text-transform: none; }
-  .docs-next.button.docs-next, .docs-prev.button.docs-next {
+  .docs-next.button.docs-next,
+  .docs-prev.button.docs-next {
     padding-right: 20px; }
-  .docs-next.button span, .docs-prev.button span {
+  .docs-next.button span,
+  .docs-prev.button span {
     margin-right: 5px; }
 
 .nav-footer {
@@ -3476,7 +3481,8 @@ a {
   margin: 5vh 0 0;
   transform: translateX(-5%); }
 
-.coverBackground, .coverImage {
+.coverBackground,
+.coverImage {
   width: 100%;
   height: 100%;
   position: relative;
@@ -3488,7 +3494,8 @@ a {
   -o-transition: all 1s ease;
   clip: rect(0px, 0, 500px, 200px);
   z-index: 2; }
-  .coverBackground .background, .coverImage .background {
+  .coverBackground .background,
+  .coverImage .background {
     width: 100%;
     height: 80%;
     position: absolute;
@@ -3497,7 +3504,8 @@ a {
     padding: 0;
     margin: 0;
     z-index: 1; }
-  .coverBackground img, .coverImage img {
+  .coverBackground img,
+  .coverImage img {
     width: 100%;
     position: relative; }
 
@@ -3505,7 +3513,8 @@ a {
   z-index: 3;
   height: 60vh; }
 
-.showCover, .showAfter {
+.showCover,
+.showAfter {
   animation-name: showCover;
   -webkit-animation-name: showCover;
   animation-duration: 1s;
@@ -3601,9 +3610,11 @@ a {
 
 ========================================================
 */
-.filter.black-white, img.black-white {
+.filter.black-white,
+img.black-white {
   filter: grayscale(100%); }
-  .filter.black-white img, img.black-white img {
+  .filter.black-white img,
+  img.black-white img {
     opacity: 0.3; }
 
 .filter-box {
@@ -3623,7 +3634,7 @@ a {
 .form input[type="number"],
 .form input[type="tel"] {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
@@ -3631,7 +3642,7 @@ a {
 
 .form button {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
@@ -6299,17 +6310,19 @@ a {
 .background-azureGreen {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
-.background-sharpBlues, .coverBackground .background.typographyCover, .coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
+.background-sharpBlues, .coverBackground .background.typographyCover,
+.coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before, form .inputFileContainer .radioInput:checked + .radioButton:before, form .selectContainerDefault .radioInput:checked + .radioButton:before, form .selectContainerTransparent .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before, form .inputFileContainer .checkboxInput:checked + .checkboxButton:before, form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before, form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
   background-image: radial-gradient(circle at 0 0, #222c49, #161d31); }
 
-.background-nightPurple, .coverBackground .background.buttonsCover, .coverImage .background.buttonsCover {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+.background-nightPurple, .coverBackground .background.buttonsCover,
+.coverImage .background.buttonsCover {
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
 .background-wineMagenta {
-  background-image: linear-gradient(-255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%); }
 
 .background-sunsetOrange {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
@@ -6325,25 +6338,25 @@ a {
 ========================================================
 */
 @font-face {
-  font-family: 'Circular Std Black';
+  font-family: "Circular Std Black";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Black"), url("../fonts/CircularStd-Black.woff") format("woff"), local("Circular Std Black"), url("../fonts/CircularStd-Black.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Book';
+  font-family: "Circular Std Book";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Book"), url("../fonts/CircularStd-Book.woff") format("woff"), local("Circular Std Book"), url("../fonts/CircularStd-Book.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Medium';
+  font-family: "Circular Std Medium";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Medium"), url("../fonts/CircularStd-Medium.woff") format("woff"), local("Circular Std Medium"), url("../fonts/CircularStd-Medium.otf") format("otf"); }
 
 @font-face {
-  font-family: 'Circular Std Bold';
+  font-family: "Circular Std Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Circular Std Bold"), url("../fonts/CircularStd-Bold.woff") format("woff"), local("Circular Std Bold"), url("../fonts/CircularStd-Bold.otf") format("otf"); }
@@ -7156,13 +7169,13 @@ a {
 ========================================================
 */
 * {
-  color: #FFF; }
+  color: #fff; }
 
 a {
   color: #50e3c2; }
 
 .navGroupCategoryTitle {
-  color: #FFF !important; }
+  color: #fff !important; }
 
 .navItem {
   color: #3dc1cd !important;
@@ -7182,15 +7195,18 @@ a {
   background-color: #161d31;
   border: 2px solid #212b47; }
 
-.docs-next.button, .docs-prev.button {
+.docs-next.button,
+.docs-prev.button {
   background-color: #7918f2;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 100px;
   text-transform: none; }
-  .docs-next.button.docs-next, .docs-prev.button.docs-next {
+  .docs-next.button.docs-next,
+  .docs-prev.button.docs-next {
     padding-right: 20px; }
-  .docs-next.button span, .docs-prev.button span {
+  .docs-next.button span,
+  .docs-prev.button span {
     margin-right: 5px; }
 
 .nav-footer {
@@ -7207,7 +7223,8 @@ a {
   margin: 5vh 0 0;
   transform: translateX(-5%); }
 
-.coverBackground, .coverImage {
+.coverBackground,
+.coverImage {
   width: 100%;
   height: 100%;
   position: relative;
@@ -7219,7 +7236,8 @@ a {
   -o-transition: all 1s ease;
   clip: rect(0px, 0, 500px, 200px);
   z-index: 2; }
-  .coverBackground .background, .coverImage .background {
+  .coverBackground .background,
+  .coverImage .background {
     width: 100%;
     height: 80%;
     position: absolute;
@@ -7228,7 +7246,8 @@ a {
     padding: 0;
     margin: 0;
     z-index: 1; }
-  .coverBackground img, .coverImage img {
+  .coverBackground img,
+  .coverImage img {
     width: 100%;
     position: relative; }
 
@@ -7236,7 +7255,8 @@ a {
   z-index: 3;
   height: 60vh; }
 
-.showCover, .showAfter {
+.showCover,
+.showAfter {
   animation-name: showCover;
   -webkit-animation-name: showCover;
   animation-duration: 1s;
@@ -7332,9 +7352,11 @@ a {
 
 ========================================================
 */
-.filter.black-white, img.black-white {
+.filter.black-white,
+img.black-white {
   filter: grayscale(100%); }
-  .filter.black-white img, img.black-white img {
+  .filter.black-white img,
+  img.black-white img {
     opacity: 0.3; }
 
 .filter-box {
@@ -7354,7 +7376,7 @@ a {
 .form input[type="number"],
 .form input[type="tel"] {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
@@ -7362,7 +7384,7 @@ a {
 
 .form button {
   padding: 5px;
-  border: solid #D0D4DA 1px;
+  border: solid #d0d4da 1px;
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
