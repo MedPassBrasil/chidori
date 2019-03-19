@@ -11,16 +11,17 @@ if you are looking for complete documentation, visit our [website](https://medpa
 npm i --save @medpass/chidori
 ```
 
->react.js
+> react.js
+
 ```javascript
-import React from "react"
-import "@medpass/chidori/build/css/chidori.min.css"
+import React from "react";
+import "@medpass/chidori/build/css/chidori.min.css";
 
 const MedpassButton = () => (
-	<button className="btn primary font-circularBold-15px" >Styled Button</button>
-)
+  <button className="btn primary font-circularBold-15px">Styled Button</button>
+);
 
-export default MedpassButton
+export default MedpassButton;
 ```
 
 ## Contributing
