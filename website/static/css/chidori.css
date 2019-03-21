@@ -2493,7 +2493,8 @@ form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p,
+.color-darkGrey, .colors .colorContainer.background-white .colorName,
+.colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p,
 form .inputFileContainer .radioButton p,
 form .selectContainerDefault .radioButton p,
 form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p,
@@ -2618,7 +2619,7 @@ form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before
 
 .background-wineMagenta, .coverBackground .background.gridsCover,
 .coverImage .background.gridsCover {
-  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
+  background-image: linear-gradient(-255deg, #ff057c 0%, #8d0b93 50%, #321575 100%); }
 
 .background-sunsetOrange, .coverBackground .background.brandCover,
 .coverImage .background.brandCover {
@@ -2917,7 +2918,7 @@ form .inputFileContainer .selectTransparent,
 form .selectContainerDefault .selectDefault,
 form .selectContainerDefault .selectTransparent,
 form .selectContainerTransparent .selectDefault,
-form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p {
+form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p, .pagination-label-container .pagination-label p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -3616,15 +3617,16 @@ a {
   border-radius: 100px;
   border: none;
   margin: 0 5px 40px;
-  font-family: 'Circular Std Bold';
+  font-family: "Circular Std Bold";
   color: #7918f2;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 3; }
 
 .homeCover {
   position: relative;
   transform: translateX(-2%); }
-  .homeCover .background, .homeCover .mask {
+  .homeCover .background,
+  .homeCover .mask {
     width: 100%;
     height: 50vh;
     position: absolute;
@@ -3633,12 +3635,15 @@ a {
     padding: 0;
     margin: 0;
     z-index: 2; }
-    .homeCover .background.mask, .homeCover .mask.mask {
+    .homeCover .background.mask,
+    .homeCover .mask.mask {
       position: absolute;
       left: 3%;
       top: 7%;
       z-index: 1; }
-  .homeCover h1, .homeCover .section, .homeCover img {
+  .homeCover h1,
+  .homeCover .section,
+  .homeCover img {
     z-index: 3; }
   .homeCover img {
     clip: rect(0, 345px, 500px, 0); }
@@ -6368,7 +6373,8 @@ form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p,
+.color-darkGrey, .colors .colorContainer.background-white .colorName,
+.colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p,
 form .inputFileContainer .radioButton p,
 form .selectContainerDefault .radioButton p,
 form .selectContainerTransparent .radioButton p, form .inputContainer .checkboxButton p,
@@ -6493,7 +6499,7 @@ form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before
 
 .background-wineMagenta, .coverBackground .background.gridsCover,
 .coverImage .background.gridsCover {
-  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%); }
+  background-image: linear-gradient(-255deg, #ff057c 0%, #8d0b93 50%, #321575 100%); }
 
 .background-sunsetOrange, .coverBackground .background.brandCover,
 .coverImage .background.brandCover {
@@ -6792,7 +6798,7 @@ form .inputFileContainer .selectTransparent,
 form .selectContainerDefault .selectDefault,
 form .selectContainerDefault .selectTransparent,
 form .selectContainerTransparent .selectDefault,
-form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p {
+form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p, .pagination-label-container .pagination-label p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -7491,15 +7497,16 @@ a {
   border-radius: 100px;
   border: none;
   margin: 0 5px 40px;
-  font-family: 'Circular Std Bold';
+  font-family: "Circular Std Bold";
   color: #7918f2;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 3; }
 
 .homeCover {
   position: relative;
   transform: translateX(-2%); }
-  .homeCover .background, .homeCover .mask {
+  .homeCover .background,
+  .homeCover .mask {
     width: 100%;
     height: 50vh;
     position: absolute;
@@ -7508,12 +7515,15 @@ a {
     padding: 0;
     margin: 0;
     z-index: 2; }
-    .homeCover .background.mask, .homeCover .mask.mask {
+    .homeCover .background.mask,
+    .homeCover .mask.mask {
       position: absolute;
       left: 3%;
       top: 7%;
       z-index: 1; }
-  .homeCover h1, .homeCover .section, .homeCover img {
+  .homeCover h1,
+  .homeCover .section,
+  .homeCover img {
     z-index: 3; }
   .homeCover img {
     clip: rect(0, 345px, 500px, 0); }

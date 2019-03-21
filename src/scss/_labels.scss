@@ -73,6 +73,7 @@
       margin: 0;
       text-align: center;
       width: 100%;
+      @extend .font-circularBold-15px;
     }
   }
 }
