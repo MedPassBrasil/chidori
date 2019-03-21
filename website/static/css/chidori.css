@@ -8068,12 +8068,10 @@ form {
   background-color: #283455;
   border-radius: 0 100px 100px 0;
   border: solid 1px #212b47;
-  padding: 0;
-  margin: 0;
   height: 50px;
-  width: 175px;
   margin-left: -20px;
   position: relative;
+  width: 175px;
   z-index: 1; }
   .pagination-label-container .pagination-label:nth-child(1) {
     z-index: 4; }

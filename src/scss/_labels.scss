@@ -34,12 +34,10 @@
     background-color: $dark-blue-grey;
     border-radius: 0 100px 100px 0;
     border: solid 1px $dark-grey-blue;
-    padding: 0;
-    margin: 0;
     height: 50px;
-    width: 175px;
     margin-left: -20px;
     position: relative;
+    width: 175px;
     z-index: 1;
 
     @extend .flex-column-center;
