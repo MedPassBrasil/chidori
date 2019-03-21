@@ -18,16 +18,33 @@ title: Labels
 </div>
 
 Code:
+
 ```html
 <div class="labelStatus active">
-    <p>Ativo</p>
+  <p>Ativo</p>
 </div>
 
 <div class="labelStatus inactive">
-    <p>Inativo</p>
+  <p>Inativo</p>
 </div>
 
 <div class="labelStatus canceled">
-    <p>Cancelado</p>
+  <p>Cancelado</p>
 </div>
 ```
+
+## Pagination label
+
+<div class="w-100p p-40px m-bottom-40px background-nightPurple">
+    <div class="pagination-label-container">
+        <div class="pagination-label">
+            <p class="active">Ativo</p>
+        </div>
+        <div class="pagination-label">
+            <p>Inativo</p>
+        </div>
+        <div class="pagination-label">
+            <p>Cancelado</p>
+        </div>
+    </div>
+</div>

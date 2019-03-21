@@ -18,16 +18,63 @@
   }
 
   p {
-    width: 100%;
     height: 40px;
-    margin: 0;
     line-height: 40px;
+    margin: 0;
     text-align: center;
+    width: 100%;
     @extend .font-circularBold-15px;
   }
 }
 
-.pagination-labels-container {
-  display: flex;
-  flex-direction: column;
+.pagination-label-container {
+  @extend .flex-row;
+
+  .pagination-label {
+    background-color: $dark-blue-grey;
+    border-radius: 0 100px 100px 0;
+    border: solid 1px $dark-grey-blue;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 175px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 1;
+
+    @extend .flex-column-center;
+
+    // breadcrumbs assim geralmente são poucos, mas dá pra melhorar com um loopzão
+    &:nth-child(1) {
+      z-index: 4;
+    }
+
+    &:nth-child(2) {
+      z-index: 3;
+    }
+
+    &:nth-child(3) {
+      z-index: 2;
+    }
+
+    &:nth-child(4) {
+      z-index: 1;
+    }
+
+    &:last-of-type {
+      p {
+        color: $white;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+      height: 50px;
+      line-height: 50px;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
 }
