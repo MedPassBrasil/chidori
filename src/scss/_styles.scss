@@ -26,35 +26,20 @@ $darkPurple: #4801ff;
 $orange: #f77062;
 $lightPink: #fe5196;
 
-@each $color,
-$value in (white, $white),
-(lightGrey, $lightGrey),
-(grey, $grey),
-(darkGrey, $darkGrey),
-(black, $black),
-(lightGreen, $lightGreen),
-(green, $green),
-(yellow, $yellow),
-(red, $red),
-(lightBlue, $lightBlue),
-(royalBlue, $royalBlue),
-(greyBlue, $greyBlue),
-(spaceBlue, $spaceBlue),
-(darkBlue, $darkBlue),
-(violet, $violet),
-(purple, $purple),
-(darkPurple, $darkPurple),
-(orange, $orange),
-(lightPink, $lightPink) {
+@each $color, $value in (white, $white), (lightGrey, $lightGrey), (grey, $grey),
+  (darkGrey, $darkGrey), (black, $black), (lightGreen, $lightGreen),
+  (green, $green), (yellow, $yellow), (red, $red), (lightBlue, $lightBlue),
+  (royalBlue, $royalBlue), (greyBlue, $greyBlue), (spaceBlue, $spaceBlue),
+  (darkBlue, $darkBlue), (violet, $violet), (purple, $purple),
+  (darkPurple, $darkPurple), (orange, $orange), (lightPink, $lightPink)
+{
+  .color-#{$color} {
+    color: $value;
+  }
 
-    .color-#{$color} {
-        color: $value;
-    }
-
-    .background-#{$color} {
-        background-color: $value;
-    }
-
+  .background-#{$color} {
+    background-color: $value;
+  }
 }
 
 //////////////////////////////////////////////
@@ -82,7 +67,12 @@ $value in (white, $white),
 }
 
 .background-wineMagenta {
-  background-image: linear-gradient(-255deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+  background-image: linear-gradient(
+    -255deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
 }
 
 .background-sunsetOrange {
@@ -263,8 +253,8 @@ $value in (white, $white),
 ========================================================
 */
 
-body{
-  @extend .background-spaceBlues ;
+body {
+  @extend .background-spaceBlues;
 }
 
 * {
@@ -331,10 +321,10 @@ a {
 }
 
 .wrapCover {
-    position: relative;
-    height: 60vh;
-    margin: 5vh 0 0;
-    transform: translateX(-5%);
+  position: relative;
+  height: 60vh;
+  margin: 5vh 0 0;
+  transform: translateX(-5%);
 }
 
 .coverBackground,
@@ -364,25 +354,25 @@ a {
     z-index: 2;
 
     &.buttonsCover {
-        @extend .background-nightPurple ;
+      @extend .background-nightPurple;
     }
-    
+
     &.typographyCover {
-        @extend .background-sharpBlues ;
+      @extend .background-sharpBlues;
     }
 
     &.colorsCover {
-        @extend .background-azureGreen ;
+      @extend .background-azureGreen;
     }
-    
+
     &.gridsCover {
-        @extend .background-wineMagenta ;
+      @extend .background-wineMagenta;
     }
 
     &.brandCover {
-        @extend .background-sunsetOrange ;
+      @extend .background-sunsetOrange;
     }
-}
+  }
 
   img {
     width: 100%;
@@ -391,16 +381,16 @@ a {
 }
 
 .containerBrand {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    img {
-        border-radius: 20px;
-    }
+  img {
+    border-radius: 20px;
+  }
 }
 
 .coverImage {
-    z-index: 3;
-    height: 50vh;
+  z-index: 3;
+  height: 50vh;
 }
 
 .showCover,
@@ -449,84 +439,91 @@ a {
 }
 
 .homeContainer {
-    h1 {
-        font-size: 70px;
-    }
+  h1 {
+    font-size: 70px;
+  }
 }
 
 .pluginWrapper .button {
-    padding: 15px 40px;
-    border-radius: 100px;
-    border: none;
-    margin: 0 5px 40px;
-    font-family: 'Circular Std Bold';
-    color: $purple;
-    background-color: #FFF;
-    z-index: 3;
+  padding: 15px 40px;
+  border-radius: 100px;
+  border: none;
+  margin: 0 5px 40px;
+  font-family: "Circular Std Bold";
+  color: $purple;
+  background-color: #fff;
+  z-index: 3;
 }
 
 .homeCover {
-    position: relative;
-    transform: translateX(-2%);
-    
-    .background, .mask {
-        width: 100%;
-        height: 50vh;
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 0;
-        margin: 0;
-        z-index: 2;
+  position: relative;
+  transform: translateX(-2%);
 
-        &.mask {
-            position: absolute;
-            left: 3%;
-            top: 7%;
-            z-index: 1;
-        }
-    }
+  .background,
+  .mask {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
 
-    h1, .section, img {
-        z-index: 3;
+    &.mask {
+      position: absolute;
+      left: 3%;
+      top: 7%;
+      z-index: 1;
     }
+  }
 
-    img {
-        clip: rect(0, 345px, 500px, 0);
-    }
+  h1,
+  .section,
+  img {
+    z-index: 3;
+  }
+
+  img {
+    clip: rect(0, 345px, 500px, 0);
+  }
 }
 
 .colors {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 
-    .colorContainer {
-        width: 33.3%;
-        height: 250px;
-        transition-duration: 0.1s;
-        @extend .flex-column-center-center-center ;
-        
-        .colorName {
-            width: 60%;
-            text-align: center;
-            line-height: 35px;
-            margin: 0;
-            @extend .font-circularBold-35px ;
-            @extend .color-white ;
-        }
-        
-        &.background-white .colorName, &.background-lightGrey .colorName {
-            @extend .color-darkGrey ;
-        }
+  .colorContainer {
+    width: 33.3%;
+    height: 250px;
+    transition-duration: 0.1s;
+    @extend .flex-column-center-center-center;
 
-        &.background-sharpBlues, &.background-azureGreen, &.background-sunsetOrange, &.background-royalPink {
-            width: 50%;
-        }
-
-        &:hover {
-            transform: scale(1.2);
-        }
+    .colorName {
+      width: 60%;
+      text-align: center;
+      line-height: 35px;
+      margin: 0;
+      @extend .font-circularBold-35px;
+      @extend .color-white;
     }
+
+    &.background-white .colorName,
+    &.background-lightGrey .colorName {
+      @extend .color-darkGrey;
+    }
+
+    &.background-sharpBlues,
+    &.background-azureGreen,
+    &.background-sunsetOrange,
+    &.background-royalPink {
+      width: 50%;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .logoHome {
