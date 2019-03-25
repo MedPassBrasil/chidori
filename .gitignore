@@ -1,7 +1,7 @@
 node_modules
 
 # build path always get a new compressed css file
-build
+# build
 
 # docusaurus
 .DS_Store
