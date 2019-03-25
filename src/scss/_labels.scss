@@ -27,10 +27,10 @@
   }
 }
 
-.pagination-label-container {
+.breadcrumb-container {
   @extend .flex-row;
 
-  .pagination-label {
+  .breadcrumb {
     background-color: $dark-blue-grey;
     border-radius: 0 100px 100px 0;
     border: solid 1px $dark-grey-blue;
