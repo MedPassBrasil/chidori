@@ -8024,12 +8024,8 @@ form {
       form .inputContainer .checkboxButton p,
       form .inputFileContainer .checkboxButton p,
       form .selectContainerDefault .checkboxButton p,
-<<<<<<< HEAD
       form .selectContainerTransparent .checkboxButton p,
-      form .fileContainer .checkboxButton p {
-=======
-      form .selectContainerTransparent .checkboxButton p {
->>>>>>> master
+      form .fileContainer .checkboxButton p {      
         margin: 0;
         z-index: 2;
         position: relative;
@@ -8041,13 +8037,9 @@ form {
     form .selectContainerDefault .selectDefault,
     form .selectContainerDefault .selectTransparent,
     form .selectContainerTransparent .selectDefault,
-<<<<<<< HEAD
     form .selectContainerTransparent .selectTransparent,
     form .fileContainer .selectDefault,
-    form .fileContainer .selectTransparent {
-=======
-    form .selectContainerTransparent .selectTransparent {
->>>>>>> master
+    form .fileContainer .selectTransparent {    
       max-width: 325px;
       width: 100%;
       height: 55px;
@@ -8069,13 +8061,9 @@ form {
       form .selectContainerDefault .selectDefault.selectTransparent,
       form .selectContainerDefault .selectTransparent.selectTransparent,
       form .selectContainerTransparent .selectDefault.selectTransparent,
-<<<<<<< HEAD
       form .selectContainerTransparent .selectTransparent.selectTransparent,
       form .fileContainer .selectDefault.selectTransparent,
-      form .fileContainer .selectTransparent.selectTransparent {
-=======
-      form .selectContainerTransparent .selectTransparent.selectTransparent {
->>>>>>> master
+      form .fileContainer .selectTransparent.selectTransparent {      
         background-color: transparent;
         color: #4a4a4a;
         border-radius: 0;
@@ -8084,12 +8072,9 @@ form {
         border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
   form .inputFileContainer {
     height: auto; }
-<<<<<<< HEAD
   form .fileContainer {
     width: 46px;
     height: 13.9px; }
-=======
->>>>>>> master
   form .selectContainerDefault:before, form .selectContainerDefault:after,
   form .selectContainerTransparent:before,
   form .selectContainerTransparent:after {
@@ -8180,7 +8165,6 @@ form {
 .mainContainer h1 small, .mainContainer h2 small, .mainContainer h3 small, .mainContainer h4 small {
   font-size: 15px; }
 
-<<<<<<< HEAD
 .card-data {
   margin-left: 10px; }
   .card-data p {
@@ -8215,7 +8199,6 @@ form {
 .card-logo-alignment {
   margin-top: 30px;
   margin-left: 10px; }
-=======
 .labelStatus {
   width: 110px;
   height: 40px;
@@ -8255,4 +8238,3 @@ form {
     margin: 0;
     text-align: center;
     width: 100%; }
->>>>>>> master
