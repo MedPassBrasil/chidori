@@ -21,7 +21,7 @@ form .fileContainer .radioButton, form .inputContainer .checkboxButton,
 form .inputFileContainer .checkboxButton,
 form .selectContainerDefault .checkboxButton,
 form .selectContainerTransparent .checkboxButton,
-form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .companyData {
+form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .card-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,7 +217,7 @@ form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .companyDat
   align-items: center;
   align-content: center; }
 
-.flex-row-start-start-start, .gridItem {
+.flex-row-start-start-start, .card {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -3902,7 +3902,7 @@ form .fileContainer .radioButton, form .inputContainer .checkboxButton,
 form .inputFileContainer .checkboxButton,
 form .selectContainerDefault .checkboxButton,
 form .selectContainerTransparent .checkboxButton,
-form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .companyData {
+form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .card-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4098,7 +4098,7 @@ form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .companyDat
   align-items: center;
   align-content: center; }
 
-.flex-row-start-start-start, .gridItem {
+.flex-row-start-start-start, .card {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -8108,38 +8108,37 @@ form {
 .mainContainer h1 small, .mainContainer h2 small, .mainContainer h3 small, .mainContainer h4 small {
   font-size: 15px; }
 
-.companyData {
+.card-data {
   margin-left: 10px; }
+  .card-data p {
+    margin-top: 8px; }
 
-.companyData p {
-  margin-top: 8px; }
-
-.companyStatus {
+.card-detail-status {
   margin-left: 10px;
   margin-top: 33px; }
 
-.gridItem {
+.card {
   background-color: #212b47;
   height: 120px;
   width: 360px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin-top: 20px; }
 
-.Companylogo {
+.company-logo {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
   z-index: 2; }
+  .company-logo p {
+    color: #4d5154;
+    z-index: 2;
+    font-family: "Circular Std Bold";
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px; }
 
-.Companylogo p {
-  color: #4d5154;
-  z-index: 2;
-  font-family: "Circular Std Bold";
-  font-size: 10px;
-  text-align: center;
-  margin-top: 13px; }
-
-.companyLogoAlignment {
+.card-logo-alignment {
   margin-top: 30px;
   margin-left: 10px; }

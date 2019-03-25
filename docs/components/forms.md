@@ -204,24 +204,6 @@ Code:
 </div>
 ```
 
-## Company logo
-
-Example:
-
-<form action="">	
-	<div class="Companylogo">			
-		<p>Nome da empresa</p>	
-	</div>
-</form>
-
-Code:
-
-```html
-<div class="Companylogo">
-  <p>Nome da empresa</p>
-</div>
-```
-
 ## Radio
 
 Example:

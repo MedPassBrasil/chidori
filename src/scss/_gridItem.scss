@@ -1,39 +1,41 @@
-.companyData {
+.card-data {
   margin-left: 10px;
   @extend .flex-column-center-center-center;
+  p {
+    margin-top: 8px;
+  }
 }
-.companyData p {
-  margin-top: 8px;
-}
-.companyStatus {
+.card-detail-status {
   margin-left: 10px;
   margin-top: 33px;
 }
-.gridItem {
+.card {
   background-color: #212b47;
   height: 120px;
   width: 360px;
   border-radius: 20px;
   @extend .flex-row-start-start-start;
+  margin-top: 20px;
 }
-.Companylogo {
+.company-logo {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
   z-index: 2;
-}
-.Companylogo p {
-  color: #4d5154;
-  z-index: 2;
-  font-family: "Circular Std Bold";
-  font-size: 10px;
-  text-align: center;
-  margin-top: 13px;
+
+  p {
+    color: #4d5154;
+    z-index: 2;
+    font-family: "Circular Std Bold";
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
-.companyLogoAlignment {
+.card-logo-alignment {
   margin-top: 30px;
   margin-left: 10px;
 }

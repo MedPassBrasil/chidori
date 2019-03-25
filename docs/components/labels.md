@@ -32,3 +32,21 @@ Code:
   <p>Cancelado</p>
 </div>
 ```
+
+## Company logo
+
+Example:
+
+<form action="">	
+	<div class="company-logo">			
+		<p>Nome</p>	
+	</div>
+</form>
+
+Code:
+
+```html
+<div class="company-logo">
+  <p>Nome</p>
+</div>
+```
