@@ -208,21 +208,17 @@ Code:
 
 Example:
 
-<form action="">
-	<div class="inputFileContainer">		
-		<div class="Companylogo">			
-			<p>Nome da empresa</p>
-		</div>
+<form action="">	
+	<div class="Companylogo">			
+		<p>Nome da empresa</p>	
 	</div>
 </form>
 
 Code:
 
 ```html
-<div class="inputFileContainer">
-  <div class="Companylogo">
-    <p>Nome da empresa</p>
-  </div>
+<div class="Companylogo">
+  <p>Nome da empresa</p>
 </div>
 ```
 

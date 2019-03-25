@@ -18,16 +18,17 @@ title: Labels
 </div>
 
 Code:
+
 ```html
 <div class="labelStatus active">
-    <p>Ativo</p>
+  <p>Ativo</p>
 </div>
 
 <div class="labelStatus inactive">
-    <p>Inativo</p>
+  <p>Inativo</p>
 </div>
 
 <div class="labelStatus canceled">
-    <p>Cancelado</p>
+  <p>Cancelado</p>
 </div>
 ```
