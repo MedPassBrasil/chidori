@@ -130,11 +130,11 @@ form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus
   align-items: center;
   align-content: flex-end; }
 
-.flex-row, .pagination-label-container {
+.flex-row, .breadcrumb-container {
   display: flex;
   flex-direction: row; }
 
-.flex-column-center, .pagination-label-container .pagination-label {
+.flex-column-center, .breadcrumb-container .breadcrumb {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -2918,7 +2918,7 @@ form .inputFileContainer .selectTransparent,
 form .selectContainerDefault .selectDefault,
 form .selectContainerDefault .selectTransparent,
 form .selectContainerTransparent .selectDefault,
-form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p, .pagination-label-container .pagination-label p {
+form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p, .breadcrumb-container .breadcrumb p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -4010,11 +4010,11 @@ form .selectContainerTransparent .checkboxButton, form .fileButton, .labelStatus
   align-items: center;
   align-content: flex-end; }
 
-.flex-row, .pagination-label-container {
+.flex-row, .breadcrumb-container {
   display: flex;
   flex-direction: row; }
 
-.flex-column-center, .pagination-label-container .pagination-label {
+.flex-column-center, .breadcrumb-container .breadcrumb {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -6798,7 +6798,7 @@ form .inputFileContainer .selectTransparent,
 form .selectContainerDefault .selectDefault,
 form .selectContainerDefault .selectTransparent,
 form .selectContainerTransparent .selectDefault,
-form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p, .pagination-label-container .pagination-label p {
+form .selectContainerTransparent .selectTransparent, form .fileButton p, .labelStatus p, .breadcrumb-container .breadcrumb p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -8074,7 +8074,7 @@ form {
     text-align: center;
     width: 100%; }
 
-.pagination-label-container .pagination-label {
+.breadcrumb-container .breadcrumb {
   background-color: #283455;
   border-radius: 0 100px 100px 0;
   border: solid 1px #212b47;
@@ -8083,17 +8083,17 @@ form {
   position: relative;
   width: 175px;
   z-index: 1; }
-  .pagination-label-container .pagination-label:nth-child(1) {
+  .breadcrumb-container .breadcrumb:nth-child(1) {
     z-index: 4; }
-  .pagination-label-container .pagination-label:nth-child(2) {
+  .breadcrumb-container .breadcrumb:nth-child(2) {
     z-index: 3; }
-  .pagination-label-container .pagination-label:nth-child(3) {
+  .breadcrumb-container .breadcrumb:nth-child(3) {
     z-index: 2; }
-  .pagination-label-container .pagination-label:nth-child(4) {
+  .breadcrumb-container .breadcrumb:nth-child(4) {
     z-index: 1; }
-  .pagination-label-container .pagination-label:last-of-type p {
+  .breadcrumb-container .breadcrumb:last-of-type p {
     color: #ffffff; }
-  .pagination-label-container .pagination-label p {
+  .breadcrumb-container .breadcrumb p {
     color: rgba(255, 255, 255, 0.25);
     font-weight: bold;
     height: 50px;
