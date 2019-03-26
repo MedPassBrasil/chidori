@@ -3,15 +3,13 @@
     "Getting Started": ["getting-started"],
     "Brand": ["brand"],
     "Layout": ["layout"],
-    "Content": [
-      "content/typography",
-      "content/colors"
-    ],
+    "Content": ["content/typography", "content/colors"],
     "Components": [
       "components/components",
       "components/buttons",
       "components/forms",
-      "components/labels"
+      "components/labels",
+      "components/gridItem"
     ]
   }
 }
