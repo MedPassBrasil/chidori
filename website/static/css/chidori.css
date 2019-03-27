@@ -8188,7 +8188,6 @@ form {
   border-radius: 0 100px 100px 0;
   border: solid 1px #212b47;
   height: 50px;
-  margin-left: -20px;
   position: relative;
   width: 175px;
   z-index: 1; }
@@ -8200,6 +8199,8 @@ form {
     z-index: 2; }
   .breadcrumb-container .breadcrumb:nth-child(4) {
     z-index: 1; }
+  .breadcrumb-container .breadcrumb:not(:first-child) {
+    margin-left: -20px; }
   .breadcrumb-container .breadcrumb:last-of-type p {
     color: #ffffff; }
   .breadcrumb-container .breadcrumb p {

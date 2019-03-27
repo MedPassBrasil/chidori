@@ -35,7 +35,6 @@
     border-radius: 0 100px 100px 0;
     border: solid 1px $dark-grey-blue;
     height: 50px;
-    margin-left: -20px;
     position: relative;
     width: 175px;
     z-index: 1;
@@ -57,6 +56,10 @@
 
     &:nth-child(4) {
       z-index: 1;
+    }
+
+    &:not(:first-child) {
+      margin-left: -20px;
     }
 
     &:last-of-type {
