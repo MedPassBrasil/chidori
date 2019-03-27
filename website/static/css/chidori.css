@@ -8171,31 +8171,6 @@ form {
   margin-top: 30px;
   margin-left: 10px; }
 
-.circular--square {
-  border-radius: 50%; }
-
-.circular--landscape {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%; }
-  .circular--landscape img {
-    width: auto;
-    height: 100%;
-    margin-left: -50px; }
-
-.circular--portrait {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%; }
-  .circular--portrait img {
-    width: 100%;
-    height: auto; }
-
 .labelStatus {
   width: 110px;
   height: 40px;
@@ -8239,6 +8214,5 @@ form {
 .rounded-image {
   border-radius: 50%;
   width: 200px;
-  height: 200px; }
-  .rounded-image img {
-    object-fit: fill; }
+  height: 200px;
+  object-fit: fill; }
