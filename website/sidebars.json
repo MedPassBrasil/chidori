@@ -9,7 +9,8 @@
       "components/buttons",
       "components/forms",
       "components/labels",
-      "components/gridItem"
+      "components/gridItem",
+      "components/images"
     ]
   }
 }

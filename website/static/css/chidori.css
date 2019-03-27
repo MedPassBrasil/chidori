@@ -10,23 +10,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 .flex-column-center-center-center, .colors .colorContainer, form .inputContainer button,
-
-
 form .inputFileContainer button,
 form .selectContainerDefault button,
 form .selectContainerTransparent button,
-form .fileContainer button, 
-form .inputContainer .radioButton,
+form .fileContainer button, form .inputContainer .radioButton,
 form .inputFileContainer .radioButton,
 form .selectContainerDefault .radioButton,
 form .selectContainerTransparent .radioButton,
-form .fileContainer .radioButton, 
-form .inputContainer .checkboxButton,
+form .fileContainer .radioButton, form .inputContainer .checkboxButton,
 form .inputFileContainer .checkboxButton,
 form .selectContainerDefault .checkboxButton,
 form .selectContainerTransparent .checkboxButton,
-form .fileContainer .checkboxButton, 
-form .fileButton, .labelStatus, .card-data {
+form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .card-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2501,20 +2496,16 @@ form .fileButton, .labelStatus, .card-data {
 .background-grey {
   background-color: #e2e2e2; }
 
-.color-darkGrey, 
-.colors .colorContainer.background-white .colorName, 
-.colors .colorContainer.background-lightGrey .colorName, 
-form .inputContainer .radioButton p,
+.color-darkGrey, .colors .colorContainer.background-white .colorName,
+.colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p,
 form .inputFileContainer .radioButton p,
 form .selectContainerDefault .radioButton p,
 form .selectContainerTransparent .radioButton p,
-form .fileContainer .radioButton p, 
-form .inputContainer .checkboxButton p,
+form .fileContainer .radioButton p, form .inputContainer .checkboxButton p,
 form .inputFileContainer .checkboxButton p,
 form .selectContainerDefault .checkboxButton p,
 form .selectContainerTransparent .checkboxButton p,
-form .fileContainer .checkboxButton p, 
-form .fileButton p {
+form .fileContainer .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
@@ -2619,13 +2610,11 @@ form .fileButton p {
 form .inputFileContainer .radioInput:checked + .radioButton:before,
 form .selectContainerDefault .radioInput:checked + .radioButton:before,
 form .selectContainerTransparent .radioInput:checked + .radioButton:before,
-form .fileContainer .radioInput:checked + .radioButton:before, 
-form .inputContainer .checkboxInput:checked + .checkboxButton:before,
+form .fileContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before,
 form .inputFileContainer .checkboxInput:checked + .checkboxButton:before,
 form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before,
 form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before,
-form .fileContainer .checkboxInput:checked + .checkboxButton:before, 
-form .fileInput:checked + .fileButton:before {
+form .fileContainer .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
@@ -2921,23 +2910,19 @@ form .fileInput:checked + .fileButton:before {
 form .inputFileContainer .defaultInput,
 form .selectContainerDefault .defaultInput,
 form .selectContainerTransparent .defaultInput,
-form .fileContainer .defaultInput, 
-form .inputContainer .contentInput,
+form .fileContainer .defaultInput, form .inputContainer .contentInput,
 form .inputFileContainer .contentInput,
 form .selectContainerDefault .contentInput,
 form .selectContainerTransparent .contentInput,
-form .fileContainer .contentInput, 
-form .inputContainer .radioButton p,
+form .fileContainer .contentInput, form .inputContainer .radioButton p,
 form .inputFileContainer .radioButton p,
 form .selectContainerDefault .radioButton p,
 form .selectContainerTransparent .radioButton p,
-form .fileContainer .radioButton p, 
-form .inputContainer .checkboxButton p,
+form .fileContainer .radioButton p, form .inputContainer .checkboxButton p,
 form .inputFileContainer .checkboxButton p,
 form .selectContainerDefault .checkboxButton p,
 form .selectContainerTransparent .checkboxButton p,
-form .fileContainer .checkboxButton p,
-form .inputContainer .selectDefault,
+form .fileContainer .checkboxButton p, form .inputContainer .selectDefault,
 form .inputContainer .selectTransparent,
 form .inputFileContainer .selectDefault,
 form .inputFileContainer .selectTransparent,
@@ -2946,8 +2931,7 @@ form .selectContainerDefault .selectTransparent,
 form .selectContainerTransparent .selectDefault,
 form .selectContainerTransparent .selectTransparent,
 form .fileContainer .selectDefault,
-form .fileContainer .selectTransparent, 
-form .fileButton p, .labelStatus p .pagination-label-container .pagination-label p , .breadcrumb-container .breadcrumb p {
+form .fileContainer .selectTransparent, form .fileButton p, .labelStatus p, .breadcrumb-container .breadcrumb p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -3690,21 +3674,15 @@ a {
       line-height: 35px;
       margin: 0; }
     .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover,
-    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, 
-    .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before,
+    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before,
     .colors form .inputFileContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputFileContainer .colors .radioInput:checked + .colorContainer.radioButton:before,
     .colors form .selectContainerDefault .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerDefault .colors .radioInput:checked + .colorContainer.radioButton:before,
-
     .colors form .selectContainerTransparent .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerTransparent .colors .radioInput:checked + .colorContainer.radioButton:before,
-    .colors form .fileContainer .radioInput:checked + .colorContainer.radioButton:before, form .fileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, 
-    .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
+    .colors form .fileContainer .radioInput:checked + .colorContainer.radioButton:before, form .fileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
     .colors form .inputFileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputFileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
     .colors form .selectContainerDefault .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerDefault .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
     .colors form .selectContainerTransparent .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerTransparent .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
-    .colors form .fileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .fileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, 
-    .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
-    .colors form .selectContainerDefault .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerDefault .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
-    .colors form .selectContainerTransparent .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerTransparent .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
+    .colors form .fileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .fileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
     .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .coverBackground .colorContainer.background.brandCover, .coverBackground .colors .colorContainer.background.brandCover,
     .colors .coverImage .colorContainer.background.brandCover, .coverImage .colors .colorContainer.background.brandCover, .colors .colorContainer.background-royalPink {
       width: 50%; }
@@ -3930,18 +3908,15 @@ img.black-white {
 form .inputFileContainer button,
 form .selectContainerDefault button,
 form .selectContainerTransparent button,
-form .fileContainer button, 
-form .inputContainer .radioButton,
+form .fileContainer button, form .inputContainer .radioButton,
 form .inputFileContainer .radioButton,
 form .selectContainerDefault .radioButton,
 form .selectContainerTransparent .radioButton,
-form .fileContainer .radioButton, 
-form .inputContainer .checkboxButton,
+form .fileContainer .radioButton, form .inputContainer .checkboxButton,
 form .inputFileContainer .checkboxButton,
 form .selectContainerDefault .checkboxButton,
 form .selectContainerTransparent .checkboxButton,
-form .fileContainer .checkboxButton, 
-form .fileButton, .labelStatus, .card-data {
+form .fileContainer .checkboxButton, form .fileButton, .labelStatus, .card-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6416,19 +6391,16 @@ form .fileButton, .labelStatus, .card-data {
 .background-grey {
   background-color: #e2e2e2; }
 
-
-
-.color-darkGrey, .colors .colorContainer.background-white .colorName, .colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p,
+.color-darkGrey, .colors .colorContainer.background-white .colorName,
+.colors .colorContainer.background-lightGrey .colorName, form .inputContainer .radioButton p,
 form .inputFileContainer .radioButton p,
 form .selectContainerDefault .radioButton p,
 form .selectContainerTransparent .radioButton p,
-form .fileContainer .radioButton p, 
-form .inputContainer .checkboxButton p,
+form .fileContainer .radioButton p, form .inputContainer .checkboxButton p,
 form .inputFileContainer .checkboxButton p,
 form .selectContainerDefault .checkboxButton p,
 form .selectContainerTransparent .checkboxButton p,
-form .fileContainer .checkboxButton p, 
-form .fileButton p {
+form .fileContainer .checkboxButton p, form .fileButton p {
   color: #4d5154; }
 
 .background-darkGrey {
@@ -6529,18 +6501,15 @@ form .fileButton p {
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); }
 
 .background-sharpBlues, .coverBackground .background.typographyCover,
-.coverImage .background.typographyCover, 
-form .inputContainer .radioInput:checked + .radioButton:before,
+.coverImage .background.typographyCover, form .inputContainer .radioInput:checked + .radioButton:before,
 form .inputFileContainer .radioInput:checked + .radioButton:before,
 form .selectContainerDefault .radioInput:checked + .radioButton:before,
 form .selectContainerTransparent .radioInput:checked + .radioButton:before,
-form .fileContainer .radioInput:checked + .radioButton:before, 
-form .inputContainer .checkboxInput:checked + .checkboxButton:before,
+form .fileContainer .radioInput:checked + .radioButton:before, form .inputContainer .checkboxInput:checked + .checkboxButton:before,
 form .inputFileContainer .checkboxInput:checked + .checkboxButton:before,
 form .selectContainerDefault .checkboxInput:checked + .checkboxButton:before,
 form .selectContainerTransparent .checkboxInput:checked + .checkboxButton:before,
-form .fileContainer .checkboxInput:checked + .checkboxButton:before, 
-form .fileInput:checked + .fileButton:before {
+form .fileContainer .checkboxInput:checked + .checkboxButton:before, form .fileInput:checked + .fileButton:before {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); }
 
 .background-spaceBlues, body {
@@ -6835,25 +6804,20 @@ form .fileInput:checked + .fileButton:before {
 .font-circularBold-15px, form .inputContainer .defaultInput,
 form .inputFileContainer .defaultInput,
 form .selectContainerDefault .defaultInput,
-
 form .selectContainerTransparent .defaultInput,
-form .fileContainer .defaultInput, 
-form .inputContainer .contentInput,
+form .fileContainer .defaultInput, form .inputContainer .contentInput,
 form .inputFileContainer .contentInput,
 form .selectContainerDefault .contentInput,
 form .selectContainerTransparent .contentInput,
-form .fileContainer .contentInput, 
-form .inputContainer .radioButton p,
+form .fileContainer .contentInput, form .inputContainer .radioButton p,
 form .inputFileContainer .radioButton p,
 form .selectContainerDefault .radioButton p,
 form .selectContainerTransparent .radioButton p,
-form .fileContainer .radioButton p, 
-form .inputContainer .checkboxButton p,
+form .fileContainer .radioButton p, form .inputContainer .checkboxButton p,
 form .inputFileContainer .checkboxButton p,
 form .selectContainerDefault .checkboxButton p,
 form .selectContainerTransparent .checkboxButton p,
-form .fileContainer .checkboxButton p, 
-form .inputContainer .selectDefault,
+form .fileContainer .checkboxButton p, form .inputContainer .selectDefault,
 form .inputContainer .selectTransparent,
 form .inputFileContainer .selectDefault,
 form .inputFileContainer .selectTransparent,
@@ -6862,7 +6826,7 @@ form .selectContainerDefault .selectTransparent,
 form .selectContainerTransparent .selectDefault,
 form .selectContainerTransparent .selectTransparent,
 form .fileContainer .selectDefault,
-form .fileContainer .selectTransparent, form .fileButton p, .labelStatus p, .pagination-label-container .pagination-label p , .breadcrumb-container .breadcrumb p {
+form .fileContainer .selectTransparent, form .fileButton p, .labelStatus p, .breadcrumb-container .breadcrumb p {
   font-family: "Circular Std Bold";
   font-weight: 400;
   font-size: 15px; }
@@ -7605,18 +7569,15 @@ a {
       line-height: 35px;
       margin: 0; }
     .colors .colorContainer.background-sharpBlues, .colors .coverBackground .colorContainer.background.typographyCover, .coverBackground .colors .colorContainer.background.typographyCover,
-    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, 
-    .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before,
+    .colors .coverImage .colorContainer.background.typographyCover, .coverImage .colors .colorContainer.background.typographyCover, .colors form .inputContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputContainer .colors .radioInput:checked + .colorContainer.radioButton:before,
     .colors form .inputFileContainer .radioInput:checked + .colorContainer.radioButton:before, form .inputFileContainer .colors .radioInput:checked + .colorContainer.radioButton:before,
     .colors form .selectContainerDefault .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerDefault .colors .radioInput:checked + .colorContainer.radioButton:before,
     .colors form .selectContainerTransparent .radioInput:checked + .colorContainer.radioButton:before, form .selectContainerTransparent .colors .radioInput:checked + .colorContainer.radioButton:before,
-    .colors form .fileContainer .radioInput:checked + .colorContainer.radioButton:before, form .fileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, 
-    .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
+    .colors form .fileContainer .radioInput:checked + .colorContainer.radioButton:before, form .fileContainer .colors .radioInput:checked + .colorContainer.radioButton:before, .colors form .inputContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
     .colors form .inputFileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .inputFileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
     .colors form .selectContainerDefault .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerDefault .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
     .colors form .selectContainerTransparent .checkboxInput:checked + .colorContainer.checkboxButton:before, form .selectContainerTransparent .colors .checkboxInput:checked + .colorContainer.checkboxButton:before,
-    .colors form .fileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .fileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, 
-    .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,    
+    .colors form .fileContainer .checkboxInput:checked + .colorContainer.checkboxButton:before, form .fileContainer .colors .checkboxInput:checked + .colorContainer.checkboxButton:before, .colors form .fileInput:checked + .colorContainer.fileButton:before, form .colors .fileInput:checked + .colorContainer.fileButton:before, .colors .colorContainer.background-azureGreen, .colors .coverBackground .colorContainer.background.colorsCover, .coverBackground .colors .colorContainer.background.colorsCover,
     .colors .coverImage .colorContainer.background.colorsCover, .coverImage .colors .colorContainer.background.colorsCover, .colors .colorContainer.background-sunsetOrange, .colors .coverBackground .colorContainer.background.brandCover, .coverBackground .colors .colorContainer.background.brandCover,
     .colors .coverImage .colorContainer.background.brandCover, .coverImage .colors .colorContainer.background.brandCover, .colors .colorContainer.background-royalPink {
       width: 50%; }
@@ -7782,7 +7743,7 @@ form {
   form .inputFileContainer,
   form .selectContainerDefault,
   form .selectContainerTransparent,
-  form .fileContainer {  
+  form .fileContainer {
     max-width: 325px;
     width: 100%;
     height: 55px;
@@ -7942,7 +7903,7 @@ form {
       form .inputFileContainer .radioButton:before,
       form .selectContainerDefault .radioButton:before,
       form .selectContainerTransparent .radioButton:before,
-      form .fileContainer .radioButton:before {      
+      form .fileContainer .radioButton:before {
         content: "";
         width: 100%;
         height: 60px;
@@ -7959,7 +7920,7 @@ form {
       form .inputFileContainer .radioButton p,
       form .selectContainerDefault .radioButton p,
       form .selectContainerTransparent .radioButton p,
-      form .fileContainer .radioButton p {      
+      form .fileContainer .radioButton p {
         margin: 0;
         z-index: 2;
         position: relative;
@@ -7988,14 +7949,14 @@ form {
       form .inputFileContainer .checkboxInput:checked + .checkboxButton p,
       form .selectContainerDefault .checkboxInput:checked + .checkboxButton p,
       form .selectContainerTransparent .checkboxInput:checked + .checkboxButton p,
-      form .fileContainer .checkboxInput:checked + .checkboxButton p {      
+      form .fileContainer .checkboxInput:checked + .checkboxButton p {
         color: #ffffff;
         transition-duration: 0.5s; }
     form .inputContainer .checkboxButton,
     form .inputFileContainer .checkboxButton,
     form .selectContainerDefault .checkboxButton,
     form .selectContainerTransparent .checkboxButton,
-    form .fileContainer .checkboxButton {    
+    form .fileContainer .checkboxButton {
       max-width: 100%;
       min-width: 48.5%;
       height: 60px;
@@ -8006,7 +7967,7 @@ form {
       form .inputFileContainer .checkboxButton:before,
       form .selectContainerDefault .checkboxButton:before,
       form .selectContainerTransparent .checkboxButton:before,
-      form .fileContainer .checkboxButton:before {      
+      form .fileContainer .checkboxButton:before {
         content: "";
         width: 100%;
         height: 60px;
@@ -8023,7 +7984,7 @@ form {
       form .inputFileContainer .checkboxButton p,
       form .selectContainerDefault .checkboxButton p,
       form .selectContainerTransparent .checkboxButton p,
-      form .fileContainer .checkboxButton p {      
+      form .fileContainer .checkboxButton p {
         margin: 0;
         z-index: 2;
         position: relative;
@@ -8037,7 +7998,7 @@ form {
     form .selectContainerTransparent .selectDefault,
     form .selectContainerTransparent .selectTransparent,
     form .fileContainer .selectDefault,
-    form .fileContainer .selectTransparent {    
+    form .fileContainer .selectTransparent {
       max-width: 325px;
       width: 100%;
       height: 55px;
@@ -8061,7 +8022,7 @@ form {
       form .selectContainerTransparent .selectDefault.selectTransparent,
       form .selectContainerTransparent .selectTransparent.selectTransparent,
       form .fileContainer .selectDefault.selectTransparent,
-      form .fileContainer .selectTransparent.selectTransparent {      
+      form .fileContainer .selectTransparent.selectTransparent {
         background-color: transparent;
         color: #4a4a4a;
         border-radius: 0;
@@ -8144,6 +8105,18 @@ form {
       transition-duration: 0.5s;
       text-align: center; }
 
+.labelStatus {
+  width: 110px;
+  height: 40px;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+  .labelStatus p {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
+    text-align: center; }
+
 .circular, .roboto {
   font-size: 80px;
   margin: 0; }
@@ -8197,6 +8170,32 @@ form {
 .card-logo-alignment {
   margin-top: 30px;
   margin-left: 10px; }
+
+.circular--square {
+  border-radius: 50%; }
+
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%; }
+  .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px; }
+
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%; }
+  .circular--portrait img {
+    width: 100%;
+    height: auto; }
+
 .labelStatus {
   width: 110px;
   height: 40px;
@@ -8236,3 +8235,10 @@ form {
     margin: 0;
     text-align: center;
     width: 100%; }
+
+.rounded-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px; }
+  .rounded-image img {
+    object-fit: fill; }

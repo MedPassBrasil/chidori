@@ -12,12 +12,12 @@ title: GridItem
     </figure>
 </div>
 
-## Card
+## Company Card
 
 <div class="w-100p p-40px m-bottom-40px flex-collumn-between-center-center background-greyBlue">   
     <div class="card">             
           <div class="company-logo card-logo-alignment">			
-            <p>Nome</p>	                  
+            <p>Nome</p>             
           </div>       
         <div class="card-data" >
             <p>19.625.449/0001-73</p>
