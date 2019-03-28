@@ -105,6 +105,16 @@ Code:
 
 ## Label Card
 
+<br/>
+
 <div class="label-card">
   <p>Edmar</p>
 </div>
+
+<br/>
+
+```html
+<div class="label-card">
+  <p>Edmar</p>
+</div>
+```
