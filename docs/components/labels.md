@@ -84,3 +84,21 @@ Code:
   <p>Nome</p>
 </div>
 ```
+
+## Label icon
+
+<br/>
+
+<div class="label-icon">
+  <img src="../../icons/icon-camera.svg" />
+  <h3>Texto</h3>
+</div>
+
+<br/>
+
+```html
+<div class="label-icon">
+  <img src="../../icons/icon-camera.svg" />
+  <h3>Texto</h3>
+</div>
+```
