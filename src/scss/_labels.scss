@@ -93,3 +93,32 @@
     margin: 0 0 0 1rem;
   }
 }
+
+.label-card {
+  border-radius: 20px;
+  background-color: $greyBlue;
+  padding: 1.5rem 2.5rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.label-card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .label-card {
+    &:first-child {
+      margin-right: 5px;
+    }
+
+    &:last-of-type {
+      margin-left: 5px;
+    }
+
+    &:not(:first-child):not(:last-of-type) {
+      margin: 0 5px;
+    }
+  }
+}

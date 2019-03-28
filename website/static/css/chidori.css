@@ -3801,6 +3801,20 @@ img.black-white {
   box-sizing: border-box;
   margin: 5px; }
 
+/*
+========================================================
+
+                        REMOVE MARGINSSSS
+
+========================================================
+*/
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -7696,6 +7710,20 @@ img.black-white {
   box-sizing: border-box;
   margin: 5px; }
 
+/*
+========================================================
+
+                        REMOVE MARGINSSSS
+
+========================================================
+*/
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0; }
+
 .btn {
   width: 100%;
   max-width: 375px;
@@ -8221,6 +8249,24 @@ form {
   .label-icon h3,
   .label-icon h4 {
     margin: 0 0 0 1rem; }
+
+.label-card {
+  border-radius: 20px;
+  background-color: #283455;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: center; }
+
+.label-card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .label-card-list .label-card:first-child {
+    margin-right: 5px; }
+  .label-card-list .label-card:last-of-type {
+    margin-left: 5px; }
+  .label-card-list .label-card:not(:first-child):not(:last-of-type) {
+    margin: 0 5px; }
 
 .rounded-image {
   border-radius: 50%;
