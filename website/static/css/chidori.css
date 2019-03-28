@@ -8221,6 +8221,8 @@ form {
   .label-icon h3,
   .label-icon h4 {
     margin: 0 0 0 1rem; }
+  .label-icon p {
+    font-size: 25px; }
 
 .rounded-image {
   border-radius: 50%;

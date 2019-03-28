@@ -91,7 +91,7 @@ Code:
 
 <div class="label-icon">
   <img src="../../icons/icon-camera.svg" />
-  <h3>Texto</h3>
+  <p>Texto</p>
 </div>
 
 <br/>
@@ -99,6 +99,6 @@ Code:
 ```html
 <div class="label-icon">
   <img src="../../icons/icon-camera.svg" />
-  <h3>Texto</h3>
+  <p>Texto</p>
 </div>
 ```
