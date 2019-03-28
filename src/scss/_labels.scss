@@ -97,3 +97,12 @@
     font-size: 25px;
   }
 }
+
+.label-card {
+  border-radius: 20px;
+  background-color: $greyBlue;
+  padding: 1.5rem 2.5rem;
+
+  display: flex;
+  justify-content: center;
+}

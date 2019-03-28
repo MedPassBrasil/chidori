@@ -102,3 +102,9 @@ Code:
   <p>Texto</p>
 </div>
 ```
+
+## Label Card
+
+<div class="label-card">
+  <p>Edmar</p>
+</div>

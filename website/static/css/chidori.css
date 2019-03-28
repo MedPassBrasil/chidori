@@ -3801,6 +3801,20 @@ img.black-white {
   box-sizing: border-box;
   margin: 5px; }
 
+/*
+========================================================
+
+                        REMOVE MARGINSSSS
+
+========================================================
+*/
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -7696,6 +7710,20 @@ img.black-white {
   box-sizing: border-box;
   margin: 5px; }
 
+/*
+========================================================
+
+                        REMOVE MARGINSSSS
+
+========================================================
+*/
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0; }
+
 .btn {
   width: 100%;
   max-width: 375px;
@@ -8223,6 +8251,13 @@ form {
     margin: 0 0 0 1rem; }
   .label-icon p {
     font-size: 25px; }
+
+.label-card {
+  border-radius: 20px;
+  background-color: #283455;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: center; }
 
 .rounded-image {
   border-radius: 50%;
