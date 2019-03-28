@@ -8212,6 +8212,16 @@ form {
     text-align: center;
     width: 100%; }
 
+.label-icon {
+  display: flex;
+  align-items: center; }
+  .label-icon p,
+  .label-icon h1,
+  .label-icon h2,
+  .label-icon h3,
+  .label-icon h4 {
+    margin: 0 0 0 1rem; }
+
 .rounded-image {
   border-radius: 50%;
   width: 200px;
