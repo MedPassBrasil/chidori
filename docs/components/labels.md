@@ -118,3 +118,41 @@ Code:
   <p>Edmar</p>
 </div>
 ```
+
+### List
+
+<br/>
+
+<div class="label-card-list">
+  <div class="label-card">
+    <p>Edmar</p>
+  </div>
+  <div class="label-card">
+    <p>ZAG</p>
+  </div>
+  <div class="label-card">
+    <p>Charlie</p>
+  </div>
+  <div class="label-card">
+    <p>Canivilo</p>
+  </div>
+</div>
+
+<br/>
+
+```html
+<div class="label-card-list">
+  <div class="label-card">
+    <p>Edmar</p>
+  </div>
+  <div class="label-card">
+    <p>Edmar</p>
+  </div>
+  <div class="label-card">
+    <p>Edmar</p>
+  </div>
+  <div class="label-card">
+    <p>Edmar</p>
+  </div>
+</div>
+```

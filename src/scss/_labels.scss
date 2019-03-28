@@ -102,3 +102,23 @@
   display: flex;
   justify-content: center;
 }
+
+.label-card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .label-card {
+    &:first-child {
+      margin-right: 5px;
+    }
+
+    &:last-of-type {
+      margin-left: 5px;
+    }
+
+    &:not(:first-child):not(:last-of-type) {
+      margin: 0 5px;
+    }
+  }
+}
