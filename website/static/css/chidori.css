@@ -7759,9 +7759,19 @@ h4 {
   .btn.icon {
     width: auto;
     padding: 0 30px; }
-    .btn.icon img, .btn.icon svg {
+    .btn.icon img,
+    .btn.icon svg {
       height: 15px;
       margin-right: 10px; }
+  .btn.outline {
+    background-color: transparent;
+    border: solid 2px #50e3c2;
+    border-radius: 32px;
+    color: #50e3c2;
+    transition: 0.33s; }
+    .btn.outline:hover {
+      background-color: #50e3c2;
+      color: #ffffff; }
 
 form {
   width: 100%; }
