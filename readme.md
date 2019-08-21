@@ -1,12 +1,17 @@
 # CHIDORI
 
-<img src="./img/chidori.jpg" alt="chidori" width=130 />
+[![npm](https://img.shields.io/npm/v/@medpass/chidori)](https://www.npmjs.com/package/@medpass/chidori)
+![license](https://img.shields.io/npm/l/@medpass/chidori)
+[![gh-pages](https://img.shields.io/badge/gh_pages-docs-blue?logo=github&style=flat)](https://medpassbrasil.github.io/chidori/)
+
+<img src="./assets/img/chidori.jpg" alt="chidori" width=250 />
 
 Medpass's Styleguide, feel free to use it.
 
 if you are looking for complete documentation, visit our [website](https://medpassbrasil.github.io/chidori/)
 
 ## How use it
+
 ```bash
 npm i --save @medpass/chidori
 ```
@@ -14,25 +19,25 @@ npm i --save @medpass/chidori
 > react.js
 
 ```javascript
-import React from "react";
-import "@medpass/chidori/build/css/chidori.min.css";
+import React from "react"
+import "@medpass/chidori/build/css/chidori.min.css"
 
-const MedpassButton = () => (
-  <button className="btn primary font-circularBold-15px">Styled Button</button>
-);
+const MedpassButton = () => <button className="btn primary font-circularBold-15px">Styled Button</button>
 
-export default MedpassButton;
+export default MedpassButton
 ```
 
 ## Contributing
+
 ```bash
-npm i && cd website && npm i
-npm start
+λ cd website && npm i && cd .. && npm i
+λ npm start
 ```
 
 Then you can edit `src/scss/*` files, everything that you change, will reflect to docs page at `localhost`
 
 ## License
+
 The MIT License (MIT)
 
 Copyright (c) 2019 Medpass
