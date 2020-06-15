@@ -2,6 +2,11 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const rename = require("gulp-rename");
 const cssnano = require("gulp-cssnano");
+const del = require("del")
+
+gulp.task("clean", () => {
+  return del(["build"])
+})
 
 gulp.task("sass", () => {
   return gulp
@@ -21,6 +26,10 @@ gulp.task("fonts", () => {
   return gulp.src("src/fonts/*").pipe(gulp.dest("build/fonts"));
 });
 
+gulp.task("package", () => {
+  return gulp.src("package.json").pipe(gulp.dest("build"))
+})
+
 gulp.task("minify", () => {
   return gulp
     .src("build/css/*.css")
@@ -37,4 +46,4 @@ gulp.task("watch", () => {
   gulp.watch("src/scss/**/*.scss", gulp.series("sass"));
 });
 
-gulp.task("build", gulp.series("sass", "fonts", "minify"));
+gulp.task("build", gulp.series("clean", "package", "sass", "fonts", "minify"));
