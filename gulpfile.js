@@ -13,6 +13,11 @@ gulp.task("sass", () => {
 });
 
 gulp.task("fonts", () => {
+  gulp.src("src/scss/fonts.scss")
+    .pipe(sass())
+    .pipe(rename("fonts.css"))
+    .pipe(gulp.dest("build/css"))
+
   return gulp.src("src/fonts/*").pipe(gulp.dest("build/fonts"));
 });
 
@@ -32,4 +37,4 @@ gulp.task("watch", () => {
   gulp.watch("src/scss/**/*.scss", gulp.series("sass"));
 });
 
-gulp.task("build", gulp.series("sass", "minify", "fonts"));
+gulp.task("build", gulp.series("sass", "fonts", "minify"));

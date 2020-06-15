@@ -1,0 +1,26 @@
+$fonts-path: "../fonts";
+$font-name: "CircularStd";
+$list: 
+	"-Black" 800 normal,
+	"-BlackItalic" 800 italic,
+	"-Bold" 600 normal,
+	"-BoldItalic" 600 italic,
+	"-Medium" 500 normal,
+	"-MediumItalic" 500 italic,
+	"-Book" 400 normal,
+	"-BookItalic" 400 italic;
+
+@each $sufix, $weight, $style in $list {
+	$name: "#{$fonts-path}/#{$font-name}-#{$sufix}";
+
+	@font-face {
+		font-family: $font-name;
+		src: url("#{$name}.eot");
+		src: url("#{$name}.eot?#iefix") format("embedded-opentype"),
+		url("#{$name}.woff") format("woff"),
+		url("#{$name}.ttf") format("truetype"),
+		url("#{$name}.svg") format("svg");
+		font-weight: $weight;
+    	font-style: $style;
+	}
+}
