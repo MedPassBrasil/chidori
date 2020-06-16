@@ -54,7 +54,11 @@ jobs:
         working-directory: ./build
 
       - name: Up Version
-        run: npm version patch
+        run: |
+          git config --global github.user gh-actions
+          git config --global github.token ${{ secrets.GITHUB_TOKEN }}
+
+          npm version patch
 
       - name: Publish
         run: |
