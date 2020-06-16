@@ -2,6 +2,11 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const rename = require("gulp-rename");
 const cssnano = require("gulp-cssnano");
+const del = require("del")
+
+gulp.task("clean", () => {
+  return del(["build"])
+})
 
 gulp.task("sass", () => {
   return gulp
@@ -13,8 +18,20 @@ gulp.task("sass", () => {
 });
 
 gulp.task("fonts", () => {
+  gulp.src("src/scss/fonts.scss")
+    .pipe(sass())
+    .pipe(rename("fonts.css"))
+    .pipe(gulp.dest("build/css"))
+
   return gulp.src("src/fonts/*").pipe(gulp.dest("build/fonts"));
 });
+
+gulp.task("package", () => {
+  return gulp.src([
+    "package.json",
+    "README.md"
+  ]).pipe(gulp.dest("build"))
+})
 
 gulp.task("minify", () => {
   return gulp
@@ -32,4 +49,4 @@ gulp.task("watch", () => {
   gulp.watch("src/scss/**/*.scss", gulp.series("sass"));
 });
 
-gulp.task("build", gulp.series("sass", "minify", "fonts"));
+gulp.task("build", gulp.series("clean", "package", "sass", "fonts", "minify"));
