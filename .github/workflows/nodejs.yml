@@ -49,12 +49,12 @@ jobs:
           name: chidori
           path: ./build
 
-      - name: Display structure of downloaded files
-        run: ls -R
-        working-directory: ./build
-
       - name: Up Version
-        run: npm version patch
+        run: |
+          git config --local user.email actions@medpass.com.br
+          git config --local user.name "Github Actions"
+
+          npm version patch
 
       - name: Publish
         run: |

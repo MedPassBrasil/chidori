@@ -20,7 +20,7 @@
   },
   "homepage": "https://medpassbrasil.github.io/chidori",
   "devDependencies": {
-    "concurrently": "^4.1.0",
+    "concurrently": "^5.2.0",
     "del": "^5.1.0",
     "gulp": "^4.0.0",
     "gulp-cssnano": "^2.1.3",
