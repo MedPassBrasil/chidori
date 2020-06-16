@@ -1,0 +1,64 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [opened, synchronize, closed]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js v12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - name: NPM Install
+        run: npm i
+
+      - name: NPM Build
+        run: npm run build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: chidori
+          path: ./build
+
+  publish:
+    needs: build
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js v12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: chidori
+          path: ./build
+
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: ./build
+
+      - name: Up Version
+        run: npm version patch
+
+      - name: Publish
+        run: |
+          echo //registry.npmjs.org/:_authToken=${{ NPM_TOKEN }} > .npmrc
+          npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
