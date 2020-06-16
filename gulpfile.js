@@ -27,7 +27,10 @@ gulp.task("fonts", () => {
 });
 
 gulp.task("package", () => {
-  return gulp.src("package.json").pipe(gulp.dest("build"))
+  return gulp.src([
+    "package.json",
+    "README.md"
+  ]).pipe(gulp.dest("build"))
 })
 
 gulp.task("minify", () => {
