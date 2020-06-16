@@ -51,6 +51,7 @@ jobs:
 
       - name: Up Version
         run: |
+          cd ./build
           git config --local user.email actions@medpass.com.br
           git config --local user.name "Github Actions"
 
