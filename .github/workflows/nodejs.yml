@@ -58,7 +58,5 @@ jobs:
 
       - name: Publish
         run: |
-          echo //registry.npmjs.org/:_authToken=${{ NPM_TOKEN }} > .npmrc
+          echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
           npm publish
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
