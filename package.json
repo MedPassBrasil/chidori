@@ -1,8 +1,8 @@
 {
   "name": "@medpass/chidori",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Medpass's Styleguide, feel free to use it.",
-  "main": "index.js",
+  "main": "./css/chidori.min.css",
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",

@@ -1,14 +1,14 @@
 $fonts-path: "../fonts";
 $font-name: "CircularStd";
 $list: 
-	"-Black" 800 normal,
-	"-BlackItalic" 800 italic,
-	"-Bold" 600 normal,
-	"-BoldItalic" 600 italic,
-	"-Medium" 500 normal,
-	"-MediumItalic" 500 italic,
-	"-Book" 400 normal,
-	"-BookItalic" 400 italic;
+	"Black" 800 normal,
+	"BlackItalic" 800 italic,
+	"Bold" 600 normal,
+	"BoldItalic" 600 italic,
+	"Medium" 500 normal,
+	"MediumItalic" 500 italic,
+	"Book" 400 normal,
+	"BookItalic" 400 italic;
 
 @each $sufix, $weight, $style in $list {
 	$name: "#{$fonts-path}/#{$font-name}-#{$sufix}";

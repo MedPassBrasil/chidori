@@ -32,7 +32,7 @@ jobs:
 
   publish:
     needs: build
-    if: github.event.action == 'closed'
+    # if: github.event.action == 'closed'
     runs-on: ubuntu-latest
 
     steps:
@@ -51,6 +51,7 @@ jobs:
 
       - name: Up Version
         run: |
+          cd ./build
           git config --local user.email actions@medpass.com.br
           git config --local user.name "Github Actions"
 
